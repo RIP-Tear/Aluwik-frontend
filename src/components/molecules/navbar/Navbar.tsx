@@ -43,17 +43,17 @@ export const Navbar = () => {
         </div>
 
         <div className="xl:flex items-center justify-center hidden gap-x-10">
-          <Link href="https://www.facebook.com/profile.php?id=61577515076852">
+          <Link href="https://www.facebook.com/profile.php?id=61577515076852" className="cursor-active">
             <SiFacebook color={"#000"} size={32} />
           </Link>
-          <Link href="https://www.linkedin.com/company/aluwik-technologia-aluminiowa/?viewAsMember=true">
+          <Link href="https://www.linkedin.com/company/aluwik-technologia-aluminiowa/?viewAsMember=true" className=" cursor-active">
             <SiLinkedin color={"#000"} size={32} />
           </Link>
           <a
             href="https://wa.me/48609604571"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 text-black"
+            className="inline-flex items-center gap-2 text-black cursor-active"
           >
             <SiWhatsapp color="#000" size={32} />
           </a>

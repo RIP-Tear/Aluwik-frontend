@@ -1,0 +1,41 @@
+import { Button } from "@/components/atoms/button/Button";
+import { Heading } from "@/components/atoms/heading/Heading";
+import { Text } from "@/components/atoms/text/Text";
+import { MoveUpRight } from "lucide-react";
+import Image from "next/image";
+import React from "react";
+
+const AboutUs = () => {
+  return (
+    <div className="relative w-full">
+      <div className="absolute inset-0 -z-10">
+        <Image src="/img/zdjecie1.png" alt="zdjęcie1" fill className="object-cover" priority />
+      </div>
+      <div className="flex justify-center px-5 mt-10 sm:mt-[100px]">
+        <div className="text-white leading-relaxed max-w-[1200px] w-full py-10">
+          <Heading
+            label={"Dowiedz się więcej o nas"}
+            size={24}
+            className="uppercase text-start mb-4 px-5"
+          />
+          <div className="max-w-[700px] px-5">
+            <Text
+              text={`ALUWIK to doświadczony producent aluminiowej stolarki okiennej. 
+Wyroby wyprodukowane w naszej firmie, zaopatrzone są we wszystkie potrzebne certyfikaty oraz aprobaty techniczne wymagane na polskim rynku budowlanym. 
+Nasza siedziba znajduje się w Tczewie, jednak z powodzeniem obsługujemy klientów z całego kraju.
+
+Produkujemy stolarkę aluminiową i systemy okienno-drzwiowe w oparciu o profile firmy ALUPROF oraz PONZIO. 
+Działamy kompleksowo – w zakres usług wchodzi doradztwo, produkcja, montaż oraz serwis. 
+Możemy poszczycić się wieloletnim doświadczeniem, które przekłada się na wysoką jakość produktów stolarki okiennej aluminiowej oraz terminowe realizowanie zleceń. 
+Dbamy o to, aby satysfakcja z wybranych rozwiązań szła w parze z atrakcyjnymi cenami.`}
+              size={16}
+            />
+            <Button label="Kontakt" icon={<MoveUpRight />} className="mt-10" />
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default AboutUs;

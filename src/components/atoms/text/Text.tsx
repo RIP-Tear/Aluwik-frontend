@@ -47,10 +47,10 @@ export const Text = ({
       const style: React.CSSProperties = {};
 
       if (isLink) {
-        style.color = "#F68825";
+        style.color = "#C16200";
         style.textDecoration = "underline";
       } else if (isHighlighted) {
-        style.color = "#F68825";
+        style.color = "#C16200";
       }
 
       if (isLink && href) {

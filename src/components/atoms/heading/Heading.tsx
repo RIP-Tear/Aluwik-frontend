@@ -37,7 +37,7 @@ export const Heading = ({
     label.split(/(\s+)/).map((word, i) => {
       const clean = word.replace(/[^a-zA-Z0-9żźćńółęąśŻŹĆĄŚĘŁÓŃ]/g, "");
       const isHighlighted = highlightWords.includes(clean);
-      const color = isHighlighted ? "#F68825" : undefined;
+      const color = isHighlighted ? "#C16200" : undefined;
 
       return (
         <span key={i} style={color ? { color } : undefined}>

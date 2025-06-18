@@ -7,6 +7,7 @@ type AllowedSizes = 14 | 16 | 18 | 24 | 32 | 64;
 
 type ButtonProps = {
   label?: string;
+  color?: string;
   icon?: JSX.Element;
   size?: AllowedSizes;
   className?: string;
@@ -22,14 +23,15 @@ export const Button = ({
   className,
   size = 18,
   style,
+  color= "orangeAccent",
   onClick,
   href,
   type = "button",
 }: ButtonProps) => {
   const content = (
-    <span className="flex items-center justify-center border-2 border-black rounded-full bg-white hover:bg-black hover:text-white transition-colors duration-300">
+    <span className={`flex items-center justify-center border-2 border-${color} text-black rounded-full bg-white hover:bg-black hover:text-white transition-colors duration-300`}>
       {label && <Text text={label} size={size} className="px-3" />}
-      <span className={"border-2 p-2 border-black rounded-full text-white bg-black"}>{icon}</span>
+      <span className={`border-2 p-2 border-${color} rounded-full text-white bg-${color}`}>{icon}</span>
     </span>
   );
 
