@@ -31,7 +31,7 @@ Możemy poszczycić się wieloletnim doświadczeniem, które przekłada się na 
 Dbamy o to, aby satysfakcja z wybranych rozwiązań szła w parze z atrakcyjnymi cenami.`}
               size={16}
             />
-            <Button label="Kontakt" icon={<MoveUpRight />} className="mt-10" />
+            <Button label="Skontaktuj sie" icon={<MoveUpRight />} className="mt-10" />
           </div>
         </div>
       </div>
