@@ -14,7 +14,13 @@ const AboutUs = () => {
       <div className="flex justify-center px-5 mt-10 sm:mt-[100px]">
         <div className="text-white leading-relaxed max-w-[1200px] w-full py-10">
           <Heading
-            label={"Dowiedz się więcej o nas"}
+            label={"Dowiedz się"}
+            size={24}
+            className="uppercase text-start px-5"
+            as="h5"
+          />
+                    <Heading
+            label={"więcej o nas"}
             size={24}
             className="uppercase text-start mb-4 px-5"
             as="h5"
@@ -23,12 +29,7 @@ const AboutUs = () => {
             <Text
               text={`ALUWIK to doświadczony producent aluminiowej stolarki okiennej. 
 Wyroby wyprodukowane w naszej firmie, zaopatrzone są we wszystkie potrzebne certyfikaty oraz aprobaty techniczne wymagane na polskim rynku budowlanym. 
-Nasza siedziba znajduje się w Tczewie, jednak z powodzeniem obsługujemy klientów z całego kraju.
-
-Produkujemy stolarkę aluminiową i systemy okienno-drzwiowe w oparciu o profile firmy ALUPROF oraz PONZIO. 
-Działamy kompleksowo – w zakres usług wchodzi doradztwo, produkcja, montaż oraz serwis. 
-Możemy poszczycić się wieloletnim doświadczeniem, które przekłada się na wysoką jakość produktów stolarki okiennej aluminiowej oraz terminowe realizowanie zleceń. 
-Dbamy o to, aby satysfakcja z wybranych rozwiązań szła w parze z atrakcyjnymi cenami.`}
+Nasza siedziba znajduje się w Tczewie, jednak z powodzeniem obsługujemy klientów z całego kraju.`}
               size={16}
             />
             <Button label="Skontaktuj sie" icon={<MoveUpRight />} className="mt-10" />

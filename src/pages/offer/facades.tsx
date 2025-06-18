@@ -4,11 +4,9 @@ import { Navbar } from "@/components/molecules/navbar/Navbar";
 import { PageHead } from "@/components/molecules/page-head/PageHead";
 import LenisProvider from "@/utils/LenisProvider";
 import "../app/globals.css";
-
 import { Footer } from "@/components/molecules/footer/Footer";
-import BlogTemplate from "@/templates/BlogTemplate";
 
-export default function BlogPage() {
+export default function FacadesPage() {
   return (
     <>
       <PageHead
@@ -17,7 +15,6 @@ export default function BlogPage() {
       />
       <LenisProvider>
         <Navbar />
-        <BlogTemplate />
         <Footer />
       </LenisProvider>
     </>

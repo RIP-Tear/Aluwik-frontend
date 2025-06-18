@@ -6,6 +6,7 @@ import "../app/globals.css";
 import { Navbar } from "@/components/molecules/navbar/Navbar";
 import HomeTemplate from "@/templates/HomeTemplate";
 import NavbarContact from "@/components/molecules/navbar-contact/NavbarContact";
+import { Footer } from "@/components/molecules/footer/Footer";
 
 export default function HomePage() {
   return (
@@ -21,7 +22,7 @@ export default function HomePage() {
         <Navbar />
         <HomeTemplate />
 
-        {/* <Footer /> */}
+        <Footer />
       </LenisProvider>
     </>
   );

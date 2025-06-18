@@ -47,8 +47,8 @@ export default function OfferCards() {
       {/* --- nagłówki --- */}
       <div className="flex justify-center mt-10 sm:mt-[100px]">
         <div className="max-w-[1200px] w-full">
-          <Heading label="Oferta dopasowana" className="px-5 text-left" bold size={32} as="h2" />
-          <Heading label="do twoich potrzeb" className="px-5 text-left" bold size={32} as="h2" />
+          <Heading label="Oferta dopasowana" className="px-5 text-left" size={32} as="h2" />
+          <Heading label="do twoich potrzeb" className="px-5 text-left" size={32} as="h2" />
         </div>
       </div>
 

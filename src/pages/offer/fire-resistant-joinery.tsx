@@ -6,9 +6,8 @@ import LenisProvider from "@/utils/LenisProvider";
 import "../app/globals.css";
 
 import { Footer } from "@/components/molecules/footer/Footer";
-import BlogTemplate from "@/templates/BlogTemplate";
 
-export default function BlogPage() {
+export default function FireResistantJoineryPage() {
   return (
     <>
       <PageHead
@@ -17,7 +16,6 @@ export default function BlogPage() {
       />
       <LenisProvider>
         <Navbar />
-        <BlogTemplate />
         <Footer />
       </LenisProvider>
     </>

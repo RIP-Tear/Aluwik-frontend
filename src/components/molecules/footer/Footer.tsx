@@ -1,5 +1,5 @@
 import { Home, FileText, Mail, ChevronRight, Bolt, CircleUserRound } from "lucide-react";
-import { SiFacebook, SiLinkedin, SiTiktok } from "react-icons/si";
+import { SiFacebook, SiLinkedin, SiTiktok, SiWhatsapp } from "react-icons/si";
 import Link from "next/link";
 import clsx from "clsx";
 import React, { useState } from "react";
@@ -25,7 +25,7 @@ const Section = ({
         onClick={() => setOpen(prev => !prev)}
         className="w-full flex items-center justify-between mb-3 cursor-active group lg:cursor-default"
       >
-        <Text text={title} bold size={24} noAnimation className="text-start" />
+        <Text text={title} bold size={24} className="text-start" />
         <ChevronRight
           size={20}
           className={clsx("transition-transform duration-300 lg:hidden", open && "rotate-90")}
@@ -44,12 +44,10 @@ const Section = ({
 };
 
 const ListItem = ({
-  icon,
   label,
   href,
   isExternal = false,
 }: {
-  icon: React.ReactNode;
   label: string;
   href: string;
   isExternal?: boolean;
@@ -61,9 +59,8 @@ const ListItem = ({
 
   return (
     <li className="flex items-center gap-2 mb-3">
-      {icon}
       <Wrapper {...wrapperProps} className="cursor-active">
-        <Text text={label} size={16} noAnimation className="text-softSync" />
+        <Text text={label} size={14} className="text-greyVariant hover:underline" />
       </Wrapper>
     </li>
   );
@@ -73,85 +70,109 @@ export const Footer = () => {
   return (
     <footer
       className={clsx(
-        styles.footer,
-        "bg-shadowMind text-softSync px-5 py-3 mb-3 rounded-3xl w-[98%] mx-auto relative z-50",
+        "bg-black text-white p-10 mx-auto relative z-50 flex justify-center items-center",
       )}
     >
-      <div className="flex flex-col lg:flex-row gap-10 justify-between items-start">
-        {/* Logo */}
-        <div className="shrink-0 flex items-center justify-center h-full min-h-[64px]">
-          <Link href="/" className="inline-block cursor-active">
-            <Logo size={32} />
-          </Link>
+      <div className="max-w-[1200px]">
+        <div className="sm:flex justify-between items-center">
+          <div className="shrink-0 flex items-center justify-center sm:justify-start h-full min-h-[64px]">
+            <Link href="/" className="inline-block cursor-active">
+              <Logo white />
+            </Link>
+          </div>
+          <div className="text-center sm:text-end mt-2 sm:mt-0">
+            <Text text={"Śledź nasze social media"} size={16} />
+            <div className="flex justify-center sm:justify-end gap-4 mt-4">
+              <Link
+                href="https://www.facebook.com/profile.php?id=61577515076852"
+                className="cursor-active"
+              >
+                <SiFacebook size={24} />
+              </Link>
+              <Link
+                href="https://www.linkedin.com/company/aluwik-technologia-aluminiowa/?viewAsMember=true"
+                className=" cursor-active"
+              >
+                <SiLinkedin size={24} />
+              </Link>
+              <a
+                href="https://wa.me/48609604571"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 text-black cursor-active"
+              >
+                <SiWhatsapp size={24} color="#fff" />
+              </a>
+            </div>
+          </div>
         </div>
+        <div className="border border-white/20 w-full my-10" />
+        <div className="flex flex-col lg:flex-row gap-10 justify-between items-start">
+          {/* Logo */}
 
-        {/* Sections */}
-        <Section title="Nawigacja">
-          <ul>
-            <ListItem icon={<Home size={24} />} label="Strona główna" href="/" />
-            <ListItem icon={<FileText size={24} />} label="Blog" href="/blog" />
-            <ListItem icon={<Bolt size={24} />} label="Usługi" href="/services" />
-            <ListItem icon={<CircleUserRound size={24} />} label="Kontakt" href="/contact" />
-          </ul>
-        </Section>
+          {/* Sections */}
+          <Section title="Nawigacja">
+            <ul>
+              <ListItem label="Strona główna" href="/" />
+              <ListItem label="Oferta" href="/offer" />
+              <ListItem label="Realizacja" href="/realization" />
+              <ListItem label="Blog" href="/blog" />
+              <ListItem label="Kontakt" href="/contact" />
+            </ul>
+          </Section>
 
-        <Section title="Media społecznościowe">
-          <ul>
-            <ListItem
-              icon={<SiLinkedin size={24} />}
-              label="LinkedIn"
-              href="https://www.linkedin.com/company/sztucznaco/posts/?feedView=all"
-              isExternal
-            />
-            <ListItem
-              icon={<SiFacebook size={24} />}
-              label="Facebook"
-              href="https://www.facebook.com/sztucznaco"
-              isExternal
-            />
-            <ListItem
-              icon={<SiTiktok size={24} />}
-              label="TikTok"
-              href="https://www.tiktok.com/@sztucznaco"
-              isExternal
-            />
-          </ul>
-        </Section>
+          <Section title="Oferta">
+            <ul>
+              <ListItem label="Systemy okienno drzwiowe" href="/window-door-systems" isExternal />
+              <ListItem label="Fasady" href="/facades" isExternal />
+              <ListItem label="Ogrody zimowe" href="/winter-gardens" isExternal />
+              <ListItem
+                label="Stolarka przeciwpożarowa"
+                href="/fire-resistant-joinery"
+                isExternal
+              />
+              <ListItem label="Zadaszenia tarasów" href="/terrace-roofing" isExternal />
+            </ul>
+          </Section>
 
-        <Section title="Kontakt">
-          <ul>
-            <ListItem
-              icon={<Mail size={24} />}
-              label="pytania@sztucznaco.pl"
-              href="mailto:pytania@sztucznaco.pl"
-              isExternal
+          <Section title="Kontakt">
+            <ul>
+              <ListItem label="609 604 571" href="tel:609604571" isExternal />
+              <ListItem label="798 953 877" href="tel:798953877" isExternal />
+              <ListItem
+                label="biuro.aluwik@gmail.com"
+                href="mailto:biuro.aluwik@gmail.com"
+                isExternal
+              />
+              <ListItem
+                label="Aleja Solidarności 8, 83-110 Tczew"
+                href="https://www.google.com/maps?q=Aleja+Solidarności+8,+83-110+Tczew"
+                isExternal
+              />
+            </ul>
+          </Section>
+          <div className="mt-10 flex flex-col items-center text-xs gap-2 text-center">
+            <Link
+              href="https://www.rip-tear.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="underline flex items-center gap-2 cursor-active"
+            >
+              <Text text="RIP & Tear" size={14} className="text-greyVariant underline" />
+              <Image
+                src="https://www.rip-tear.com/favicon.ico"
+                alt="RIP & Tear"
+                width={30}
+                height={30}
+              />
+            </Link>
+            <Text
+              text="© 2025 ALUWIK · Wszelkie prawa zastrzeżone"
+              size={14}
+              className="text-greyVariant"
             />
-          </ul>
-        </Section>
-      </div>
-
-      {/* Bottom line */}
-      <div className="mt-10 flex flex-col items-center text-xs gap-2 text-center">
-        <Text
-          text="© 2025 Sztuczna co? · Wszelkie prawa zastrzeżone · Projekt i realizacja:"
-          size={16}
-          noAnimation
-          className="text-softSync"
-        />
-        <Link
-          href="https://www.rip-tear.com/"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="underline flex items-center gap-2 cursor-active"
-        >
-          <Text text="RIP & Tear" size={16} noAnimation className="text-softSync underline" />
-          <Image
-            src="https://www.rip-tear.com/favicon.ico"
-            alt="RIP & Tear"
-            width={30}
-            height={30}
-          />
-        </Link>
+          </div>
+        </div>
       </div>
     </footer>
   );

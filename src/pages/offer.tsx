@@ -5,7 +5,7 @@ import { PageHead } from "@/components/molecules/page-head/PageHead";
 import LenisProvider from "@/utils/LenisProvider";
 import "../app/globals.css";
 
-// import { Footer } from "@/components/molecules/footer/Footer";
+import { Footer } from "@/components/molecules/footer/Footer";
 import OfferTemplate from "@/templates/OfferTemplate";
 
 export default function OfferPage() {
@@ -18,7 +18,7 @@ export default function OfferPage() {
       <LenisProvider>
         <Navbar />
         <OfferTemplate />
-        {/* <Footer /> */}
+        <Footer />
       </LenisProvider>
     </>
   );

@@ -4,13 +4,16 @@ import Image from "next/image";
 
 type LogoProps = {
   className?: string;
+  white?: boolean;
 };
 
-export const Logo = ({ className }: LogoProps) => {
+export const Logo = ({ className, white = false }: LogoProps) => {
+  const logoSrc = white ? "/img/logo-text-white.PNG" : "/img/logo-text.png";
+
   return (
     <div className={clsx("w-[160px] sm:w-[200px]", className)}>
       <Image
-        src="/img/logo-text.png"
+        src={logoSrc}
         alt="logo"
         width={200}
         height={200}
