@@ -48,12 +48,12 @@ body {
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: var(--color-softSync);
+  background-color: #000;
   border-radius: 10px;
   cursor: url("/cursors/cursor2.svg") 0 0, auto;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background-color: var(--color-neroMint);
+  background-color: var(--color-orangeAccent);
   cursor: url("/cursors/cursor1.svg") 0 0, auto;
 }

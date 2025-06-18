@@ -17,6 +17,7 @@ const AboutUs = () => {
             label={"Dowiedz się więcej o nas"}
             size={24}
             className="uppercase text-start mb-4 px-5"
+            as="h5"
           />
           <div className="max-w-[700px] px-5">
             <Text

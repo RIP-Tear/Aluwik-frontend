@@ -15,7 +15,9 @@ export default function HomePage() {
         description="Odkryj nowoczesne podejście do tworzenia treści, stron internetowych i projektowania graficznego z wykorzystaniem sztucznej inteligencji. Sprawdź, co potrafimy w Sztuczna co?"
       />
       <LenisProvider>
+        <div className="hidden xl:block">
         <NavbarContact />
+        </div>
         <Navbar />
         <HomeTemplate />
 

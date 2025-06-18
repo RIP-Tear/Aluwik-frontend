@@ -6,19 +6,21 @@ const OfferCards = () => {
     <div>
       <div className="flex justify-center items-center mt-10 sm:mt-[100px]">
         <div className="max-w-[1200px] w-full">
+          <Heading label="Oferta dopasowana" className="text-left px-5" bold size={32} as="h2" />
           <Heading
-            label="Oferta dopasowana
+            label="
 do twoich potrzeb"
             className="text-left px-5"
             bold
             size={32}
-            highlightColor="#C16200"
-            highlightWords={["aluminiowej"]}
+            as="h2"
           />
         </div>
       </div>
       <div className="flex justify-center items-center mt-10 sm:mt-[100px]">
-        <div className="max-w-[1200px] w-full"></div>
+        <div className="max-w-[1200px] w-full">
+          <div></div>
+        </div>
       </div>
     </div>
   );
