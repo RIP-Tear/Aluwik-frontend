@@ -6,15 +6,15 @@ import { Michroma } from "next/font/google";
 
 const michroma = Michroma({
   subsets: ["latin"],
-  weight: ["400", ], 
+  weight: ["400"],
   display: "swap",
 });
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
-      <div className={michroma.className}>
-        <Component {...pageProps} />
-      </div>
+    <div className={michroma.className}>
+      <Component {...pageProps} />
+    </div>
   );
 }
 

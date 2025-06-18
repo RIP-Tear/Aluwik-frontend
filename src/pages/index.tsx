@@ -17,7 +17,7 @@ export default function HomePage() {
       />
       <LenisProvider>
         <div className="hidden xl:block">
-        <NavbarContact />
+          <NavbarContact />
         </div>
         <Navbar />
         <HomeTemplate />

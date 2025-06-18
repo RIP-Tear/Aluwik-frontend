@@ -1,6 +1,5 @@
 import React, { JSX } from "react";
 import clsx from "clsx";
-import button from "./button.module.css";
 import { Text } from "../text/Text";
 
 type AllowedSizes = 14 | 16 | 18 | 24 | 32 | 64;

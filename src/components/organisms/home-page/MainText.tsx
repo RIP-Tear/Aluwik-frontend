@@ -11,7 +11,6 @@ const MainText = () => {
           className="text-left px-5"
           bold
           size={64}
-          highlightColor="#C16200"
           highlightWords={["aluminiowej"]}
         />
       </div>

@@ -13,13 +13,8 @@ const AboutUs = () => {
       </div>
       <div className="flex justify-center px-5 mt-10 sm:mt-[100px]">
         <div className="text-white leading-relaxed max-w-[1200px] w-full py-10">
+          <Heading label={"Dowiedz się"} size={24} className="uppercase text-start px-5" as="h5" />
           <Heading
-            label={"Dowiedz się"}
-            size={24}
-            className="uppercase text-start px-5"
-            as="h5"
-          />
-                    <Heading
             label={"więcej o nas"}
             size={24}
             className="uppercase text-start mb-4 px-5"

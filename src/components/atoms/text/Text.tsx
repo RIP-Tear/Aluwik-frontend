@@ -29,7 +29,6 @@ export const Text = ({
   className,
   bold = false,
   highlightWords = [],
-  highlightColor,
   linkWords = [],
   linkUrlMap = {},
 }: TextProps) => {

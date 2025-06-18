@@ -1,21 +1,10 @@
 import { Logo } from "@/components/atoms/logo/Logo";
 import { Text } from "@/components/atoms/text/Text";
 import clsx from "clsx";
-import {
-  Bolt,
-  CircleUserRound,
-  FileText,
-  House,
-  MapPin,
-  Menu,
-  MessageCircle,
-  Phone,
-  X,
-} from "lucide-react";
+import { MapPin, Menu, MessageCircle, Phone, X } from "lucide-react";
 import Link from "next/link";
 import { useRouter } from "next/router";
 import { useState } from "react";
-import styles from "./navbar.module.css";
 import { Button } from "@/components/atoms/button/Button";
 import { SiFacebook, SiLinkedin, SiWhatsapp } from "react-icons/si";
 
@@ -45,8 +34,15 @@ export const Navbar = () => {
           {navLinks.map(({ href, label }) => {
             const isActive = pathname === href;
             return (
-              <Link href={href}>
-                <Text text={label} size={18} className="hover:underline cursor-active" />
+              <Link key={href} href={href}>
+                <Text
+                  text={label}
+                  size={18}
+                  className={clsx("cursor-active", {
+                    "underline font-bold": isActive,
+                    "hover:underline": !isActive,
+                  })}
+                />
               </Link>
             );
           })}
@@ -55,13 +51,13 @@ export const Navbar = () => {
         <div className="xl:flex items-center justify-center hidden gap-x-10">
           <Link
             href="https://www.facebook.com/profile.php?id=61577515076852"
-            className="cursor-active"
+            className="cursor-active transition hover:scale-105"
           >
             <SiFacebook color={"#000"} size={32} />
           </Link>
           <Link
             href="https://www.linkedin.com/company/aluwik-technologia-aluminiowa/?viewAsMember=true"
-            className=" cursor-active"
+            className=" cursor-active transition hover:scale-105"
           >
             <SiLinkedin color={"#000"} size={32} />
           </Link>
@@ -69,7 +65,7 @@ export const Navbar = () => {
             href="https://wa.me/48609604571"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 text-black cursor-active"
+            className="inline-flex items-center gap-2 text-black cursor-active transition hover:scale-105"
           >
             <SiWhatsapp color="#000" size={32} />
           </a>
@@ -103,6 +99,8 @@ export const Navbar = () => {
             <Text text={label} size={18} className="hover:underline cursor-active" />
           </Link>
         ))}
+
+        <div className="border border-black/20" />
         <div className="mt-2 flex flex-col gap-4">
           <div className="w-fit">
             <Button

@@ -5,7 +5,7 @@ import React from "react";
 
 const NavbarContact = () => {
   return (
-    <div className="bg-orangeAccent py-4 px-5 flex justify-between items-center ">
+    <div className="bg-gradient-to-r from-orangeAccent to-alertRed py-4 px-5 flex justify-between items-center ">
       <div>
         <Text text="Pon–Pt 07:00–16:00" size={16} className="text-white" />
       </div>

@@ -3,7 +3,7 @@
 import { Navbar } from "@/components/molecules/navbar/Navbar";
 import { PageHead } from "@/components/molecules/page-head/PageHead";
 import LenisProvider from "@/utils/LenisProvider";
-import "../app/globals.css";
+import "../../app/globals.css";
 
 import { Footer } from "@/components/molecules/footer/Footer";
 

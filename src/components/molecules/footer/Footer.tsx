@@ -1,11 +1,10 @@
-import { Home, FileText, Mail, ChevronRight, Bolt, CircleUserRound } from "lucide-react";
-import { SiFacebook, SiLinkedin, SiTiktok, SiWhatsapp } from "react-icons/si";
+import { ChevronRight } from "lucide-react";
+import { SiFacebook, SiLinkedin, SiWhatsapp } from "react-icons/si";
 import Link from "next/link";
 import clsx from "clsx";
 import React, { useState } from "react";
 import { Logo } from "@/components/atoms/logo/Logo";
 import { Text } from "@/components/atoms/text/Text";
-import styles from "./footer.module.css";
 import Image from "next/image";
 
 const Section = ({
