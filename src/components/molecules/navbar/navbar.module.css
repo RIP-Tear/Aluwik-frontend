@@ -1,0 +1,11 @@
+.navbar {
+  box-shadow: 0 0 60px 10px black;
+  isolation: isolate;
+  overflow: visible;
+}
+
+.navbarSide {
+  box-shadow: 0 10px 30px -5px rgba(0, 0, 0, 0.5);
+  isolation: isolate;
+  overflow: visible;
+}

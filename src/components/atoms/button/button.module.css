@@ -1,0 +1,4 @@
+.reserve::after {
+  content: '';
+  display: inline-block;
+}

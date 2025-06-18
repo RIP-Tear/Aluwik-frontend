@@ -1,0 +1,40 @@
+@keyframes barSlideInLeft {
+    0% {
+      width: 0;
+      opacity: 0;
+    }
+    20%,
+    80% {
+      width: var(--bar-width);
+      opacity: 1;
+    }
+    100% {
+      width: 0;
+      opacity: 0;
+    }
+  }
+  
+  @keyframes barSlideInRight {
+    0% {
+      width: 0;
+      opacity: 0;
+    }
+    20%,
+    80% {
+      width: var(--bar-width);
+      opacity: 1;
+    }
+    100% {
+      width: 0;
+      opacity: 0;
+    }
+  }
+  
+  .barSlideInLeft {
+    animation-name: barSlideInLeft;
+  }
+  
+  .barSlideInRight {
+    animation-name: barSlideInRight;
+  }
+  

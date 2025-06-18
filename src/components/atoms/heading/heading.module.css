@@ -1,0 +1,7 @@
+.bold-fake {
+  text-shadow:
+    1px 0 currentColor,
+    -1px 0 currentColor,
+    0 1px currentColor,
+    0 -1px currentColor;
+}
