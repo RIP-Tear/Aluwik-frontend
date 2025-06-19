@@ -28,7 +28,7 @@ Wyroby wyprodukowane w naszej firmie, zaopatrzone są we wszystkie potrzebne cer
 Nasza siedziba znajduje się w Tczewie, jednak z powodzeniem obsługujemy klientów z całego kraju.`}
               size={16}
             />
-            <Button label="Skontaktuj sie" icon={<MoveUpRight />} className="mt-10" />
+            <Button label="Skontaktuj się" icon={<MoveUpRight />} className="mt-10" />
           </div>
         </div>
       </div>

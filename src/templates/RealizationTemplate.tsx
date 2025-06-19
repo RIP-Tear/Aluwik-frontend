@@ -1,4 +1,5 @@
 import HeroText from "@/components/molecules/hero-text/HeroText";
+import CategoryPreviewRealization from "@/components/organisms/realization-page/CategoryPreviewRealization";
 
 const RealizationTemplate = () => {
   return (
@@ -8,6 +9,7 @@ const RealizationTemplate = () => {
 realizacjami"
         highlightWords={["realizacjami"]}
       />
+      <CategoryPreviewRealization />
     </div>
   );
 };

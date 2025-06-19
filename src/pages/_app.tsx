@@ -3,6 +3,7 @@ import type { AppProps } from "next/app";
 import "../app/globals.css";
 
 import { Michroma } from "next/font/google";
+import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 
 const michroma = Michroma({
   subsets: ["latin"],
@@ -10,11 +11,15 @@ const michroma = Michroma({
   display: "swap",
 });
 
+const queryClient = new QueryClient();
+
 function MyApp({ Component, pageProps }: AppProps) {
   return (
-    <div className={michroma.className}>
-      <Component {...pageProps} />
-    </div>
+    <QueryClientProvider client={queryClient}>
+      <div className={michroma.className}>
+        <Component {...pageProps} />
+      </div>
+    </QueryClientProvider>
   );
 }
 
