@@ -11,7 +11,7 @@ const ContactHero = () => {
       <div className="absolute inset-0 -z-10">
         <Image src={contactBg} alt="zdjęcie2" fill className="object-cover" priority />
       </div>
-      <div className="flex justify-center px-5">
+      <div className="flex justify-center ">
         <div className="text-white leading-relaxed max-w-[1200px] w-full py-10">
           <div className="max-w-[1200px] px-5 sm:flex">
             <div className="max-w-[800px]">
@@ -19,7 +19,7 @@ const ContactHero = () => {
                 label="Jesteś zainteresowany naszymi
 usługami?"
                 size={32}
-                className=" text-start mb-4 px-5"
+                className=" text-start mb-4"
                 as="h2"
                 highlightWords={["usługami"]}
               />

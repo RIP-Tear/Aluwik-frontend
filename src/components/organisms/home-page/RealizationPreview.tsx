@@ -50,17 +50,17 @@ const RealizationPreview = () => {
     <div className="bg-black w-full py-10 sm:py-[100px] mt-10 sm:mt-[100px]">
       <div className="flex justify-center px-5">
         <div className="text-white leading-relaxed max-w-[1200px] w-full py-10">
-          <div className="px-5 sm:flex gap-8">
-            {/* Lewa kolumna */}
+          <div className="flex flex-col xl:flex-row gap-8">
+            {/* Tekst po lewej */}
             <div className="flex-1 max-w-[800px]">
               <Heading
                 label="Zapoznaj się z naszymi realizacjami"
                 size={32}
-                className="text-start mb-4 px-5"
+                className="text-start mb-4"
                 as="h2"
                 highlightWords={["realizacjami"]}
               />
-              <div className="max-w-[600px] px-5">
+              <div className="max-w-[600px]">
                 <Text
                   text={`Produkujemy stolarkę aluminiową i systemy okienno-drzwiowe w oparciu o profile firmy ALUPROF oraz PONZIO. 
 Działamy kompleksowo – w zakres usług wchodzi doradztwo, produkcja, montaż oraz serwis. 
@@ -72,8 +72,8 @@ Dbamy o to, aby satysfakcja z wybranych rozwiązań szła w parze z atrakcyjnymi
               </div>
             </div>
 
-            {/* Mozaika po prawej */}
-            <div className="hidden sm:grid grid-cols-2 gap-4 w-full max-w-[600px]">
+            {/* Mozaika 2x2 */}
+            <div className="grid grid-cols-2 gap-4 w-full max-w-[600px] mt-8 sm:mt-0">
               {tiles.map((tile, i) => (
                 <div key={i} className="relative w-full aspect-[4/3] rounded-lg overflow-hidden">
                   {/* Widoczny obrazek */}
@@ -84,7 +84,7 @@ Dbamy o to, aby satysfakcja z wybranych rozwiązań szła w parze z atrakcyjnymi
                     className="object-cover transition-opacity duration-700"
                   />
 
-                  {/* Nadchodzący obrazek – fade-in */}
+                  {/* Nadchodzący obrazek */}
                   {tile.incoming && (
                     <motion.div
                       initial={{ opacity: 0 }}

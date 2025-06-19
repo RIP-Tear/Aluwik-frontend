@@ -12,7 +12,7 @@ const AboutUs = () => {
       <div className="absolute inset-0 -z-10">
         <Image src={aboutUsBg} alt="zdjęcie1" fill className="object-cover" priority />
       </div>
-      <div className="flex justify-center px-5 mt-10 sm:mt-[100px]">
+      <div className="flex justify-center mt-10 sm:mt-[100px]">
         <div className="text-white leading-relaxed max-w-[1200px] w-full py-10">
           <Heading label={"Dowiedz się"} size={24} className="uppercase text-start px-5" as="h5" />
           <Heading

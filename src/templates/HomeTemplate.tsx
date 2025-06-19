@@ -3,7 +3,7 @@ import { useGsapFadeInSections } from "@/hooks/useGsapSectionFadeIn";
 import AboutUs from "@/components/organisms/home-page/AboutUs";
 import OfferCards from "@/components/organisms/home-page/OfferCards";
 import ContactHero from "@/components/organisms/home-page/ContactHero";
-import RealizationPreview from "@/components/organisms/realization-preview/RealizationPreview";
+import RealizationPreview from "@/components/organisms/home-page/RealizationPreview";
 import HeroText from "@/components/molecules/hero-text/HeroText";
 
 const HomeTemplate = () => {

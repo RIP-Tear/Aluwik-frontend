@@ -69,7 +69,7 @@ export const Footer = () => {
   return (
     <footer
       className={clsx(
-        "bg-black text-white p-10 mx-auto relative z-50 flex justify-center items-center",
+        "bg-black text-white py-10 mx-auto relative z-50 flex justify-center items-center",
       )}
     >
       <div className="max-w-[1200px]">
@@ -107,8 +107,6 @@ export const Footer = () => {
         </div>
         <div className="border border-white/20 w-full my-10" />
         <div className="flex flex-col lg:flex-row gap-10 justify-between items-start">
-          {/* Logo */}
-
           {/* Sections */}
           <Section title="Nawigacja">
             <ul>
