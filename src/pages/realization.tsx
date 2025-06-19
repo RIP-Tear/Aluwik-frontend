@@ -3,6 +3,8 @@ import { PageHead } from "@/components/molecules/page-head/PageHead";
 import "../app/globals.css";
 import LenisProvider from "@/utils/LenisProvider";
 import { Footer } from "@/components/molecules/footer/Footer";
+import NavbarContact from "@/components/molecules/navbar-contact/NavbarContact";
+import RealizationTemplate from "@/templates/RealizationTemplate";
 
 export default function RealizationPage() {
   return (
@@ -12,7 +14,11 @@ export default function RealizationPage() {
         description="Nasza witryna jest w trakcie budowy. Wróć wkrótce!"
       />
       <LenisProvider>
+        <div className="hidden xl:block">
+          <NavbarContact />
+        </div>
         <Navbar />
+        <RealizationTemplate />
         <Footer />
       </LenisProvider>
     </>

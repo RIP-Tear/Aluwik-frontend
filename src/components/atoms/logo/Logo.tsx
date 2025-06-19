@@ -1,6 +1,8 @@
 import React from "react";
 import clsx from "clsx";
 import Image from "next/image";
+import { logoWhite } from "@/utils/images/logoWhite";
+import { logoBlack } from "@/utils/images/logoBlack";
 
 type LogoProps = {
   className?: string;
@@ -8,7 +10,7 @@ type LogoProps = {
 };
 
 export const Logo = ({ className, white = false }: LogoProps) => {
-  const logoSrc = white ? "/img/logo-text-white.PNG" : "/img/logo-text.png";
+  const logoSrc = white ? logoWhite : logoBlack;
 
   return (
     <div className={clsx("w-[160px] sm:w-[200px]", className)}>

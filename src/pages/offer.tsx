@@ -7,6 +7,7 @@ import "../app/globals.css";
 
 import { Footer } from "@/components/molecules/footer/Footer";
 import OfferTemplate from "@/templates/OfferTemplate";
+import NavbarContact from "@/components/molecules/navbar-contact/NavbarContact";
 
 export default function OfferPage() {
   return (
@@ -16,6 +17,9 @@ export default function OfferPage() {
         description="Skorzystaj z naszych usług: tworzymy strony internetowe, projektujemy UI/UX, wdrażamy sztuczną inteligencję i prowadzimy kampanie marketingowe. Sprawdź, jak możemy rozwinąć Twój biznes online."
       />
       <LenisProvider>
+        <div className="hidden xl:block">
+          <NavbarContact />
+        </div>
         <Navbar />
         <OfferTemplate />
         <Footer />

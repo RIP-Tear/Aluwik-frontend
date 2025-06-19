@@ -21,7 +21,6 @@ export default function HomePage() {
         </div>
         <Navbar />
         <HomeTemplate />
-
         <Footer />
       </LenisProvider>
     </>
