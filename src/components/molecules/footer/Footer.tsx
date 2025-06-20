@@ -6,6 +6,7 @@ import React, { useState } from "react";
 import { Logo } from "@/components/atoms/logo/Logo";
 import { Text } from "@/components/atoms/text/Text";
 import Image from "next/image";
+import PageSection from "@/components/atoms/page-section/PageSection";
 
 const Section = ({
   title,
@@ -72,37 +73,35 @@ export const Footer = () => {
         "bg-black text-white py-10 mx-auto relative z-50 flex justify-center items-center",
       )}
     >
-      <div className="max-w-[1200px]">
-        <div className="sm:flex justify-between items-center">
-          <div className="shrink-0 flex items-center justify-center sm:justify-start h-full min-h-[64px]">
-            <Link href="/" className="inline-block cursor-active">
-              <Logo white />
+      <PageSection noMarginTop>
+        <div className="shrink-0 flex items-center justify-center sm:justify-start h-full min-h-[64px]">
+          <Link href="/" className="inline-block cursor-active">
+            <Logo white />
+          </Link>
+        </div>
+        <div className="text-center sm:text-end mt-2 sm:mt-0">
+          <Text text={"Śledź nasze social media"} size={16} />
+          <div className="flex justify-center sm:justify-end gap-4 mt-4">
+            <Link
+              href="https://www.facebook.com/profile.php?id=61577515076852"
+              className="cursor-active"
+            >
+              <SiFacebook size={24} />
             </Link>
-          </div>
-          <div className="text-center sm:text-end mt-2 sm:mt-0">
-            <Text text={"Śledź nasze social media"} size={16} />
-            <div className="flex justify-center sm:justify-end gap-4 mt-4">
-              <Link
-                href="https://www.facebook.com/profile.php?id=61577515076852"
-                className="cursor-active"
-              >
-                <SiFacebook size={24} />
-              </Link>
-              <Link
-                href="https://www.linkedin.com/company/aluwik-technologia-aluminiowa/?viewAsMember=true"
-                className=" cursor-active"
-              >
-                <SiLinkedin size={24} />
-              </Link>
-              <a
-                href="https://wa.me/48609604571"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 text-black cursor-active"
-              >
-                <SiWhatsapp size={24} color="#fff" />
-              </a>
-            </div>
+            <Link
+              href="https://www.linkedin.com/company/aluwik-technologia-aluminiowa/?viewAsMember=true"
+              className=" cursor-active"
+            >
+              <SiLinkedin size={24} />
+            </Link>
+            <a
+              href="https://wa.me/48609604571"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 text-black cursor-active"
+            >
+              <SiWhatsapp size={24} color="#fff" />
+            </a>
           </div>
         </div>
         <div className="border border-white/20 w-full my-10" />
@@ -170,7 +169,7 @@ export const Footer = () => {
             />
           </div>
         </div>
-      </div>
+      </PageSection>
     </footer>
   );
 };

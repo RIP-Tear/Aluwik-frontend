@@ -2,7 +2,7 @@ import { useQuery } from "@tanstack/react-query";
 import axios from "axios";
 import { RealizationsResponse } from "@/model/Realization";
 
-const API_URL = `${process.env.NEXT_PUBLIC_API_URL}/api/realizations?populate=image`;
+const API_URL = `${process.env.NEXT_PUBLIC_API_URL}/api/realizations?populate=image&pagination[limit]=100`;
 
 export const useRealizations = () => {
   return useQuery<RealizationsResponse>({

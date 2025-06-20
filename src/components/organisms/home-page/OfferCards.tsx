@@ -1,4 +1,5 @@
 import { Heading } from "@/components/atoms/heading/Heading";
+import PageSection from "@/components/atoms/page-section/PageSection";
 import { Text } from "@/components/atoms/text/Text";
 import { boxes } from "@/utils/mock/boxes";
 import { MoveUpRight } from "lucide-react";
@@ -11,24 +12,19 @@ export default function OfferCards() {
 
   return (
     <div>
-      {/* --- nagłówki --- */}
-      <div className="flex justify-center mt-10 sm:mt-[100px]">
-        <div className="max-w-[1200px] w-full">
-          <Heading
-            label="Oferta dopasowana"
-            className="px-5 text-left"
-            size={32}
-            as="h2"
-            highlightWords={["Oferta"]}
-          />
-          <Heading label="do twoich potrzeb" className="px-5 text-left" size={32} as="h2" />
-        </div>
-      </div>
+      <PageSection>
+        <Heading
+          label="Oferta dopasowana"
+          className="text-left"
+          size={32}
+          as="h2"
+          highlightWords={["Oferta"]}
+        />
+        <Heading label="do twoich potrzeb" className="text-left" size={32} as="h2" />
+      </PageSection>
 
-      {/* --- sekcja kart --- */}
-      <div className="flex justify-center mt-10 p-5">
-        <div className="max-w-[1200px] w-full flex flex-col xl:grid xl:grid-cols-4 xl:grid-rows-2 gap-4">
-          {/* zdjęcie z fade-in */}
+      <PageSection>
+        <div className="flex flex-col xl:grid xl:grid-cols-4 xl:grid-rows-2 gap-4">
           <div className="border-2 border-orangeAccent relative w-full aspect-[4/3] xl:aspect-auto xl:col-span-3 xl:row-span-2 rounded-lg overflow-hidden">
             <Image
               key={image}
@@ -40,7 +36,6 @@ export default function OfferCards() {
             />
           </div>
 
-          {/* boxy */}
           <div className="flex flex-col xl:contents gap-4 xl:gap-0">
             {boxes.map(({ icon: Icon, title, description, href }, i) => {
               const active = i === activeIndex;
@@ -73,7 +68,7 @@ export default function OfferCards() {
             })}
           </div>
         </div>
-      </div>
+      </PageSection>
     </div>
   );
 }

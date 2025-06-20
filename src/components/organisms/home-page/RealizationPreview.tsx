@@ -6,6 +6,7 @@ import { MoveUpRight } from "lucide-react";
 import Image from "next/image";
 import React, { useEffect, useMemo, useState } from "react";
 import { motion } from "framer-motion";
+import PageSection from "@/components/atoms/page-section/PageSection";
 
 const CHANGE_INTERVAL = 1500;
 const FADE_DURATION = 0.5;
@@ -47,66 +48,64 @@ const RealizationPreview = () => {
   }, [allImages]);
 
   return (
-    <div className="bg-black w-full py-10 sm:py-[100px] mt-10 sm:mt-[100px]">
-      <div className="flex justify-center px-5">
-        <div className="text-white leading-relaxed max-w-[1200px] w-full py-10">
-          <div className="flex flex-col xl:flex-row gap-8">
-            {/* Tekst po lewej */}
-            <div className="flex-1 max-w-[800px]">
-              <Heading
-                label="Zapoznaj się z naszymi realizacjami"
-                size={32}
-                className="text-start mb-4"
-                as="h2"
-                highlightWords={["realizacjami"]}
-              />
-              <div className="max-w-[600px]">
-                <Text
-                  text={`Produkujemy stolarkę aluminiową i systemy okienno-drzwiowe w oparciu o profile firmy ALUPROF oraz PONZIO. 
+    <PageSection className="bg-black py-10 sm:py-[100px]">
+      <div className="text-white leading-relaxed py-10">
+        <div className="flex flex-col xl:flex-row gap-8">
+          {/* Tekst po lewej */}
+          <div className="flex-1 max-w-[800px]">
+            <Heading
+              label="Zapoznaj się z naszymi realizacjami"
+              size={32}
+              className="text-start mb-4"
+              as="h2"
+              highlightWords={["realizacjami"]}
+            />
+            <div className="max-w-[600px]">
+              <Text
+                text={`Produkujemy stolarkę aluminiową i systemy okienno-drzwiowe w oparciu o profile firmy ALUPROF oraz PONZIO. 
 Działamy kompleksowo – w zakres usług wchodzi doradztwo, produkcja, montaż oraz serwis. 
 Możemy poszczycić się wieloletnim doświadczeniem, które przekłada się na wysoką jakość produktów oraz terminowe realizowanie zleceń. 
 Dbamy o to, aby satysfakcja z wybranych rozwiązań szła w parze z atrakcyjnymi cenami.`}
-                  size={16}
+                size={16}
+              />
+              <Button label="Zobacz nasze realizacje" icon={<MoveUpRight />} className="mt-10" />
+            </div>
+          </div>
+
+          {/* Mozaika 2x2 */}
+          <div className="grid grid-cols-2 gap-4 w-full max-w-[600px] mt-8 sm:mt-0">
+            {tiles.map((tile, i) => (
+              <div key={i} className="relative w-full aspect-[4/3] rounded-lg overflow-hidden">
+                {/* Widoczny obrazek */}
+                <Image
+                  src={tile.visible}
+                  alt={`Visible ${i}`}
+                  fill
+                  className="object-cover transition-opacity duration-700"
                 />
-                <Button label="Zobacz nasze realizacje" icon={<MoveUpRight />} className="mt-10" />
+
+                {/* Nadchodzący obrazek */}
+                {tile.incoming && (
+                  <motion.div
+                    initial={{ opacity: 0 }}
+                    animate={{ opacity: 1 }}
+                    transition={{ duration: FADE_DURATION }}
+                    className="absolute inset-0"
+                  >
+                    <Image
+                      src={tile.incoming}
+                      alt={`Incoming ${i}`}
+                      fill
+                      className="object-cover"
+                    />
+                  </motion.div>
+                )}
               </div>
-            </div>
-
-            {/* Mozaika 2x2 */}
-            <div className="grid grid-cols-2 gap-4 w-full max-w-[600px] mt-8 sm:mt-0">
-              {tiles.map((tile, i) => (
-                <div key={i} className="relative w-full aspect-[4/3] rounded-lg overflow-hidden">
-                  {/* Widoczny obrazek */}
-                  <Image
-                    src={tile.visible}
-                    alt={`Visible ${i}`}
-                    fill
-                    className="object-cover transition-opacity duration-700"
-                  />
-
-                  {/* Nadchodzący obrazek */}
-                  {tile.incoming && (
-                    <motion.div
-                      initial={{ opacity: 0 }}
-                      animate={{ opacity: 1 }}
-                      transition={{ duration: FADE_DURATION }}
-                      className="absolute inset-0"
-                    >
-                      <Image
-                        src={tile.incoming}
-                        alt={`Incoming ${i}`}
-                        fill
-                        className="object-cover"
-                      />
-                    </motion.div>
-                  )}
-                </div>
-              ))}
-            </div>
+            ))}
           </div>
         </div>
       </div>
-    </div>
+    </PageSection>
   );
 };
 
