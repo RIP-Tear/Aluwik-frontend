@@ -110,10 +110,10 @@ export const Footer = () => {
           <Section title="Nawigacja">
             <ul>
               <ListItem label="Strona główna" href="/" />
-              <ListItem label="Oferta" href="/offer" />
-              <ListItem label="Realizacja" href="/realization" />
+              <ListItem label="Oferta" href="/oferta" />
+              <ListItem label="Realizacja" href="/realizacja" />
               <ListItem label="Blog" href="/blog" />
-              <ListItem label="Kontakt" href="/contact" />
+              <ListItem label="Kontakt" href="/kontakt" />
             </ul>
           </Section>
 
