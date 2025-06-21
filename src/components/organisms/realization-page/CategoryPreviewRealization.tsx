@@ -17,7 +17,6 @@ const CATEGORY_CONFIG: Record<string, { title: string; icon: React.ElementType }
 
 const CATEGORY_KEYS = Object.keys(CATEGORY_CONFIG);
 
-/** Buduje pełny URL obrazka na podstawie formatu medium lub oryginału */
 const buildImageSrc = (img: any) =>
   `${process.env.NEXT_PUBLIC_API_URL}${img.formats?.medium?.url || img.url}`;
 
@@ -26,7 +25,6 @@ const CategoryPreviewRealization: React.FC = () => {
   const [activeCategory, setActiveCategory] = useState("systemyOkiennoDzwiowe");
   const [openedIndex, setOpenedIndex] = useState<number | null>(null);
 
-  /* ---------- przyciski kategorii ---------- */
   const mobileCategoryButtons = (
     <div className="flex flex-col gap-4 w-full md:hidden mb-6">
       {CATEGORY_KEYS.map(key => {
@@ -36,7 +34,7 @@ const CategoryPreviewRealization: React.FC = () => {
             key={key}
             onClick={() => setActiveCategory(key)}
             className={clsx(
-              "relative w-full border-2 border-orangeAccent rounded-lg p-4 transition flex items-center gap-3 text-left",
+              "relative w-full border-2 border-orangeAccent rounded-xl p-4 transition flex items-center gap-3 text-left",
               activeCategory === key ? "bg-white shadow-md" : "hover:bg-white",
             )}
           >
@@ -57,7 +55,7 @@ const CategoryPreviewRealization: React.FC = () => {
             key={key}
             onClick={() => setActiveCategory(key)}
             className={clsx(
-              "relative w-full border-2 border-orangeAccent rounded-lg p-4 transition flex items-center gap-3 text-left",
+              "relative w-full border-2 border-orangeAccent rounded-xl p-4 transition flex items-center gap-3 text-left",
               activeCategory === key ? "bg-white shadow-md" : "hover:bg-white",
             )}
           >
@@ -69,14 +67,13 @@ const CategoryPreviewRealization: React.FC = () => {
     </div>
   );
 
-  /* ---------- stany ładowania / błędu ---------- */
   if (isLoading) {
     return (
       <PageSection>
         <div className="flex flex-col md:flex-row gap-8">
           {mobileCategoryButtons}
           {desktopCategorySidebar}
-          <div className="flex flex-col items-center justify-center text-center flex-1">
+          <div className="flex flex-col items-center justify-center text-center flex-1 mb-10 sm:mb-[300px]">
             <MoonLoader color="#C16200" />
           </div>
         </div>
@@ -110,10 +107,9 @@ const CategoryPreviewRealization: React.FC = () => {
     );
   }
 
-  const realizations = data!.data; // w tym miejscu dane na pewno istnieją
+  const realizations = data!.data;
   const filtered = realizations.filter(r => r.category === activeCategory);
 
-  /* ---------- modal helpers ---------- */
   const openModal = (index: number) => setOpenedIndex(index);
   const closeModal = () => setOpenedIndex(null);
 

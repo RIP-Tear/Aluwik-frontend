@@ -75,7 +75,7 @@ Dbamy o to, aby satysfakcja z wybranych rozwiązań szła w parze z atrakcyjnymi
           {/* Mozaika 2x2 */}
           <div className="grid grid-cols-2 gap-4 w-full max-w-[600px] mt-8 sm:mt-0">
             {tiles.map((tile, i) => (
-              <div key={i} className="relative w-full aspect-[4/3] rounded-lg overflow-hidden">
+              <div key={i} className="relative w-full aspect-[4/3] rounded-xl overflow-hidden">
                 {/* Widoczny obrazek */}
                 <Image
                   src={tile.visible}

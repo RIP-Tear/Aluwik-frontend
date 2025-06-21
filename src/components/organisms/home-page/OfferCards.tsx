@@ -25,7 +25,7 @@ export default function OfferCards() {
 
       <PageSection>
         <div className="flex flex-col xl:grid xl:grid-cols-4 xl:grid-rows-2 gap-4">
-          <div className="border-2 border-orangeAccent relative w-full aspect-[4/3] xl:aspect-auto xl:col-span-3 xl:row-span-2 rounded-lg overflow-hidden">
+          <div className="border-2 border-orangeAccent relative w-full aspect-[4/3] xl:aspect-auto xl:col-span-3 xl:row-span-2 rounded-xl overflow-hidden">
             <Image
               key={image}
               src={image}
@@ -43,7 +43,7 @@ export default function OfferCards() {
                 <button
                   key={title + i}
                   onClick={() => setActiveIndex(i)}
-                  className={`relative border-2 border-orangeAccent rounded-lg p-4 h-auto xl:h-52 transition
+                  className={`relative border-2 border-orangeAccent rounded-xl p-4 h-auto xl:h-52 transition
                     flex flex-col justify-start text-left cursor-active
                     ${active ? "bg-white shadow-md" : "hover:bg-white"}`}
                 >

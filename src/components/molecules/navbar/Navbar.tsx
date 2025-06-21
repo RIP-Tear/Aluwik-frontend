@@ -10,10 +10,10 @@ import { SiFacebook, SiLinkedin, SiWhatsapp } from "react-icons/si";
 
 const navLinks = [
   { href: "/", label: "Strona główna" },
-  { href: "/offer", label: "Oferta" },
-  { href: "/realization", label: "Realizacje" },
+  { href: "/oferta", label: "Oferta" },
+  { href: "/realizacje", label: "Realizacje" },
   { href: "/blog", label: "Blog" },
-  { href: "/contact", label: "Kontakt" },
+  { href: "/kontakt", label: "Kontakt" },
 ];
 
 export const Navbar = () => {
