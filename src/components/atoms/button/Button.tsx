@@ -41,7 +41,6 @@ export const Button = ({
       href={href}
       style={style}
       className={clsx("cursor-active", className)}
-      target="_blank"
       rel="noopener noreferrer"
     >
       {content}
