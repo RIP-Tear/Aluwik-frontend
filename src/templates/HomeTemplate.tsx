@@ -5,6 +5,7 @@ import OfferCards from "@/components/organisms/home-page/OfferCards";
 import ContactHero from "@/components/organisms/home-page/ContactHero";
 import RealizationPreview from "@/components/organisms/home-page/RealizationPreview";
 import HeroText from "@/components/molecules/hero-text/HeroText";
+import BlogSection from "@/components/organisms/home-page/BlogSection";
 
 const HomeTemplate = () => {
   useGsapFadeInSections();
@@ -19,6 +20,7 @@ const HomeTemplate = () => {
       <AboutUs />
       <OfferCards />
       <RealizationPreview />
+      <BlogSection />
       <ContactHero />
     </div>
   );

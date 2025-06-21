@@ -56,7 +56,7 @@ const RealizationPreview = () => {
             <Heading
               label="Zapoznaj się z naszymi realizacjami"
               size={32}
-              className="text-start mb-4"
+              className="text-start mb-5 sm:mb-[50px]"
               as="h2"
               highlightWords={["realizacjami"]}
             />

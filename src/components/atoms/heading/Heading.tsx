@@ -69,7 +69,7 @@ export const Heading = <Tag extends AllowedTags = "h1">({
   return (
     <TagName
       className={clsx(
-        "text-softSync leading-snug break-words text-center",
+        "text-softSync leading-snug break-words",
         sizeClass,
         bold && styles["bold-fake"],
         className,

@@ -13,7 +13,7 @@ export const boxes: BoxItem[] = [
     icon: DoorOpen,
     title: "Systemy okienno drzwiowe",
     description: "Nowoczesne okna i drzwi dopasowane do Twoich potrzeb.",
-    image: "/img/dzwi.jpg",
+    image: "/img/drzwi.jpg",
     href: "/oferta/window-door-systems",
   },
   {

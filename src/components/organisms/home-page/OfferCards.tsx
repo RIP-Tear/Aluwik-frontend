@@ -20,10 +20,12 @@ export default function OfferCards() {
           as="h2"
           highlightWords={["Oferta"]}
         />
-        <Heading label="do twoich potrzeb" className="text-left" size={32} as="h2" />
-      </PageSection>
-
-      <PageSection>
+        <Heading
+          label="do twoich potrzeb"
+          className="text-left mb-5 sm:mb-[50px]"
+          size={32}
+          as="h2"
+        />
         <div className="flex flex-col xl:grid xl:grid-cols-4 xl:grid-rows-2 gap-4">
           <div className="border-2 border-orangeAccent relative w-full aspect-[4/3] xl:aspect-auto xl:col-span-3 xl:row-span-2 rounded-xl overflow-hidden">
             <Image
