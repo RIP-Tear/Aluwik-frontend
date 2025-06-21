@@ -15,8 +15,10 @@ const sizeMap: Record<AllowedSizes, string> = {
 type AllowedTags = "p" | "span" | "div";
 type TextProps<Tag extends AllowedTags = "p"> = {
   as?: Tag;
-  text: string | number | undefined;
+  href?: string;
+  text?: string | number | undefined;
   size?: AllowedSizes;
+  html?: string;
   className?: string;
   bold?: boolean;
   highlightWords?: string[];
@@ -27,7 +29,9 @@ type TextProps<Tag extends AllowedTags = "p"> = {
 
 export const Text = <Tag extends AllowedTags = "p">({
   as,
-  text,
+  href,
+  text = "",
+  html,
   size = 24,
   className,
   bold = false,
@@ -37,10 +41,21 @@ export const Text = <Tag extends AllowedTags = "p">({
   linkUrlMap = {},
   ...props
 }: TextProps<Tag>) => {
-  const TagName = as ?? "p";
-  const textStr = String(text ?? "");
+  const TagName = (href ? "a" : as) ?? "p";
   const sizeClass = sizeMap[size] ?? "text-base";
   const weightClass = bold ? "font-semibold" : "font-normal";
+
+  if (html) {
+    return (
+      <TagName
+        className={clsx(sizeClass, weightClass, "whitespace-pre-wrap", className)}
+        dangerouslySetInnerHTML={{ __html: html }}
+        {...props}
+      />
+    );
+  }
+
+  const textStr = String(text ?? "");
 
   const renderHighlightedText = () =>
     textStr.split(/(\s+)/).map((word, i) => {

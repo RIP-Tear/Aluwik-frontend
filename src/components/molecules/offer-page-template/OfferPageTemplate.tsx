@@ -5,11 +5,18 @@ import React from "react";
 import { LucideIcon } from "lucide-react";
 import { Heading } from "@/components/atoms/heading/Heading";
 import { Text } from "@/components/atoms/text/Text";
+import Link from "next/link";
+
+type LinkItem = {
+  label: string;
+  href: string;
+};
 
 type BoxItem = {
   icon: LucideIcon;
   title: string;
-  items: string[];
+  items?: string[];
+  links?: LinkItem[];
 };
 
 type SectionItem = {
@@ -46,22 +53,47 @@ const OfferPageTemplate = ({
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-10">
           {/* BOXY */}
           <div className="space-y-6">
-            {boxes.map(({ icon: Icon, title, items }, index) => (
+            {boxes.map(({ icon: Icon, title, items, links }, index) => (
               <div
                 key={index}
                 className="border-2 border-orangeAccent rounded-xl p-5 bg-white shadow-sm"
               >
-                <div className="flex items-center gap-2 text-orangeAccent mb-3">
-                  <Icon className="w-5 h-5 flex-shrink-0" />
-                  <Heading label={title} as="h3" size={18} />
+                <div className="flex items-center gap-2 mb-3">
+                  <Icon className="w-5 h-5 flex-shrink-0 text-orangeAccent" />
+                  <Heading
+                    label={title}
+                    as="h3"
+                    size={18}
+                    className="text-start text-orangeAccent"
+                  />
                 </div>
-                <ul className="list-disc list-inside space-y-1">
-                  {items.map((item, i) => (
-                    <li key={i}>
-                      <Text text={item} size={14} as="span" />
-                    </li>
-                  ))}
-                </ul>
+
+                {items && (
+                  <ul className="list-disc list-inside space-y-1">
+                    {items.map((item, i) => (
+                      <li key={i}>
+                        <Text text={item} size={14} as="span" />
+                      </li>
+                    ))}
+                  </ul>
+                )}
+
+                {links && (
+                  <ul className="space-y-1 list-none pl-1">
+                    {links.map((link, i) => (
+                      <li key={i}>
+                        <Link href={link.href} className="cursor-active">
+                          <Text
+                            as="span"
+                            text={link.label}
+                            size={14}
+                            className="text-orangeAccent hover:underline"
+                          />
+                        </Link>
+                      </li>
+                    ))}
+                  </ul>
+                )}
               </div>
             ))}
           </div>
@@ -74,11 +106,13 @@ const OfferPageTemplate = ({
                 {Array.isArray(section.content) ? (
                   <ul className="list-disc list-inside space-y-1">
                     {section.content.map((item, i) => (
-                      <li key={i} dangerouslySetInnerHTML={{ __html: item }} />
+                      <li key={i}>
+                        <Text as="span" html={item} size={14} />
+                      </li>
                     ))}
                   </ul>
                 ) : (
-                  <p dangerouslySetInnerHTML={{ __html: section.content }} />
+                  <Text as="p" html={section.content} size={14} />
                 )}
               </div>
             ))}
