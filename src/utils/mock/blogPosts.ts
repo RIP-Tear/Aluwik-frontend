@@ -24,7 +24,7 @@ export const blogPosts: BlogPost[] = [
   {
     title: "Tarasy kompozytowe – trwałość i styl na lata",
     excerpt:
-      "Poznaj zalety tarasów kompozytowych – estetycznych i odpornych na warunki atmosferyczne.",
+      "Poznaj zalety tarasów kompozytowych – estetycznych i odpornych na warunki atmosferyczne. ",
     image: "/img/tarasy.jpg",
     date: "Kwiecień 2025",
     href: "tarasy-kompozytowe",

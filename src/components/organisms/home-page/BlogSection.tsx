@@ -9,7 +9,7 @@ import { blogPosts } from "@/utils/mock/blogPosts";
 
 const BlogSection = () => {
   const [featuredPost, ...restPosts] = blogPosts;
-  const otherPosts = restPosts.slice(0, 3);
+  const otherPosts = restPosts.slice(0, 2);
 
   return (
     <PageSection className="mb-10 sm:mb-[100px]">
@@ -22,25 +22,28 @@ const BlogSection = () => {
       />
 
       <div className="grid md:grid-cols-2 gap-8 items-start h-full">
+        {/* Główny post */}
         {featuredPost && (
-          <div className="flex flex-col justify-between space-y-4">
-            <div className="relative w-full h-[300px] overflow-hidden">
+          <div className="flex flex-col border-2 border-orangeAccent rounded-xl overflow-hidden h-full">
+            <div className="relative w-full h-[200px]">
               <Image
                 src={featuredPost.image}
                 alt={featuredPost.title}
                 fill
-                className="object-cover border-2 border-orangeAccent rounded-xl"
+                className="object-cover"
               />
             </div>
-            <div className="flex-1">
-              <Heading
-                label={featuredPost.title}
-                as="h3"
-                size={18}
-                className="text-orangeAccent mb-2"
-              />
-              <Text text={featuredPost.excerpt} size={16} />
-              <div className="flex justify-end items-center mt-5">
+            <div className="flex flex-col flex-1 p-3 justify-between">
+              <div>
+                <Heading
+                  label={featuredPost.title}
+                  as="h3"
+                  size={18}
+                  className="text-orangeAccent mb-2"
+                />
+                <Text text={featuredPost.excerpt} size={16} />
+              </div>
+              <div className="flex justify-end items-center mt-6">
                 <Button
                   label="Czytaj"
                   color="black"
@@ -53,20 +56,26 @@ const BlogSection = () => {
           </div>
         )}
 
-        <div className="flex flex-col justify-between h-full">
+        {/* Pozostałe posty */}
+        <div className="flex flex-col justify-between h-full space-y-4">
           {otherPosts.map((post, idx) => (
-            <div key={idx} className="flex gap-4">
-              <div className="relative w-32 h-32 overflow-hidden">
-                <Image
-                  src={post.image}
-                  alt={post.title}
-                  fill
-                  className="object-cover border-2 border-orangeAccent rounded-xl"
-                />
+            <div
+              key={idx}
+              className="flex gap-4 border-2 border-orangeAccent rounded-xl overflow-hidden h-[calc(50%-0.5rem)]"
+            >
+              <div className="relative w-32 h-auto aspect-[1/1] flex-shrink-0">
+                <Image src={post.image} alt={post.title} fill className="object-cover" />
               </div>
-              <div className="flex-1 mb-5">
-                <Heading label={post.title} as="h4" size={16} className="mb-2 text-orangeAccent" />
-                <Text text={post.excerpt} size={14} />
+              <div className="flex-1 p-3 flex flex-col justify-between">
+                <div>
+                  <Heading
+                    label={post.title}
+                    as="h4"
+                    size={16}
+                    className="mb-2 text-orangeAccent"
+                  />
+                  <Text text={post.excerpt} size={14} />
+                </div>
                 <div className="flex justify-end items-center mt-2">
                   <Button
                     label="Czytaj"
