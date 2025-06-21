@@ -14,7 +14,7 @@ export const boxes: BoxItem[] = [
     title: "Systemy okienno drzwiowe",
     description: "Nowoczesne okna i drzwi dopasowane do Twoich potrzeb.",
     image: "/img/dzwi.jpg",
-    href: "/window-door-systems",
+    href: "/oferta/window-door-systems",
   },
   {
     icon: Layers3,

@@ -2,11 +2,12 @@
 
 import { PageHead } from "@/components/molecules/page-head/PageHead";
 import LenisProvider from "@/utils/LenisProvider";
-import "../app/globals.css";
+import "../../app/globals.css";
 import { Navbar } from "@/components/molecules/navbar/Navbar";
-import HomeTemplate from "@/templates/HomeTemplate";
 import NavbarContact from "@/components/molecules/navbar-contact/NavbarContact";
 import { Footer } from "@/components/molecules/footer/Footer";
+import ContactHero from "@/components/organisms/home-page/ContactHero";
+import FirePartitionWallsOffer from "@/components/organisms/offer-page/offers/FirePartitionWallsOffer";
 
 export default function FirePartitionWallsPage() {
   return (
@@ -20,7 +21,8 @@ export default function FirePartitionWallsPage() {
           <NavbarContact />
         </div>
         <Navbar />
-        <HomeTemplate />
+        <FirePartitionWallsOffer />
+        <ContactHero />
         <Footer />
       </LenisProvider>
     </>

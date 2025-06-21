@@ -2,11 +2,12 @@
 
 import { PageHead } from "@/components/molecules/page-head/PageHead";
 import LenisProvider from "@/utils/LenisProvider";
-import "../app/globals.css";
+import "../../app/globals.css";
 import { Navbar } from "@/components/molecules/navbar/Navbar";
-import HomeTemplate from "@/templates/HomeTemplate";
 import NavbarContact from "@/components/molecules/navbar-contact/NavbarContact";
 import { Footer } from "@/components/molecules/footer/Footer";
+import ContactHero from "@/components/organisms/home-page/ContactHero";
+import AluminiumWindowsOffer from "@/components/organisms/offer-page/offers/AluminiumWindowsOffer";
 
 export default function AluminiumWindowsPage() {
   return (
@@ -20,7 +21,8 @@ export default function AluminiumWindowsPage() {
           <NavbarContact />
         </div>
         <Navbar />
-        <HomeTemplate />
+        <AluminiumWindowsOffer />
+        <ContactHero />
         <Footer />
       </LenisProvider>
     </>
