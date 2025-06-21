@@ -28,7 +28,7 @@ const BlogPostTemplate = ({
     <>
       <HeroText label={title} highlightWords={highlightWords} />
 
-      <PageSection className="bg-black text-white mt-5 sm:mt-[50px]" noMarginTop>
+      <PageSection className="bg-black text-white">
         <div className="flex flex-col lg:flex-row gap-10 mb-10 sm:mb-[100px]">
           {/* Lewa kolumna */}
           <div className="lg:w-3/4 space-y-8 leading-relaxed my-10">

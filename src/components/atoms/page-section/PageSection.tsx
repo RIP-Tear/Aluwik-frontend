@@ -12,7 +12,7 @@ const PageSection: React.FC<PageSectionProps> = ({ children, className, noMargin
     <div
       className={clsx(
         "flex justify-center items-center",
-        !noMarginTop && "mt-10 sm:mt-[100px]",
+        !noMarginTop && "mt-5 sm:mt-[50px]",
         className,
       )}
     >

@@ -34,7 +34,7 @@ const CategoryPreviewRealization: React.FC = () => {
             key={key}
             onClick={() => setActiveCategory(key)}
             className={clsx(
-              "relative w-full border-2 border-orangeAccent rounded-xl p-4 transition flex items-center gap-3 text-left",
+              "relative w-full border-2 border-orangeAccent rounded-xl p-4 transition flex items-center gap-3 text-left cursor-active",
               activeCategory === key ? "bg-white shadow-md" : "hover:bg-white",
             )}
           >
@@ -55,7 +55,7 @@ const CategoryPreviewRealization: React.FC = () => {
             key={key}
             onClick={() => setActiveCategory(key)}
             className={clsx(
-              "relative w-full border-2 border-orangeAccent rounded-xl p-4 transition flex items-center gap-3 text-left",
+              "relative w-full border-2 border-orangeAccent rounded-xl p-4 transition flex items-center gap-3 text-left cursor-active",
               activeCategory === key ? "bg-white shadow-md" : "hover:bg-white",
             )}
           >
