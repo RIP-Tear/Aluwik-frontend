@@ -5,6 +5,7 @@ import LenisProvider from "@/utils/LenisProvider";
 import { Footer } from "@/components/molecules/footer/Footer";
 import NavbarContact from "@/components/molecules/navbar-contact/NavbarContact";
 import RealizationTemplate from "@/templates/RealizationTemplate";
+import ContactHero from "@/components/organisms/home-page/ContactHero";
 
 export default function RealizationPage() {
   return (
@@ -19,6 +20,7 @@ export default function RealizationPage() {
         </div>
         <Navbar />
         <RealizationTemplate />
+        <ContactHero />
         <Footer />
       </LenisProvider>
     </>

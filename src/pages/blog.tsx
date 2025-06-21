@@ -8,6 +8,7 @@ import "../app/globals.css";
 import { Footer } from "@/components/molecules/footer/Footer";
 import BlogTemplate from "@/templates/BlogTemplate";
 import NavbarContact from "@/components/molecules/navbar-contact/NavbarContact";
+import ContactHero from "@/components/organisms/home-page/ContactHero";
 
 export default function BlogPage() {
   return (
@@ -22,6 +23,7 @@ export default function BlogPage() {
         </div>
         <Navbar />
         <BlogTemplate />
+        <ContactHero />
         <Footer />
       </LenisProvider>
     </>

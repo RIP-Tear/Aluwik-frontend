@@ -12,7 +12,9 @@ const sizeMap: Record<AllowedSizes, string> = {
   64: "sm:text-6xl text-4xl",
 };
 
-type TextProps = {
+type AllowedTags = "p" | "span" | "div";
+type TextProps<Tag extends AllowedTags = "p"> = {
+  as?: Tag;
   text: string | number | undefined;
   size?: AllowedSizes;
   className?: string;
@@ -21,17 +23,21 @@ type TextProps = {
   highlightColor?: string;
   linkWords?: string[];
   linkUrlMap?: Record<string, string>;
-};
+} & React.HTMLAttributes<HTMLElement>;
 
-export const Text = ({
+export const Text = <Tag extends AllowedTags = "p">({
+  as,
   text,
   size = 24,
   className,
   bold = false,
   highlightWords = [],
+  highlightColor,
   linkWords = [],
   linkUrlMap = {},
-}: TextProps) => {
+  ...props
+}: TextProps<Tag>) => {
+  const TagName = as ?? "p";
   const textStr = String(text ?? "");
   const sizeClass = sizeMap[size] ?? "text-base";
   const weightClass = bold ? "font-semibold" : "font-normal";
@@ -49,7 +55,7 @@ export const Text = ({
         style.color = "#C16200";
         style.textDecoration = "underline";
       } else if (isHighlighted) {
-        style.color = "#C16200";
+        style.color = highlightColor ?? "#C16200";
       }
 
       if (isLink && href) {
@@ -60,7 +66,7 @@ export const Text = ({
             target="_blank"
             rel="noopener noreferrer"
             style={style}
-            className="cursor-active"
+            className="cursor-pointer"
           >
             {word}
           </a>
@@ -75,8 +81,8 @@ export const Text = ({
     });
 
   return (
-    <p className={clsx(sizeClass, weightClass, "whitespace-pre-wrap", className)}>
+    <TagName className={clsx(sizeClass, weightClass, "whitespace-pre-wrap", className)} {...props}>
       {renderHighlightedText()}
-    </p>
+    </TagName>
   );
 };

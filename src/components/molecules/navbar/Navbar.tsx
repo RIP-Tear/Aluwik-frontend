@@ -22,7 +22,7 @@ export const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
-    <header className={clsx("px-5 py-2w-[98%] mx-auto relative z-50 mt-5")}>
+    <header className={clsx("px-5 py-2 mx-auto relative z-50 mt-5")}>
       <nav className="flex items-center justify-between w-full">
         {/* Logo */}
         <Link href="/" className="cursor-active">

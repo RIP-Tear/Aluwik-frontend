@@ -8,6 +8,7 @@ import "../app/globals.css";
 import { Footer } from "@/components/molecules/footer/Footer";
 import OfferTemplate from "@/templates/OfferTemplate";
 import NavbarContact from "@/components/molecules/navbar-contact/NavbarContact";
+import ContactHero from "@/components/organisms/home-page/ContactHero";
 
 export default function OfferPage() {
   return (
@@ -22,6 +23,7 @@ export default function OfferPage() {
         </div>
         <Navbar />
         <OfferTemplate />
+        <ContactHero />
         <Footer />
       </LenisProvider>
     </>

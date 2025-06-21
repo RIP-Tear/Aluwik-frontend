@@ -21,7 +21,6 @@ type HeadingProps<Tag extends AllowedTags = "h1"> = {
   size?: AllowedSizes;
   className?: string;
   highlightWords?: string[];
-  /** Jeśli podasz własny kolor → użyje go zamiast gradientu */
   highlightColor?: string;
   bold?: boolean;
 } & React.HTMLAttributes<HTMLHeadingElement>;
