@@ -4,6 +4,7 @@ import "../app/globals.css";
 
 import { Michroma } from "next/font/google";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
+import LenisProvider from "@/utils/LenisProvider";
 
 const michroma = Michroma({
   subsets: ["latin"],
@@ -16,9 +17,11 @@ const queryClient = new QueryClient();
 function MyApp({ Component, pageProps }: AppProps) {
   return (
     <QueryClientProvider client={queryClient}>
-      <div className={michroma.className}>
-        <Component {...pageProps} />
-      </div>
+      <LenisProvider>
+        <div className={michroma.className}>
+          <Component {...pageProps} />
+        </div>
+      </LenisProvider>
     </QueryClientProvider>
   );
 }

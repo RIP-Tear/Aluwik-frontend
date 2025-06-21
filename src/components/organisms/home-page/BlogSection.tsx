@@ -24,7 +24,7 @@ const BlogSection = () => {
       <div className="grid md:grid-cols-2 gap-8 items-start h-full">
         {/* Główny post */}
         {featuredPost && (
-          <div className="flex flex-col border-2 border-orangeAccent rounded-xl overflow-hidden h-full">
+          <div className="flex flex-col border-2 border-orangeAccent rounded-xl overflow-hidden h-full bg-white">
             <div className="relative w-full h-[200px]">
               <Image
                 src={featuredPost.image}
@@ -61,7 +61,7 @@ const BlogSection = () => {
           {otherPosts.map((post, idx) => (
             <div
               key={idx}
-              className="flex gap-4 border-2 border-orangeAccent rounded-xl overflow-hidden h-[calc(50%-0.5rem)]"
+              className="flex gap-4 border-2 border-orangeAccent rounded-xl overflow-hidden h-[calc(50%-0.5rem)] bg-white"
             >
               <div className="relative w-32 h-auto aspect-[1/1] flex-shrink-0">
                 <Image src={post.image} alt={post.title} fill className="object-cover" />

@@ -17,7 +17,7 @@ const BlogPreview = () => {
   return (
     <PageSection className="mb-10 sm:mb-[100px]">
       {/* Główny post */}
-      <div className="mb-10 border-2 border-orangeAccent rounded-xl overflow-hidden group">
+      <div className="mb-10 border-2 border-orangeAccent rounded-xl overflow-hidden group bg-white">
         <div className="relative w-full h-[320px]">
           <Image
             src={first.image}
@@ -46,7 +46,7 @@ const BlogPreview = () => {
         {others.map(post => (
           <div
             key={post.href}
-            className="flex gap-4 border-2 border-orangeAccent rounded-xl overflow-hidden h-full group"
+            className="flex gap-4 border-2 border-orangeAccent rounded-xl overflow-hidden h-full group bg-white"
           >
             <div className="relative w-32 h-auto min-h-32 flex-shrink-0">
               <Image
