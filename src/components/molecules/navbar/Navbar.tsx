@@ -49,18 +49,22 @@ export const Navbar = () => {
         </div>
 
         <div className="xl:flex items-center justify-center hidden gap-x-10">
-          <Link
+          <a
             href="https://www.facebook.com/profile.php?id=61577515076852"
+            target="_blank"
+            rel="noopener noreferrer"
             className="cursor-active transition hover:scale-105 hover:text-orangeAccent text-black"
           >
             <SiFacebook size={32} />
-          </Link>
-          <Link
+          </a>
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
             href="https://www.linkedin.com/company/aluwik-technologia-aluminiowa/?viewAsMember=true"
             className=" cursor-active transition hover:scale-105 hover:text-orangeAccent text-black"
           >
             <SiLinkedin size={32} />
-          </Link>
+          </a>
           <a
             href="https://wa.me/48609604571"
             target="_blank"
@@ -134,6 +138,7 @@ export const Navbar = () => {
               label={"Aleja Solidarności 8, 83-110 Tczew"}
               icon={<MapPin />}
               color="black"
+              blank
               size={14}
               href="https://www.google.com/maps?q=Aleja+Solidarności+8,+83-110+Tczew"
             />

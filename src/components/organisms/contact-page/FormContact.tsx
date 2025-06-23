@@ -118,7 +118,7 @@ const FormContact: React.FC = () => {
             className="w-full p-3 rounded-xl bg-white text-black focus:outline-alertRed border-2 border-orangeAccent"
           />
 
-          {error && <p className="text-alertRed text-sm">{error}</p>}
+          {error && <Text text={error} className="text-alertRed" size={16} />}
 
           <div className="flex justify-end">
             <Button

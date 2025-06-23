@@ -35,6 +35,7 @@ const NavbarContact = () => {
           label={"Aleja Solidarności 8, 83-110 Tczew"}
           icon={<MapPin />}
           color="black"
+          blank
           size={14}
           href="https://www.google.com/maps?q=Aleja+Solidarności+8,+83-110+Tczew"
         />

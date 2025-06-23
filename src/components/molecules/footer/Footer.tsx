@@ -54,9 +54,7 @@ const ListItem = ({
   isExternal?: boolean;
 }) => {
   const Wrapper = isExternal ? "a" : Link;
-  const wrapperProps = isExternal
-    ? { href, target: "_blank", rel: "noopener noreferrer" }
-    : { href };
+  const wrapperProps = isExternal ? { href } : { href };
 
   return (
     <li className="flex items-center gap-2 mb-3">
@@ -84,18 +82,22 @@ export const Footer = () => {
           <div className="text-center lg:text-end mt-2 lg:mt-0">
             <Text text={"Śledź nasze social media"} size={16} />
             <div className="flex justify-center lg:justify-end gap-4 mt-4">
-              <Link
+              <a
                 href="https://www.facebook.com/profile.php?id=61577515076852"
                 className="cursor-active transition hover:scale-105"
+                target="_blank"
+                rel="noopener noreferrer"
               >
                 <SiFacebook size={24} />
-              </Link>
-              <Link
+              </a>
+              <a
                 href="https://www.linkedin.com/company/aluwik-technologia-aluminiowa/?viewAsMember=true"
                 className=" cursor-active transition hover:scale-105"
+                target="_blank"
+                rel="noopener noreferrer"
               >
                 <SiLinkedin size={24} />
-              </Link>
+              </a>
               <a
                 href="https://wa.me/48609604571"
                 target="_blank"
@@ -114,7 +116,7 @@ export const Footer = () => {
             <ul>
               <ListItem label="Strona główna" href="/" />
               <ListItem label="Oferta" href="/oferta" />
-              <ListItem label="Realizacja" href="/realizacja" />
+              <ListItem label="Realizacja" href="/realizacje" />
               <ListItem label="Blog" href="/blog" />
               <ListItem label="Kontakt" href="/kontakt" />
             </ul>
@@ -140,7 +142,6 @@ export const Footer = () => {
               <ListItem
                 label="Aleja Solidarności 8, 83-110 Tczew"
                 href="https://www.google.com/maps?q=Aleja+Solidarności+8,+83-110+Tczew"
-                isExternal
               />
             </ul>
           </Section>
@@ -149,9 +150,9 @@ export const Footer = () => {
               href="https://www.rip-tear.com/"
               target="_blank"
               rel="noopener noreferrer"
-              className="underline flex items-center gap-2 cursor-active"
+              className="hover:underline flex items-center gap-2 cursor-active"
             >
-              <Text text="RIP & Tear" size={14} className="text-greyVariant hover:underline" />
+              <Text text="RIP & Tear" size={14} className="text-greyVariant" />
               <Image
                 src="https://www.rip-tear.com/favicon.ico"
                 alt="RIP & Tear"

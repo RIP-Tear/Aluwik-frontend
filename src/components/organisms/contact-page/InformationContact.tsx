@@ -48,17 +48,18 @@ const InformationContact = () => {
         {/* ADRES */}
         <div className="flex flex-col space-y-2">
           <Heading label="Adres" as="h2" size={24} className="text-orangeAccent" />
-          <Link
+          <a
             href="https://www.google.com/maps?q=Aleja+Solidarności+8,+83-110+Tczew"
             className="cursor-active hover:underline"
             target="_blank"
+            rel="noopener noreferrer"
           >
             <div className="flex items-center gap-2">
               <MapPin size={18} />
               <Text text="Aleja Solidarności 8" size={16} />
             </div>
             <Text text="83-110 Tczew" size={16} />
-          </Link>
+          </a>
         </div>
 
         {/* SOCIAL MEDIA */}
@@ -68,6 +69,7 @@ const InformationContact = () => {
             className="flex items-center gap-2 cursor-active hover:underline"
             href="https://www.facebook.com/profile.php?id=61577515076852"
             target="_blank"
+            rel="noopener noreferrer"
           >
             <SiFacebook size={18} />
             <Text text="Facebook" size={16} />
@@ -76,6 +78,7 @@ const InformationContact = () => {
             className="flex items-center gap-2 cursor-active hover:underline"
             href="https://www.linkedin.com/company/aluwik-technologia-aluminiowa/?viewAsMember=true"
             target="_blank"
+            rel="noopener noreferrer"
           >
             <SiLinkedin size={18} />
             <Text text="LinkedIn" size={16} />

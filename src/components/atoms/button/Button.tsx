@@ -17,6 +17,7 @@ type ButtonProps = {
   type?: "button" | "submit" | "reset";
   loading?: boolean;
   disabled?: boolean;
+  blank?: boolean;
 };
 
 export const Button = ({
@@ -31,14 +32,27 @@ export const Button = ({
   type = "button",
   loading = false,
   disabled = false,
+  blank = false,
 }: ButtonProps) => {
   const isDisabled = loading || disabled;
+  const colorClassMap = {
+    orangeAccent: "bg-orangeAccent border-orangeAccent",
+    greenAccept: "bg-greenAccept border-greenAccept",
+    greyVariant: "bg-greyVariant border-greyVariant",
+    alertRed: "bg-alertRed border-alertRed",
+  };
+
+  const currentColorClasses = colorClassMap[color as keyof typeof colorClassMap] || "";
+
   const content = (
     <span
-      className={`flex flex-nowrap items-center justify-center border-2 border-${color} text-black rounded-full bg-white hover:bg-black hover:text-white transition-colors duration-300 whitespace-nowrap`}
+      className={clsx(
+        "flex flex-nowrap items-center justify-center text-black rounded-full bg-white hover:bg-black hover:text-white transition-colors duration-300 whitespace-nowrap border-2",
+        currentColorClasses,
+      )}
     >
       {label && <Text text={label} size={size} className="px-3" />}
-      <span className={`border-2 p-2 rounded-full text-white bg-${color}`}>
+      <span className={clsx("border-2 p-2 rounded-full text-white", `bg-${color}`)}>
         {loading ? (
           <div className="flex items-center justify-center">
             <MoonLoader size={size} color="#ffffff" loading />
@@ -56,6 +70,7 @@ export const Button = ({
       style={style}
       className={clsx("cursor-active block w-fit", className)}
       rel="noopener noreferrer"
+      target={blank ? "_blank" : undefined}
     >
       {content}
     </a>
