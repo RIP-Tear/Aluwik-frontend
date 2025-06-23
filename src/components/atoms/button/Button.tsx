@@ -1,6 +1,7 @@
 import React, { JSX } from "react";
 import clsx from "clsx";
 import { Text } from "../text/Text";
+import { MoonLoader } from "react-spinners";
 
 type AllowedSizes = 14 | 16 | 18 | 24 | 32 | 64;
 
@@ -14,6 +15,8 @@ type ButtonProps = {
   onClick?: () => void;
   href?: string;
   type?: "button" | "submit" | "reset";
+  loading?: boolean;
+  disabled?: boolean;
 };
 
 export const Button = ({
@@ -26,13 +29,24 @@ export const Button = ({
   onClick,
   href,
   type = "button",
+  loading = false,
+  disabled = false,
 }: ButtonProps) => {
+  const isDisabled = loading || disabled;
   const content = (
     <span
       className={`flex flex-nowrap items-center justify-center border-2 border-${color} text-black rounded-full bg-white hover:bg-black hover:text-white transition-colors duration-300 whitespace-nowrap`}
     >
       {label && <Text text={label} size={size} className="px-3" />}
-      <span className={`border-2 p-2 rounded-full text-white bg-${color}`}>{icon}</span>
+      <span className={`border-2 p-2 rounded-full text-white bg-${color}`}>
+        {loading ? (
+          <div className="flex items-center justify-center">
+            <MoonLoader size={size} color="#ffffff" loading />
+          </div>
+        ) : (
+          icon
+        )}
+      </span>
     </span>
   );
 
@@ -48,9 +62,10 @@ export const Button = ({
   ) : (
     <button
       style={style}
-      onClick={onClick}
+      onClick={isDisabled ? undefined : onClick}
       type={type}
       className={clsx("cursor-active", className)}
+      disabled={loading}
     >
       {content}
     </button>

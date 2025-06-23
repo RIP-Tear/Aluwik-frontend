@@ -68,7 +68,7 @@ const ImageModal: React.FC<ImageModalProps> = ({
           <button
             aria-label="Poprzednie zdjęcie"
             onClick={onPrev}
-            className="absolute top-1/2 px-10 -translate-y-1/2 z-10 h-full bg-transparent hover:bg-orangeAccent/40 transition cursor-active"
+            className="absolute top-1/2 px-2 sm:px-10 -translate-y-1/2 z-10 h-full bg-transparent hover:bg-orangeAccent/40 transition cursor-active"
           >
             <ChevronLeft size={64} className="text-orangeAccent" />
           </button>
@@ -79,7 +79,7 @@ const ImageModal: React.FC<ImageModalProps> = ({
           <button
             aria-label="Następne zdjęcie"
             onClick={onNext}
-            className="absolute right-0 h-full px-10 top-1/2 -translate-y-1/2 z-10 bg-transparent hover:bg-orangeAccent/40 transition cursor-active"
+            className="absolute right-0 h-full px-2 sm:px-10 top-1/2 -translate-y-1/2 z-10 bg-transparent hover:bg-orangeAccent/40 transition cursor-active"
           >
             <ChevronRight size={64} className="text-orangeAccent" />
           </button>

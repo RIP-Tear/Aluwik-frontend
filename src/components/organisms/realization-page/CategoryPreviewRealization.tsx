@@ -123,7 +123,7 @@ const CategoryPreviewRealization: React.FC = () => {
           {filtered.map(({ id, image }, index) => (
             <div
               key={id}
-              className="group relative w-full aspect-[4/3] overflow-hidden rounded cursor-active"
+              className="border-2 border-orangeAccent group relative w-full aspect-[4/3] overflow-hidden rounded-xl cursor-active"
               onClick={() => openModal(index)}
             >
               <Image

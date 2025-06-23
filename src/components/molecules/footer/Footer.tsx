@@ -7,6 +7,7 @@ import { Logo } from "@/components/atoms/logo/Logo";
 import { Text } from "@/components/atoms/text/Text";
 import Image from "next/image";
 import PageSection from "@/components/atoms/page-section/PageSection";
+import { offers } from "@/utils/mock/offers";
 
 const Section = ({
   title,
@@ -121,15 +122,9 @@ export const Footer = () => {
 
           <Section title="Oferta">
             <ul>
-              <ListItem label="Systemy okienno drzwiowe" href="/window-door-systems" isExternal />
-              <ListItem label="Fasady" href="/facades" isExternal />
-              <ListItem label="Ogrody zimowe" href="/winter-gardens" isExternal />
-              <ListItem
-                label="Stolarka przeciwpożarowa"
-                href="/fire-resistant-joinery"
-                isExternal
-              />
-              <ListItem label="Zadaszenia tarasów" href="/terrace-roofing" isExternal />
+              {offers.map(offer => (
+                <ListItem key={offer.href} label={offer.title} href={offer.href} isExternal />
+              ))}
             </ul>
           </Section>
 

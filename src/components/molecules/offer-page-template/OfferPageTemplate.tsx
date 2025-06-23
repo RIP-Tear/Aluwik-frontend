@@ -46,7 +46,7 @@ const OfferPageTemplate = ({
       <HeroText label={title} highlightWords={highlightWords} />
 
       <PageSection className="mb-10 sm:mb-[100px]">
-        <div className="relative w-full h-[400px] rounded-xl overflow-hidden mb-10 border-2 border-orangeAccent">
+        <div className="relative w-full h-[250px] rounded-xl overflow-hidden mb-10 border-2 border-orangeAccent">
           <Image src={imageSrc} alt={imageAlt} fill className="object-cover" priority />
         </div>
 

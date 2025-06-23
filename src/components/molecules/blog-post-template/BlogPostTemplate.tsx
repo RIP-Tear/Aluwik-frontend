@@ -29,7 +29,7 @@ const BlogPostTemplate = ({
       <HeroText label={title} highlightWords={highlightWords} />
 
       <PageSection className="bg-black text-white">
-        <div className="flex flex-col lg:flex-row gap-10 mb-10 sm:mb-[100px]">
+        <div className="flex flex-col lg:flex-row gap-10 mb-5 sm:mb-[50px]">
           {/* Lewa kolumna */}
           <div className="lg:w-3/4 space-y-8 leading-relaxed my-10">
             {sections.map(section => (
@@ -41,7 +41,7 @@ const BlogPostTemplate = ({
           </div>
 
           {/* Prawa kolumna */}
-          <div className="lg:w-1/4 flex flex-col gap-6 mt-10">
+          <div className="lg:w-1/4 flex flex-col gap-6 mt-0 sm:mt-10">
             <div className="relative w-full h-[250px] rounded-xl overflow-hidden border-2 border-orangeAccent">
               <Image src={heroImage.src} alt={heroImage.alt} fill className="object-cover" />
             </div>
