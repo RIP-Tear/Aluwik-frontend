@@ -30,26 +30,29 @@ export default function OfferCards() {
         key={title}
         onClick={() => setActiveIndex(index)}
         className={`relative border-2 border-orangeAccent rounded-xl p-4 transition
-          flex flex-col text-left cursor-active
-          ${active ? "bg-white shadow-md" : "hover:bg-white"} xl:min-h-[208px]`}
+  flex flex-col text-left cursor-active
+  ${active ? "bg-white shadow-md" : "hover:bg-white"}
+  xl:min-h-[208px] ${isMobile ? "w-fit shrink-0" : ""}`}
       >
-        <div className="sm:flex items-center gap-2">
-          {/* kontener dla ikonki i strzałki */}
-          <div className="flex items-center w-full sm:w-auto mb-2 sm:mb-0">
-            <Icon size={iconSize} className="text-orangeAccent" />
-
-            {/* strzałka tylko na mobile, wypchnięta na prawą stronę */}
-            <a
-              href={href}
-              className="ml-auto bg-orangeAccent rounded-full text-white w-8 h-8 sm:hidden flex items-center justify-center shadow-md transition hover:scale-105 cursor-active"
-              aria-label={`Przejdź do ${title}`}
-            >
-              <MoveUpRight size={moveIconSize} />
-            </a>
+        <div className={`flex items-center gap-2 ${isMobile ? "justify-between" : ""}`}>
+          <div className="flex items-center gap-3">
+            <Icon size={iconSize} className="text-orangeAccent shrink-0" />
+            <Text
+              text={title}
+              size={textSize}
+              className="whitespace-nowrap overflow-hidden text-ellipsis max-w-[180px] sm:max-w-none"
+            />
           </div>
 
-          {/* tytuł obok na desktopie */}
-          <Text text={title} size={textSize} className="ml-0 sm:ml-2" />
+          {isMobile && (
+            <a
+              href={href}
+              className="ml-auto bg-orangeAccent rounded-full text-white p-4 w-6 h-6 flex items-center justify-center shadow-md transition hover:scale-105 cursor-active"
+              aria-label={`Przejdź do ${title}`}
+            >
+              <MoveUpRight size={moveIconSize} className="shrink-0" />
+            </a>
+          )}
         </div>
 
         <div className="flex flex-col grow">
@@ -60,7 +63,7 @@ export default function OfferCards() {
           {!isMobile && (
             <a
               href={href}
-              className="mt-auto ml-auto bg-orangeAccent rounded-full text-white w-8 h-8 sm:w-10 sm:h-10 flex items-center justify-center shadow-md transition hover:scale-105 cursor-active"
+              className="mt-auto ml-auto bg-orangeAccent rounded-full text-white w-8 h-8 sm:w-10 sm:h-10 flex items-center justify-center shadow-md transition hover:scale-105 cursor-active shrink-0"
               aria-label={`Przejdź do ${title}`}
             >
               <MoveUpRight size={moveIconSize} />
@@ -89,10 +92,30 @@ export default function OfferCards() {
         />
 
         <div className="flex flex-col gap-4 xl:grid xl:grid-cols-4 xl:auto-rows-auto xl:gap-4">
+          {/* Karty desktop (3 sekcje) */}
+          {!isMobile && (
+            <>
+              {/* 4 karty (rząd 1) */}
+              <div className="grid grid-cols-2 gap-4 xl:grid-cols-4 xl:col-span-4 xl:row-start-1">
+                {topCards.map((card, i) => renderCard(card, i))}
+              </div>
+
+              {/* 2 karty obok zdjęcia */}
+              <div className="grid grid-cols-2 gap-4 xl:flex xl:flex-col xl:col-start-4 xl:row-start-2">
+                {rightCards.map((card, i) => renderCard(card, i + 4))}
+              </div>
+
+              {/* 3 dolne karty */}
+              <div className="grid grid-cols-2 gap-4 xl:flex xl:flex-row xl:col-span-3 xl:row-start-3">
+                {bottomCards.map((card, i) => renderCard(card, i + 6))}
+              </div>
+            </>
+          )}
+
           {/* ZDJĘCIE */}
           <div
-            className="order-1 xl:order-none border-2 border-orangeAccent relative w-full aspect-[4/3] lg:aspect-[4/3]
-                       rounded-xl overflow-hidden xl:aspect-auto h-[250px] lg:h-[350px] xl:h-[470px] xl:col-span-3 xl:row-start-2"
+            className="border-2 border-orangeAccent relative w-full aspect-[4/3] lg:aspect-[4/3]
+               rounded-xl overflow-hidden xl:aspect-auto h-[250px] lg:h-[350px] xl:h-[470px] xl:col-span-3 xl:row-start-2"
           >
             <Image
               key={offers[activeIndex].image}
@@ -104,20 +127,12 @@ export default function OfferCards() {
             />
           </div>
 
-          {/* 4 karty (rząd 1) */}
-          <div className="order-2 xl:order-none grid grid-cols-2 gap-4 xl:grid xl:grid-cols-4 xl:col-span-4 xl:row-start-1">
-            {topCards.map((card, i) => renderCard(card, i))}
-          </div>
-
-          {/* 2 karty obok zdjęcia */}
-          <div className="order-3 xl:order-none grid grid-cols-2 gap-4 xl:flex xl:flex-col xl:col-start-4 xl:row-start-2">
-            {rightCards.map((card, i) => renderCard(card, i + 4))}
-          </div>
-
-          {/* 3 dolne karty */}
-          <div className="order-4 xl:order-none grid grid-cols-2 gap-4 xl:flex xl:flex-row xl:col-span-3 xl:row-start-3">
-            {bottomCards.map((card, i) => renderCard(card, i + 6))}
-          </div>
+          {/* Karuzela pod zdjęciem (mobile) */}
+          {isMobile && (
+            <div className="overflow-x-auto flex gap-4 pb-2 -mx-4 px-4 mobile-scroll-hide">
+              {[...topCards, ...rightCards, ...bottomCards].map((card, i) => renderCard(card, i))}
+            </div>
+          )}
         </div>
 
         {/* przycisk */}

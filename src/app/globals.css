@@ -1,28 +1,28 @@
 @import "tailwindcss";
 
 @theme {
-    /* 🎨 Kolory */
-    --color-orangeAccent: #C16200;
-    --color-greyVariant: #E1E1E6;
-    --color-alertRed: #D32027;
-    --color-greenAccept: #2E7D32;
+  /* 🎨 Kolory */
+  --color-orangeAccent: #C16200;
+  --color-greyVariant: #E1E1E6;
+  --color-alertRed: #D32027;
+  --color-greenAccept: #2E7D32;
 
-    /* 🔠 Rozmiary tekstu (REM + waga) */
-    --text-64: 4rem;
-    /* 64px */
-    --text-32: 2rem;
-    /* 32px */
-    --text-24: 1.5rem;
-    /* 24px */
-    --text-18: 1.125rem;
-    /* 18px */
-    --text-16: 1rem;
-    /* 16px */
-    --text-14: 0.875rem;
-    /* 14px */
+  /* 🔠 Rozmiary tekstu (REM + waga) */
+  --text-64: 4rem;
+  /* 64px */
+  --text-32: 2rem;
+  /* 32px */
+  --text-24: 1.5rem;
+  /* 24px */
+  --text-18: 1.125rem;
+  /* 18px */
+  --text-16: 1rem;
+  /* 16px */
+  --text-14: 0.875rem;
+  /* 14px */
 
-    --cursor-default: url("/cursors/cursor2.svg") 0 0, auto;
-    --cursor-active: url("/cursors/cursor1.svg") 0 0, auto;
+  --cursor-default: url("/cursors/cursor2.svg") 0 0, auto;
+  --cursor-active: url("/cursors/cursor1.svg") 0 0, auto;
 }
 
 html,
@@ -57,4 +57,18 @@ body {
 ::-webkit-scrollbar-thumb:hover {
   background-color: var(--color-orangeAccent);
   cursor: url("/cursors/cursor1.svg") 0 0, auto;
+}
+
+@media (max-width: 768px) {
+  .mobile-scroll-hide {
+    -ms-overflow-style: none;
+    /* IE/Edge */
+    scrollbar-width: none;
+    /* Firefox */
+  }
+
+  .mobile-scroll-hide::-webkit-scrollbar {
+    display: none;
+    /* Chrome/Safari */
+  }
 }
