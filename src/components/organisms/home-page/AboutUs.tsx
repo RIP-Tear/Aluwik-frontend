@@ -13,7 +13,7 @@ const AboutUs = () => {
       <div className="absolute inset-0 -z-10">
         <Image src={aboutUsBg} alt="zdjęcie1" fill className="object-cover" priority />
       </div>
-      <PageSection className="text-white leading-relaxed py-10">
+      <PageSection className="text-white leading-relaxed py-5 sm:py-10">
         <Heading
           label={"Poznaj nas bliżej"}
           size={32}

@@ -13,7 +13,7 @@ const ContactHero = () => {
         <Image src={contactBg} alt="zdjęcie2" fill className="object-cover" priority />
       </div>
       <PageSection noMarginTop>
-        <div className="text-white leading-relaxed py-10">
+        <div className="text-white leading-relaxed py-5 sm:py-10">
           <div className="sm:flex justify-between">
             <Heading
               label="Jesteś zainteresowany naszymi

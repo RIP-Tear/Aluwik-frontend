@@ -28,7 +28,7 @@ const BlogPreview = () => {
         </div>
         <div className="p-4">
           <Heading label={first.title} as="h3" size={24} className="text-orangeAccent mb-2" />
-          <Text text={first.excerpt} size={18} />
+          <Text text={first.excerpt} size={16} />
           <div className="flex justify-end mt-4">
             <Button
               label="Czytaj"

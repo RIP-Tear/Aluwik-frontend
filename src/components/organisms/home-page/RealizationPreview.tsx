@@ -49,8 +49,8 @@ const RealizationPreview = () => {
 
   return (
     <PageSection className="bg-black ">
-      <div className="text-white leading-relaxed py-10">
-        <div className="flex flex-col xl:flex-row gap-8">
+      <div className="text-white leading-relaxed py-5 sm:py-10">
+        <div className="flex flex-col xl:flex-row gap-8 items-center">
           {/* Tekst po lewej */}
           <div className="flex-1 max-w-[800px]">
             <Heading
@@ -75,9 +75,12 @@ Dbamy o to, aby satysfakcja z wybranych rozwiązań szła w parze z atrakcyjnymi
           </div>
 
           {/* Mozaika 2x2 */}
-          <div className="grid grid-cols-2 gap-4 w-full max-w-[600px] mt-8 sm:mt-0">
+          <div className="grid grid-cols-2 gap-4 w-full max-w-[600px]">
             {tiles.map((tile, i) => (
-              <div key={i} className="relative w-full aspect-[4/3] rounded-xl overflow-hidden">
+              <div
+                key={i}
+                className="relative w-full aspect-[4/3] rounded-xl overflow-hidden border-2 border-orangeAccent"
+              >
                 {/* Widoczny obrazek */}
                 <Image
                   src={tile.visible}
