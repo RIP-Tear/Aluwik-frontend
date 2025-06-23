@@ -86,13 +86,13 @@ export const Footer = () => {
             <div className="flex justify-center lg:justify-end gap-4 mt-4">
               <Link
                 href="https://www.facebook.com/profile.php?id=61577515076852"
-                className="cursor-active"
+                className="cursor-active transition hover:scale-105"
               >
                 <SiFacebook size={24} />
               </Link>
               <Link
                 href="https://www.linkedin.com/company/aluwik-technologia-aluminiowa/?viewAsMember=true"
-                className=" cursor-active"
+                className=" cursor-active transition hover:scale-105"
               >
                 <SiLinkedin size={24} />
               </Link>
@@ -100,7 +100,7 @@ export const Footer = () => {
                 href="https://wa.me/48609604571"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 text-black cursor-active"
+                className="inline-flex items-center gap-2 text-black cursor-active transition hover:scale-105"
               >
                 <SiWhatsapp size={24} color="#fff" />
               </a>
@@ -151,7 +151,7 @@ export const Footer = () => {
               rel="noopener noreferrer"
               className="underline flex items-center gap-2 cursor-active"
             >
-              <Text text="RIP & Tear" size={14} className="text-greyVariant underline" />
+              <Text text="RIP & Tear" size={14} className="text-greyVariant hover:underline" />
               <Image
                 src="https://www.rip-tear.com/favicon.ico"
                 alt="RIP & Tear"

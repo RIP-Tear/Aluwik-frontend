@@ -10,8 +10,8 @@ export default function ContactPage() {
   return (
     <>
       <PageHead
-        title="Sztuczna co? | Kontact"
-        description="Skontaktuj się z zespołem Sztuczna co? – chętnie odpowiemy na pytania dotyczące naszych usług, współpracy lub mediów społecznościowych. Jesteśmy dostępni mailowo, telefonicznie oraz na platformach takich jak Instagram, LinkedIn czy TikTok."
+        title="5 zalet drzwi przesuwnych w nowoczesnych wnętrzach | Blog ALUWIK"
+        description="Poznaj największe atuty drzwi przesuwnych – oszczędność miejsca, elegancki design i funkcjonalność. Sprawdź, dlaczego to idealne rozwiązanie do współczesnych domów i mieszkań."
       />
       <div className="hidden xl:block">
         <NavbarContact />

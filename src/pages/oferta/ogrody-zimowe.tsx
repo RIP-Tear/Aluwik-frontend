@@ -12,10 +12,9 @@ export default function WinterGardensPage() {
   return (
     <>
       <PageHead
-        title="Aluwik - Technologia aluminiowa"
-        description="Odkryj nowoczesne podejście do tworzenia treści, stron internetowych i projektowania graficznego z wykorzystaniem sztucznej inteligencji. Sprawdź, co potrafimy w Sztuczna co?"
+        title="ALUWIK | Ogrody zimowe – komfort przez cały rok"
+        description="Tworzymy eleganckie i funkcjonalne ogrody zimowe z aluminium, które zapewniają naturalne światło i przestrzeń do relaksu. Konstrukcje o wysokiej izolacyjności cieplnej, odporne na warunki atmosferyczne."
       />
-
       <div className="hidden xl:block">
         <NavbarContact />
       </div>

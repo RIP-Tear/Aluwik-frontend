@@ -11,9 +11,10 @@ export default function HomePage() {
   return (
     <>
       <PageHead
-        title="Aluwik - Technologia aluminiowa"
-        description="Odkryj nowoczesne podejście do tworzenia treści, stron internetowych i projektowania graficznego z wykorzystaniem sztucznej inteligencji. Sprawdź, co potrafimy w Sztuczna co?"
+        title="ALUWIK | Producent stolarki aluminiowej"
+        description="Aluwik to doświadczony producent okien, drzwi, fasad i ogrodów zimowych z aluminium. Realizujemy nowoczesne i trwałe rozwiązania dla domu i biznesu. Zaufaj jakości profili Aluprof i Ponzio."
       />
+
       <div className="hidden xl:block">
         <NavbarContact />
       </div>

@@ -12,10 +12,9 @@ export default function AluminiumWindowsPage() {
   return (
     <>
       <PageHead
-        title="Aluwik - Technologia aluminiowa"
-        description="Odkryj nowoczesne podejście do tworzenia treści, stron internetowych i projektowania graficznego z wykorzystaniem sztucznej inteligencji. Sprawdź, co potrafimy w Sztuczna co?"
+        title="ALUWIK | Okna aluminiowe – trwałość i nowoczesny design"
+        description="Produkujemy energooszczędne i estetyczne okna aluminiowe na profilach Aluprof i Ponzio. Gwarancja trwałości, szczelności i eleganckiego wykończenia – idealne do nowoczesnych inwestycji."
       />
-
       <div className="hidden xl:block">
         <NavbarContact />
       </div>

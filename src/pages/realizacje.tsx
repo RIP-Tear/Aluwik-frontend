@@ -10,10 +10,9 @@ export default function RealizationPage() {
   return (
     <>
       <PageHead
-        title="Sztuczna co? | Strona w budowie..."
-        description="Nasza witryna jest w trakcie budowy. Wróć wkrótce!"
+        title="ALUWIK | Nasze realizacje – okna, drzwi i fasady aluminiowe"
+        description="Zobacz wybrane realizacje ALUWIK. Montujemy nowoczesne okna, drzwi, fasady i ogrody zimowe z aluminium. Projekty dla domów jednorodzinnych, firm i instytucji publicznych."
       />
-
       <div className="hidden xl:block">
         <NavbarContact />
       </div>

@@ -13,10 +13,9 @@ export default function BlogPage() {
   return (
     <>
       <PageHead
-        title="Sztuczna co? | Blog"
-        description="Czytaj najnowsze artykuły, inspiracje i aktualności od zespołu Sztuczna co?. Na naszym blogu znajdziesz porady, trendy i nowinki ze świata technologii, designu i sztucznej inteligencji."
+        title="ALUWIK | Blog o stolarce aluminiowej i nowoczesnych rozwiązaniach"
+        description="Bądź na bieżąco z trendami i poradami dotyczącymi stolarki aluminiowej. Na blogu ALUWIK znajdziesz inspiracje, realizacje oraz wskazówki dotyczące okien, drzwi, fasad i ogrodów zimowych."
       />
-
       <div className="hidden xl:block">
         <NavbarContact />
       </div>

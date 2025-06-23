@@ -12,8 +12,8 @@ export default function FirePartitionWallsPage() {
   return (
     <>
       <PageHead
-        title="Aluwik - Technologia aluminiowa"
-        description="Odkryj nowoczesne podejście do tworzenia treści, stron internetowych i projektowania graficznego z wykorzystaniem sztucznej inteligencji. Sprawdź, co potrafimy w Sztuczna co?"
+        title="ALUWIK | Ściany oddzielenia przeciwpożarowego"
+        description="Bezpieczne i certyfikowane ściany oddzielenia przeciwpożarowego od ALUWIK. Tworzymy konstrukcje aluminiowe EI30, EI60 i EI120 zgodne z normami pożarowymi. Sprawdź nasze realizacje!"
       />
 
       <div className="hidden xl:block">

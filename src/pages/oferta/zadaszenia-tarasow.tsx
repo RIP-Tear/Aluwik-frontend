@@ -12,8 +12,8 @@ export default function TerraceRoofingPage() {
   return (
     <>
       <PageHead
-        title="Aluwik - Technologia aluminiowa"
-        description="Odkryj nowoczesne podejście do tworzenia treści, stron internetowych i projektowania graficznego z wykorzystaniem sztucznej inteligencji. Sprawdź, co potrafimy w Sztuczna co?"
+        title="ALUWIK | Zadaszenia tarasów"
+        description="Nowoczesne i trwałe zadaszenia tarasów od ALUWIK – idealne połączenie designu i funkcjonalności. Ochrona przed deszczem i słońcem, dopasowana do Twojej przestrzeni."
       />
       <div className="hidden xl:block">
         <NavbarContact />

@@ -1,19 +1,32 @@
-// app/layout.tsx
 import React from "react";
 import "./globals.css";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Aluwik",
-  description: "Oficjalna strona projektu Sztuczna co? — coś więcej niż AI.",
-  keywords: ["AI", "sztuczna inteligencja", "Sztuczna co?", "technologia", "startup"],
-  authors: [{ name: "SztucznaCo", url: "https://sztucznaco.pl" }],
+  title: "ALUWIK | Stolarka aluminiowa dla domu i biznesu",
+  description:
+    "ALUWIK to producent wysokiej jakości stolarki aluminiowej: okien, drzwi, fasad i ogrodów zimowych. Oferujemy trwałe rozwiązania z profili Aluprof i Ponzio dla klientów indywidualnych i firm.",
+  keywords: [
+    "aluwik",
+    "stolarka aluminiowa",
+    "okna aluminiowe",
+    "drzwi aluminiowe",
+    "fasady aluminiowe",
+    "ogrody zimowe",
+    "Aluprof",
+    "Ponzio",
+    "producent stolarki",
+    "aluminium",
+    "systemy okienno-drzwiowe",
+  ],
+  authors: [{ name: "ALUWIK", url: "https://aluwik.pl" }],
   robots: "index, follow",
   openGraph: {
-    title: "Sztuczna co?",
-    description: "Coś więcej niż AI. Strona w budowie, ale warto wracać!",
-    url: "https://sztucznaco.pl",
-    siteName: "SztucznaCo",
+    title: "ALUWIK | Stolarka aluminiowa dla domu i biznesu",
+    description:
+      "Sprawdź naszą ofertę okien, drzwi, fasad i ogrodów zimowych z aluminium. ALUWIK — nowoczesne systemy dla wymagających.",
+    url: "https://aluwik.pl",
+    siteName: "ALUWIK",
     locale: "pl_PL",
     type: "website",
   },

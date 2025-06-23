@@ -10,8 +10,8 @@ export default function ContactPage() {
   return (
     <>
       <PageHead
-        title="Sztuczna co? | Kontact"
-        description="Skontaktuj się z zespołem Sztuczna co? – chętnie odpowiemy na pytania dotyczące naszych usług, współpracy lub mediów społecznościowych. Jesteśmy dostępni mailowo, telefonicznie oraz na platformach takich jak Instagram, LinkedIn czy TikTok."
+        title="Jak zorganizować idealny ogród zimowy? | Blog ALUWIK"
+        description="Poznaj praktyczne wskazówki, jak zaprojektować i urządzić ogród zimowy. Dowiedz się, jakie materiały wybrać, jak zadbać o izolację i jak stworzyć przytulną przestrzeń przez cały rok."
       />
       <div className="hidden xl:block">
         <NavbarContact />

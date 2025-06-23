@@ -13,10 +13,9 @@ export default function OfferPage() {
   return (
     <>
       <PageHead
-        title="Sztuczna co? | Usługi"
-        description="Skorzystaj z naszych usług: tworzymy strony internetowe, projektujemy UI/UX, wdrażamy sztuczną inteligencję i prowadzimy kampanie marketingowe. Sprawdź, jak możemy rozwinąć Twój biznes online."
+        title="ALUWIK | Oferta aluminiowych okien, drzwi, fasad i ogrodów zimowych"
+        description="Poznaj ofertę ALUWIK – nowoczesne systemy aluminiowe dla domu i firmy. Specjalizujemy się w produkcji drzwi, okien, fasad i ogrodów zimowych z profili Aluprof i Ponzio. Jakość, trwałość i estetyka."
       />
-
       <div className="hidden xl:block">
         <NavbarContact />
       </div>

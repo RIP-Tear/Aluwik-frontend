@@ -12,10 +12,9 @@ export default function SlidingDoorSystemsPage() {
   return (
     <>
       <PageHead
-        title="Aluwik - Technologia aluminiowa"
-        description="Odkryj nowoczesne podejście do tworzenia treści, stron internetowych i projektowania graficznego z wykorzystaniem sztucznej inteligencji. Sprawdź, co potrafimy w Sztuczna co?"
+        title="ALUWIK | Systemy drzwi przesuwnych"
+        description="Nowoczesne i trwałe systemy drzwi przesuwnych od ALUWIK. Oferujemy konstrukcje o wysokiej izolacyjności cieplnej i estetyce – idealne do tarasów, balkonów i ogrodów zimowych."
       />
-
       <div className="hidden xl:block">
         <NavbarContact />
       </div>

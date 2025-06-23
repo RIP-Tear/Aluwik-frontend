@@ -1,6 +1,8 @@
+import HeroDescription from "@/components/molecules/hero-descripton/HeroDescription";
 import HeroText from "@/components/molecules/hero-text/HeroText";
 import BlogPreview from "@/components/organisms/blog-page/BlogPreview";
 import { useGsapFadeInSections } from "@/hooks/useGsapSectionFadeIn";
+import { blogBg } from "@/utils/images/blogBg";
 
 const BlogTemplate = () => {
   useGsapFadeInSections();
@@ -8,6 +10,11 @@ const BlogTemplate = () => {
   return (
     <div>
       <HeroText label="Najnowsze artykuły z naszego bloga" highlightWords={["artykuły"]} />
+      <HeroDescription
+        image={blogBg}
+        text="Poznaj nasz blog – wiedza, inspiracje i nowości
+Na blogu dzielimy się doświadczeniem, trendami i praktycznymi poradami z zakresu stolarki aluminiowej, architektury oraz nowoczesnych rozwiązań budowlanych. Znajdziesz tu również aktualności z życia firmy i przykłady zastosowań naszych produktów w codziennych realizacjach."
+      />
       <BlogPreview />
     </div>
   );

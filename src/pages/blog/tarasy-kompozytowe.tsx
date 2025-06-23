@@ -10,8 +10,8 @@ export default function ContactPage() {
   return (
     <>
       <PageHead
-        title="Sztuczna co? | Kontact"
-        description="Skontaktuj się z zespołem Sztuczna co? – chętnie odpowiemy na pytania dotyczące naszych usług, współpracy lub mediów społecznościowych. Jesteśmy dostępni mailowo, telefonicznie oraz na platformach takich jak Instagram, LinkedIn czy TikTok."
+        title="Tarasy kompozytowe – trwałość i styl na lata | Blog ALUWIK"
+        description="Sprawdź, dlaczego tarasy kompozytowe to idealne połączenie estetyki i odporności na warunki atmosferyczne. Poznaj ich zalety i dowiedz się, jak stworzyć eleganczny taras na lata."
       />
       <div className="hidden xl:block">
         <NavbarContact />

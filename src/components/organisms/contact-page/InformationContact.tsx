@@ -8,7 +8,7 @@ import { SiFacebook, SiLinkedin, SiWhatsapp } from "react-icons/si";
 
 const InformationContact = () => {
   return (
-    <PageSection className="bg-black py-10 text-white">
+    <PageSection noMarginTop className="bg-black py-10 text-white">
       {/* GRID INFO */}
       <div className="grid md:grid-cols-4 gap-6 mb-10">
         {/* KONTAKT */}

@@ -8,8 +8,8 @@ export default function ContactPage() {
   return (
     <>
       <PageHead
-        title="Sztuczna co? | Kontact"
-        description="Skontaktuj się z zespołem Sztuczna co? – chętnie odpowiemy na pytania dotyczące naszych usług, współpracy lub mediów społecznościowych. Jesteśmy dostępni mailowo, telefonicznie oraz na platformach takich jak Instagram, LinkedIn czy TikTok."
+        title="ALUWIK | Kontakt z producentem stolarki aluminiowej"
+        description="Skontaktuj się z ALUWIK – producentem stolarki aluminiowej. Odpowiemy na pytania dotyczące naszej oferty: okien, drzwi, fasad i ogrodów zimowych. Jesteśmy dostępni telefonicznie, mailowo i przez formularz kontaktowy."
       />
       <Navbar />
       <ContactTemplate />

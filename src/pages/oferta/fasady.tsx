@@ -12,10 +12,9 @@ export default function FacadesPage() {
   return (
     <>
       <PageHead
-        title="Aluwik - Technologia aluminiowa"
-        description="Odkryj nowoczesne podejście do tworzenia treści, stron internetowych i projektowania graficznego z wykorzystaniem sztucznej inteligencji. Sprawdź, co potrafimy w Sztuczna co?"
+        title="ALUWIK | Fasady – nowoczesna elewacja budynku"
+        description="Nowoczesne fasady aluminiowe ALUWIK to połączenie estetyki, trwałości i energooszczędności. Tworzymy elewacje dopasowane do budynków komercyjnych, biurowców i inwestycji premium. Systemy Aluprof i Ponzio."
       />
-
       <div className="hidden xl:block">
         <NavbarContact />
       </div>

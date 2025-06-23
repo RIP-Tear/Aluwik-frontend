@@ -10,9 +10,10 @@ export default function ContactPage() {
   return (
     <>
       <PageHead
-        title="Sztuczna co? | Kontact"
-        description="Skontaktuj się z zespołem Sztuczna co? – chętnie odpowiemy na pytania dotyczące naszych usług, współpracy lub mediów społecznościowych. Jesteśmy dostępni mailowo, telefonicznie oraz na platformach takich jak Instagram, LinkedIn czy TikTok."
+        title="Drzwi przeciwpożarowe – bezpieczeństwo w nowoczesnej formie | Blog ALUWIK"
+        description="Dowiedz się, dlaczego drzwi przeciwpożarowe są kluczowym elementem zabezpieczeń w nowoczesnym budownictwie. Sprawdź, jak łączymy estetykę z funkcjonalnością i odpornością na ogień."
       />
+
       <div className="hidden xl:block">
         <NavbarContact />
       </div>

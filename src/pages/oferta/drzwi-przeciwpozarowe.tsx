@@ -12,10 +12,9 @@ export default function FireDoorsPage() {
   return (
     <>
       <PageHead
-        title="Aluwik - Technologia aluminiowa"
-        description="Odkryj nowoczesne podejście do tworzenia treści, stron internetowych i projektowania graficznego z wykorzystaniem sztucznej inteligencji. Sprawdź, co potrafimy w Sztuczna co?"
+        title="ALUWIK | Drzwi przeciwpożarowe – bezpieczeństwo i certyfikaty"
+        description="Drzwi przeciwpożarowe ALUWIK zapewniają skuteczną ochronę życia i mienia. Spełniają normy EI30, EI60, EI120, są odporne na ogień i dym, idealne do obiektów publicznych i komercyjnych. Zaufaj sprawdzonym rozwiązaniom aluminiowym."
       />
-
       <div className="hidden xl:block">
         <NavbarContact />
       </div>

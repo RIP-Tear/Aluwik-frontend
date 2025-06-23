@@ -12,10 +12,9 @@ export default function SlidingWindowsPage() {
   return (
     <>
       <PageHead
-        title="Aluwik - Technologia aluminiowa"
-        description="Odkryj nowoczesne podejście do tworzenia treści, stron internetowych i projektowania graficznego z wykorzystaniem sztucznej inteligencji. Sprawdź, co potrafimy w Sztuczna co?"
+        title="ALUWIK | Okna przesuwne – więcej światła, mniej ograniczeń"
+        description="Nowoczesne systemy okien przesuwnych z aluminium. Maksymalna ilość światła, płynność ruchu i oszczędność przestrzeni. Sprawdź rozwiązania idealne do domów, tarasów i ogrodów zimowych."
       />
-
       <div className="hidden xl:block">
         <NavbarContact />
       </div>

@@ -12,8 +12,8 @@ export default function AluminiumDoorsPage() {
   return (
     <>
       <PageHead
-        title="Aluwik - Technologia aluminiowa"
-        description="Odkryj nowoczesne podejście do tworzenia treści, stron internetowych i projektowania graficznego z wykorzystaniem sztucznej inteligencji. Sprawdź, co potrafimy w Sztuczna co?"
+        title="ALUWIK | Drzwi aluminiowe – nowoczesność i trwałość"
+        description="Oferujemy aluminiowe drzwi zewnętrzne i wewnętrzne o wysokiej odporności, izolacyjności i nowoczesnym wyglądzie. Idealne do domów, biur i budynków komercyjnych. Zaufaj jakości profili Aluprof i Ponzio."
       />
 
       <div className="hidden xl:block">
