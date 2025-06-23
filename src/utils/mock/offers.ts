@@ -21,26 +21,13 @@ export type OfferItem = {
 
 export const offers: OfferItem[] = [
   {
-    icon: PanelLeftOpen,
-    title: "Systemy drzwi przesuwanych",
-    description: "Komfortowe i energooszczędne systemy przesuwne do dużych przeszkleń.",
-    image: "/img/drzwi-przesuwane.jpg",
-    href: "/oferta/systemy-drzwi-przesuwanych",
-  },
-  {
     icon: DoorClosed,
     title: "Drzwi aluminiowe",
     description: "Wytrzymałe drzwi z profili aluminiowych zapewniające bezpieczeństwo i styl.",
     image: "/img/drzwi.jpg",
     href: "/oferta/drzwi-aluminiowe",
   },
-  {
-    icon: MoveHorizontal,
-    title: "Okna przesuwane",
-    description: "Lekko i cicho pracujące okna przesuwne zwiększające powierzchnię użytkową.",
-    image: "/img/okna-przesuwane.webp",
-    href: "/oferta/okna-przesuwane",
-  },
+
   {
     icon: AppWindow,
     title: "Okna aluminiowe",
@@ -61,6 +48,21 @@ export const offers: OfferItem[] = [
     description: "Całoroczne oranżerie z izolowanych profili aluminiowych do komfortowego relaksu.",
     image: "/img/ogrody-zimowe.jpg",
     href: "/oferta/ogrody-zimowe",
+  },
+  {
+    icon: PanelLeftOpen,
+    title: "Systemy drzwi przesuwanych",
+    description: "Komfortowe i energooszczędne systemy przesuwne do dużych przeszkleń.",
+    image: "/img/drzwi-przesuwane.jpg",
+    href: "/oferta/systemy-drzwi-przesuwanych",
+  },
+
+  {
+    icon: MoveHorizontal,
+    title: "Okna przesuwane",
+    description: "Lekko i cicho pracujące okna przesuwne zwiększające powierzchnię użytkową.",
+    image: "/img/okna-przesuwane.webp",
+    href: "/oferta/okna-przesuwane",
   },
   {
     icon: Flame,

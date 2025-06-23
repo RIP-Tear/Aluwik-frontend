@@ -1,12 +1,12 @@
 import { Button } from "@/components/atoms/button/Button";
 import { Heading } from "@/components/atoms/heading/Heading";
 import { Text } from "@/components/atoms/text/Text";
-import { boxes } from "@/utils/mock/boxes";
 import { MoveUpRight } from "lucide-react";
 import Image from "next/image";
 import React, { useEffect, useMemo, useState } from "react";
 import { motion } from "framer-motion";
 import PageSection from "@/components/atoms/page-section/PageSection";
+import { offers } from "@/utils/mock/offers";
 
 const CHANGE_INTERVAL = 1500;
 const FADE_DURATION = 0.5;
@@ -17,7 +17,7 @@ type FadeTile = {
 };
 
 const RealizationPreview = () => {
-  const allImages = useMemo(() => boxes.map(b => b.image), []);
+  const allImages = useMemo(() => offers.map(b => b.image), []);
   const [tiles, setTiles] = useState<FadeTile[]>(
     allImages.slice(0, 4).map(src => ({ visible: src, incoming: null })),
   );
