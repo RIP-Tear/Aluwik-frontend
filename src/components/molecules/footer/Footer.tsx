@@ -20,7 +20,7 @@ const Section = ({
   const [open, setOpen] = useState(defaultOpen);
 
   return (
-    <div className="w-full sm:max-w-[300px]">
+    <div className="w-full lg:max-w-[300px]">
       <button
         onClick={() => setOpen(prev => !prev)}
         className="w-full flex items-center justify-between mb-3 cursor-active group lg:cursor-default"
@@ -74,34 +74,36 @@ export const Footer = () => {
       )}
     >
       <PageSection noMarginTop>
-        <div className="shrink-0 flex items-center justify-center sm:justify-start h-full min-h-[64px]">
-          <Link href="/" className="inline-block cursor-active">
-            <Logo white />
-          </Link>
-        </div>
-        <div className="text-center sm:text-end mt-2 sm:mt-0">
-          <Text text={"Śledź nasze social media"} size={16} />
-          <div className="flex justify-center sm:justify-end gap-4 mt-4">
-            <Link
-              href="https://www.facebook.com/profile.php?id=61577515076852"
-              className="cursor-active"
-            >
-              <SiFacebook size={24} />
+        <div className="lg:flex justify-between">
+          <div className="shrink-0 flex items-center justify-center lg:justify-start h-full min-h-[64px]">
+            <Link href="/" className="inline-block cursor-active">
+              <Logo white />
             </Link>
-            <Link
-              href="https://www.linkedin.com/company/aluwik-technologia-aluminiowa/?viewAsMember=true"
-              className=" cursor-active"
-            >
-              <SiLinkedin size={24} />
-            </Link>
-            <a
-              href="https://wa.me/48609604571"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 text-black cursor-active"
-            >
-              <SiWhatsapp size={24} color="#fff" />
-            </a>
+          </div>
+          <div className="text-center lg:text-end mt-2 lg:mt-0">
+            <Text text={"Śledź nasze social media"} size={16} />
+            <div className="flex justify-center lg:justify-end gap-4 mt-4">
+              <Link
+                href="https://www.facebook.com/profile.php?id=61577515076852"
+                className="cursor-active"
+              >
+                <SiFacebook size={24} />
+              </Link>
+              <Link
+                href="https://www.linkedin.com/company/aluwik-technologia-aluminiowa/?viewAsMember=true"
+                className=" cursor-active"
+              >
+                <SiLinkedin size={24} />
+              </Link>
+              <a
+                href="https://wa.me/48609604571"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 text-black cursor-active"
+              >
+                <SiWhatsapp size={24} color="#fff" />
+              </a>
+            </div>
           </div>
         </div>
         <div className="border border-white/20 w-full my-10" />

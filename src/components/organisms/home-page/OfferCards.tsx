@@ -1,3 +1,4 @@
+import { Button } from "@/components/atoms/button/Button";
 import { Heading } from "@/components/atoms/heading/Heading";
 import PageSection from "@/components/atoms/page-section/PageSection";
 import { Text } from "@/components/atoms/text/Text";
@@ -69,6 +70,9 @@ export default function OfferCards() {
               );
             })}
           </div>
+        </div>
+        <div className="mt-10 w-fit">
+          <Button label="Sprawdź naszą ofertę" icon={<MoveUpRight />} href="/oferta" />
         </div>
       </PageSection>
     </div>

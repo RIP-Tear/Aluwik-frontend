@@ -29,7 +29,7 @@ export const Button = ({
 }: ButtonProps) => {
   const content = (
     <span
-      className={`flex items-center justify-center border-2 border-${color} text-black rounded-full bg-white hover:bg-black hover:text-white transition-colors duration-300`}
+      className={`flex flex-nowrap items-center justify-center border-2 border-${color} text-black rounded-full bg-white hover:bg-black hover:text-white transition-colors duration-300 whitespace-nowrap`}
     >
       {label && <Text text={label} size={size} className="px-3" />}
       <span className={`border-2 p-2 rounded-full text-white bg-${color}`}>{icon}</span>
@@ -40,7 +40,7 @@ export const Button = ({
     <a
       href={href}
       style={style}
-      className={clsx("cursor-active", className)}
+      className={clsx("cursor-active block w-fit", className)}
       rel="noopener noreferrer"
     >
       {content}

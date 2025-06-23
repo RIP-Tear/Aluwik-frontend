@@ -12,7 +12,7 @@ const BlogSection = () => {
   const otherPosts = restPosts.slice(0, 2);
 
   return (
-    <PageSection className="mb-10 sm:mb-[100px]">
+    <PageSection className="mb-5 sm:mb-[50px]">
       <Heading
         label="Zobacz najnowsze wpisy na blogu"
         size={32}
@@ -21,7 +21,7 @@ const BlogSection = () => {
         as="h2"
       />
 
-      <div className="grid md:grid-cols-2 gap-8 items-start h-full">
+      <div className="grid md:grid-cols-2 gap-4 sm:gap-8 items-start h-full">
         {/* Główny post */}
         {featuredPost && (
           <div className="flex flex-col border-2 border-orangeAccent rounded-xl overflow-hidden h-full bg-white">

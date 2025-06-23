@@ -13,19 +13,22 @@ const AboutUs = () => {
       <div className="absolute inset-0 -z-10">
         <Image src={aboutUsBg} alt="zdjęcie1" fill className="object-cover" priority />
       </div>
-      <PageSection>
-        <div className="text-white leading-relaxed py-10">
-          <Heading label={"Dowiedz się"} size={24} className="uppercase text-start" as="h5" />
-          <Heading label={"więcej o nas"} size={24} className="uppercase text-start mb-4" as="h5" />
-          <div className="max-w-[700px]">
-            <Text
-              text={`ALUWIK to doświadczony producent aluminiowej stolarki okiennej. 
+      <PageSection className="text-white leading-relaxed py-10">
+        <Heading
+          label={"Poznaj nas bliżej"}
+          size={32}
+          className="text-start mb-5 sm:mb-[50px]"
+          as="h2"
+          highlightWords={["bliżej"]}
+        />
+        <div className="max-w-[700px]">
+          <Text
+            text={`ALUWIK to doświadczony producent aluminiowej stolarki okiennej. 
 Wyroby wyprodukowane w naszej firmie, zaopatrzone są we wszystkie potrzebne certyfikaty oraz aprobaty techniczne wymagane na polskim rynku budowlanym. 
 Nasza siedziba znajduje się w Tczewie, jednak z powodzeniem obsługujemy klientów z całego kraju.`}
-              size={16}
-            />
-            <Button label="Skontaktuj się" icon={<MoveUpRight />} className="mt-10" />
-          </div>
+            size={16}
+          />
+          <Button label="Skontaktuj się" icon={<MoveUpRight />} className="mt-10" href="/kontakt" />
         </div>
       </PageSection>
     </div>

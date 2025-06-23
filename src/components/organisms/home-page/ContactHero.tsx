@@ -14,18 +14,20 @@ const ContactHero = () => {
       </div>
       <PageSection noMarginTop>
         <div className="text-white leading-relaxed py-10">
-          <div className="max-w-[1200px] px-5 sm:flex">
-            <div className="max-w-[800px]">
-              <Heading
-                label="Jesteś zainteresowany naszymi
+          <div className="sm:flex justify-between">
+            <Heading
+              label="Jesteś zainteresowany naszymi
 usługami?"
-                size={32}
-                className=" text-start mb-4"
-                as="h2"
-                highlightWords={["usługami"]}
-              />
+              size={32}
+              className=" text-start mb-4"
+              as="h2"
+              highlightWords={["usługami"]}
+            />
+            <div className="sm:w-[400px] sm:flex justify-end">
+              <div className="w-fit mt-10">
+                <Button label="Idź do kontaktu" icon={<MoveUpRight />} href="/kontakt" />
+              </div>
             </div>
-            <Button label="Przejdź do kontaktu" icon={<MoveUpRight />} className="mt-10" />
           </div>
         </div>
       </PageSection>

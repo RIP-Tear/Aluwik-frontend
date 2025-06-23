@@ -38,7 +38,7 @@ export const Navbar = () => {
                 <Text
                   text={label}
                   size={18}
-                  className={clsx("cursor-active", {
+                  className={clsx("cursor-active hover:text-orangeAccent", {
                     "underline font-bold": isActive,
                     "hover:underline": !isActive,
                   })}
@@ -51,23 +51,23 @@ export const Navbar = () => {
         <div className="xl:flex items-center justify-center hidden gap-x-10">
           <Link
             href="https://www.facebook.com/profile.php?id=61577515076852"
-            className="cursor-active transition hover:scale-105"
+            className="cursor-active transition hover:scale-105 hover:text-orangeAccent text-black"
           >
-            <SiFacebook color={"#000"} size={32} />
+            <SiFacebook size={32} />
           </Link>
           <Link
             href="https://www.linkedin.com/company/aluwik-technologia-aluminiowa/?viewAsMember=true"
-            className=" cursor-active transition hover:scale-105"
+            className=" cursor-active transition hover:scale-105 hover:text-orangeAccent text-black"
           >
-            <SiLinkedin color={"#000"} size={32} />
+            <SiLinkedin size={32} />
           </Link>
           <a
             href="https://wa.me/48609604571"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 text-black cursor-active transition hover:scale-105"
+            className="inline-flex items-center gap-2 cursor-active transition hover:scale-105 hover:text-orangeAccent text-black"
           >
-            <SiWhatsapp color="#000" size={32} />
+            <SiWhatsapp size={32} />
           </a>
         </div>
 

@@ -48,7 +48,7 @@ const RealizationPreview = () => {
   }, [allImages]);
 
   return (
-    <PageSection className="bg-black py-10 sm:py-[100px]">
+    <PageSection className="bg-black ">
       <div className="text-white leading-relaxed py-10">
         <div className="flex flex-col xl:flex-row gap-8">
           {/* Tekst po lewej */}
@@ -68,7 +68,9 @@ Możemy poszczycić się wieloletnim doświadczeniem, które przekłada się na 
 Dbamy o to, aby satysfakcja z wybranych rozwiązań szła w parze z atrakcyjnymi cenami.`}
                 size={16}
               />
-              <Button label="Zobacz nasze realizacje" icon={<MoveUpRight />} className="mt-10" />
+              <div className="w-fit mt-10 hidden sm:block">
+                <Button label="Zobacz nasze realizacje" icon={<MoveUpRight />} href="/realizacje" />
+              </div>
             </div>
           </div>
 
@@ -103,6 +105,9 @@ Dbamy o to, aby satysfakcja z wybranych rozwiązań szła w parze z atrakcyjnymi
               </div>
             ))}
           </div>
+        </div>
+        <div className="sm:hidden block w-fit mt-10">
+          <Button label="Zobacz nasze realizacje" icon={<MoveUpRight />} href="/realizacje" />
         </div>
       </div>
     </PageSection>
