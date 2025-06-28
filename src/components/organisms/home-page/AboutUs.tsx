@@ -2,7 +2,6 @@ import { Button } from "@/components/atoms/button/Button";
 import { Heading } from "@/components/atoms/heading/Heading";
 import PageSection from "@/components/atoms/page-section/PageSection";
 import { Text } from "@/components/atoms/text/Text";
-import { aboutUsBg } from "@/utils/images/aboutUsBg";
 import { MoveUpRight } from "lucide-react";
 import Image from "next/image";
 import React from "react";
@@ -11,7 +10,13 @@ const AboutUs = () => {
   return (
     <div className="relative w-full">
       <div className="absolute inset-0 -z-10">
-        <Image src={aboutUsBg} alt="zdjęcie1" fill className="object-cover" priority />
+        <Image
+          src="../backgrounds/aboutUsBg.webp"
+          alt="O nas"
+          fill
+          className="object-cover"
+          priority
+        />
       </div>
       <PageSection className="text-white leading-relaxed py-5 sm:py-10">
         <Heading
