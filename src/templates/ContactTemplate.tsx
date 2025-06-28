@@ -1,6 +1,5 @@
 import React from "react";
 
-import { useGsapFadeInSections } from "@/hooks/useGsapSectionFadeIn";
 import HeroText from "@/components/molecules/hero-text/HeroText";
 import InformationContact from "@/components/organisms/contact-page/InformationContact";
 import FormContact from "@/components/organisms/contact-page/FormContact";
@@ -8,8 +7,6 @@ import HeroDescription from "@/components/molecules/hero-descripton/HeroDescript
 import { contactBg } from "@/utils/images/contactBg";
 
 const ContactTemplate = () => {
-  useGsapFadeInSections();
-
   return (
     <>
       <HeroText label="Skontaktuj się z nami" highlightWords={["nami"]} />

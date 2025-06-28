@@ -1,15 +1,22 @@
+"use client";
+
 import React from "react";
-import { useGsapFadeInSections } from "@/hooks/useGsapSectionFadeIn";
+import dynamic from "next/dynamic";
+import HeroText from "@/components/molecules/hero-text/HeroText";
 import AboutUs from "@/components/organisms/home-page/AboutUs";
 import OfferCards from "@/components/organisms/home-page/OfferCards";
-import ContactHero from "@/components/organisms/home-page/ContactHero";
-import RealizationPreview from "@/components/organisms/home-page/RealizationPreview";
-import HeroText from "@/components/molecules/hero-text/HeroText";
-import BlogSection from "@/components/organisms/home-page/BlogSection";
+
+const RealizationPreview = dynamic(
+  () => import("@/components/organisms/home-page/RealizationPreview"),
+);
+const BlogSection = dynamic(() => import("@/components/organisms/home-page/BlogSection"), {
+  ssr: false,
+});
+const ContactHero = dynamic(() => import("@/components/organisms/home-page/ContactHero"), {
+  ssr: false,
+});
 
 const HomeTemplate = () => {
-  useGsapFadeInSections();
-
   return (
     <div>
       <HeroText

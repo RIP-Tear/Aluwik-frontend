@@ -1,12 +1,9 @@
 import HeroDescription from "@/components/molecules/hero-descripton/HeroDescription";
 import HeroText from "@/components/molecules/hero-text/HeroText";
 import BlogPreview from "@/components/organisms/blog-page/BlogPreview";
-import { useGsapFadeInSections } from "@/hooks/useGsapSectionFadeIn";
 import { blogBg } from "@/utils/images/blogBg";
 
 const BlogTemplate = () => {
-  useGsapFadeInSections();
-
   return (
     <div>
       <HeroText label="Najnowsze artykuły z naszego bloga" highlightWords={["artykuły"]} />

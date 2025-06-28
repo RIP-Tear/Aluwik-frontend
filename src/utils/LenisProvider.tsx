@@ -2,7 +2,6 @@
 
 import React, { useEffect } from "react";
 import Lenis from "@studio-freight/lenis";
-import { gsap } from "gsap";
 
 export default function LenisProvider({ children }: { children: React.ReactNode }) {
   useEffect(() => {
@@ -18,29 +17,6 @@ export default function LenisProvider({ children }: { children: React.ReactNode 
     }
 
     requestAnimationFrame(raf);
-
-    import("gsap/ScrollTrigger").then(({ default: ScrollTrigger }) => {
-      gsap.registerPlugin(ScrollTrigger);
-
-      ScrollTrigger.scrollerProxy(document.body, {
-        scrollTop(value?: number) {
-          return value !== undefined ? lenis.scrollTo(value) : lenis.scroll;
-        },
-        getBoundingClientRect() {
-          return {
-            top: 0,
-            left: 0,
-            width: window.innerWidth,
-            height: window.innerHeight,
-          };
-        },
-        pinType: document.body.style.transform ? "transform" : "fixed",
-      });
-
-      lenis.on("scroll", ScrollTrigger.update);
-      ScrollTrigger.defaults({ scroller: document.body });
-      ScrollTrigger.refresh();
-    });
 
     return () => {
       lenis.destroy();

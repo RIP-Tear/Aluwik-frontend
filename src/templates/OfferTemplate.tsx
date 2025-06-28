@@ -1,9 +1,12 @@
 import HeroDescription from "@/components/molecules/hero-descripton/HeroDescription";
 import HeroText from "@/components/molecules/hero-text/HeroText";
-import PreviewOffers from "@/components/organisms/offer-page/PreviewOffers";
 import { offerBg } from "@/utils/images/offerBg";
+import dynamic from "next/dynamic";
 
 const OfferTemplate = () => {
+  const PreviewOffers = dynamic(() => import("@/components/organisms/offer-page/PreviewOffers"), {
+    ssr: false,
+  });
   return (
     <div>
       <HeroText label="Zapoznaj się z naszą ofertą" highlightWords={["ofertą"]} />
