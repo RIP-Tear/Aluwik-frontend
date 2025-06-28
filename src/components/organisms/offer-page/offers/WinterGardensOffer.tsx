@@ -7,7 +7,7 @@ const WinterGardensOffer = () => {
     <OfferPageTemplate
       title="Ogrody zimowe"
       highlightWords={["zimowe"]}
-      imageSrc="/img/ogrody-zimowe.jpg"
+      imageSrc="/img/ogrody-zimowe.webp"
       imageAlt="Ogród zimowy"
       boxes={[
         {

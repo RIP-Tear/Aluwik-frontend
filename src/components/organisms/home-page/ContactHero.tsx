@@ -10,7 +10,7 @@ const ContactHero = () => {
     <div className="relative w-full">
       <div className="absolute inset-0 -z-10">
         <Image
-          src="../backgrounds/contactBg.webp"
+          src="/backgrounds/contactBg.webp"
           alt="Kontakt"
           fill
           className="object-cover"

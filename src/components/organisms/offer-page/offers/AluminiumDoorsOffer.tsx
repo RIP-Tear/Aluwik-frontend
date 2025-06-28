@@ -64,7 +64,7 @@ const AluminiumDoorsOffer = () => {
     <OfferPageTemplate
       title="Drzwi aluminiowe"
       highlightWords={["aluminiowe"]}
-      imageSrc="/img/drzwi.jpg"
+      imageSrc="/img/drzwi.webp"
       imageAlt="Drzwi aluminiowe"
       boxes={boxes}
       sections={sections}

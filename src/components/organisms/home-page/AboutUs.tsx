@@ -11,7 +11,7 @@ const AboutUs = () => {
     <div className="relative w-full">
       <div className="absolute inset-0 -z-10">
         <Image
-          src="../backgrounds/aboutUsBg.webp"
+          src="/backgrounds/aboutUsBg.webp"
           alt="O nas"
           fill
           className="object-cover"

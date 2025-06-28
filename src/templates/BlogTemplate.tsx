@@ -7,7 +7,7 @@ const BlogTemplate = () => {
     <div>
       <HeroText label="Najnowsze artykuły z naszego bloga" highlightWords={["artykuły"]} />
       <HeroDescription
-        image="../backgrounds/blogBg.webp"
+        image="/backgrounds/blogBg.webp"
         text="Poznaj nasz blog – wiedza, inspiracje i nowości
 Na blogu dzielimy się doświadczeniem, trendami i praktycznymi poradami z zakresu stolarki aluminiowej, architektury oraz nowoczesnych rozwiązań budowlanych. Znajdziesz tu również aktualności z życia firmy i przykłady zastosowań naszych produktów w codziennych realizacjach."
       />

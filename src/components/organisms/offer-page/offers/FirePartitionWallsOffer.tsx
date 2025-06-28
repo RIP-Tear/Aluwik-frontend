@@ -7,7 +7,7 @@ const FirePartitionWallsOffer = () => {
     <OfferPageTemplate
       title="Ściany oddzielenia przeciwpożarowego"
       highlightWords={["przeciwpożarowego"]}
-      imageSrc="/img/sciany-oddzielenia-przeciwpozarowego.jpg"
+      imageSrc="/img/sciany-oddzielenia-przeciwpozarowego.webp"
       imageAlt="Ściany oddzielenia przeciwpożarowego"
       boxes={[
         {

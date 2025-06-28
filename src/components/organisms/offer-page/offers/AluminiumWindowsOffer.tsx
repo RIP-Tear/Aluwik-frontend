@@ -7,7 +7,7 @@ const AluminiumWindowsOffer = () => {
     <OfferPageTemplate
       title="Okna aluminiowe"
       highlightWords={["aluminiowe"]}
-      imageSrc="/img/okna-aluminiowe.jpg"
+      imageSrc="/img/okna-aluminiowe.webp"
       imageAlt="Nowoczesne aluminiowe okna"
       boxes={[
         {

@@ -6,7 +6,7 @@ const SlidingDoorSystemsOffer = () => {
     <OfferPageTemplate
       title="Systemy drzwi przesuwnych"
       highlightWords={["drzwi"]}
-      imageSrc="/img/drzwi-przesuwane.jpg"
+      imageSrc="/img/drzwi-przesuwane.webp"
       imageAlt="Systemy drzwi przesuwnych"
       boxes={[
         {

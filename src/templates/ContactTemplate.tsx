@@ -10,7 +10,7 @@ const ContactTemplate = () => {
     <>
       <HeroText label="Skontaktuj się z nami" highlightWords={["nami"]} />
       <HeroDescription
-        image="../backgrounds/contactBg.webp"
+        image="/backgrounds/contactBg.webp"
         text="Jesteśmy do Twojej dyspozycji
 Masz pytania dotyczące naszej oferty, współpracy lub realizacji? Skontaktuj się z nami telefonicznie, mailowo lub przez formularz kontaktowy. Odpowiadamy szybko i rzeczowo – chętnie doradzimy i pomożemy w wyborze najlepszego rozwiązania."
       />

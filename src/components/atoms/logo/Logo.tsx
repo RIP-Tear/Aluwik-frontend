@@ -8,7 +8,7 @@ type LogoProps = {
 };
 
 export const Logo = ({ className, white = false }: LogoProps) => {
-  const logoSrc = white ? "../logos/logoWhite.webp" : "../logos/logoBlack.webp";
+  const logoSrc = white ? "/logos/logoWhite.webp" : "/logos/logoBlack.webp";
 
   return (
     <div className={clsx("w-[160px] sm:w-[200px]", className)}>

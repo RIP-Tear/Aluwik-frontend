@@ -7,7 +7,7 @@ const TerraceRoofingOffer = () => {
     <OfferPageTemplate
       title="Zadaszenia tarasów"
       highlightWords={["tarasów"]}
-      imageSrc="/img/zadaszenia-tarasow.jpg"
+      imageSrc="/img/zadaszenia-tarasow.webp"
       imageAlt="Zadaszenie tarasu"
       boxes={[
         {

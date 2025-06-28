@@ -7,7 +7,7 @@ const FireDoorsOffer = () => {
     <OfferPageTemplate
       title="Drzwi przeciwpożarowe"
       highlightWords={["przeciwpożarowe"]}
-      imageSrc="/img/drzwi-przeciwpozarowe.jpg"
+      imageSrc="/img/drzwi-przeciwpozarowe.webp"
       imageAlt="Drzwi przeciwpożarowe"
       boxes={[
         {

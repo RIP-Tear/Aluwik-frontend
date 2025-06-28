@@ -77,7 +77,7 @@ const FacadesOffer = () => {
     <OfferPageTemplate
       title="Fasady aluminiowe"
       highlightWords={["Fasady"]}
-      imageSrc="/img/fasady.jpg"
+      imageSrc="/img/fasady.webp"
       imageAlt="Nowoczesne fasady aluminiowe"
       boxes={boxes}
       sections={sections}

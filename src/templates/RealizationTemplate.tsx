@@ -11,7 +11,7 @@ realizacjami"
         highlightWords={["realizacjami"]}
       />
       <HeroDescription
-        image="../backgrounds/realizationBg.webp"
+        image="/backgrounds/realizationBg.webp"
         text="Zobacz nasze realizacje – jakość, która mówi sama za siebie
 Nasze projekty to połączenie precyzji wykonania, trwałych materiałów i estetyki. W tej sekcji prezentujemy wybrane realizacje, które najlepiej pokazują możliwości technologii aluminiowej w praktyce – od nowoczesnych fasad i ogrodów zimowych, po funkcjonalne drzwi i okna. Zainspiruj się i przekonaj się, jak możemy odmienić również Twoją przestrzeń."
       />
