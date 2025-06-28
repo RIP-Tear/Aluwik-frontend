@@ -87,6 +87,7 @@ export const Footer = () => {
                 className="cursor-active transition hover:scale-105"
                 target="_blank"
                 rel="noopener noreferrer"
+                aria-label="Odwiedź nasz profil na Facebooku (otwiera się w nowej karcie)"
               >
                 <SiFacebook size={24} />
               </a>
@@ -95,6 +96,7 @@ export const Footer = () => {
                 className=" cursor-active transition hover:scale-105"
                 target="_blank"
                 rel="noopener noreferrer"
+                aria-label="Odwiedź nasz profil na LinkedIn (otwiera się w nowej karcie)"
               >
                 <SiLinkedin size={24} />
               </a>
@@ -103,6 +105,7 @@ export const Footer = () => {
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 text-black cursor-active transition hover:scale-105"
+                aria-label="Skontaktuj się z nami przez WhatsApp (otwiera się w nowej karcie)"
               >
                 <SiWhatsapp size={24} color="#fff" />
               </a>

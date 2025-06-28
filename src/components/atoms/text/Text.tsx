@@ -67,10 +67,10 @@ export const Text = <Tag extends AllowedTags = "p">({
       const style: React.CSSProperties = {};
 
       if (isLink) {
-        style.color = "#C16200";
+        style.color = "#A15000";
         style.textDecoration = "underline";
       } else if (isHighlighted) {
-        style.color = highlightColor ?? "#C16200";
+        style.color = highlightColor ?? "#A15000";
       }
 
       if (isLink && href) {

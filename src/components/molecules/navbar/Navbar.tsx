@@ -54,6 +54,7 @@ export const Navbar = () => {
             target="_blank"
             rel="noopener noreferrer"
             className="cursor-active transition hover:scale-105 hover:text-orangeAccent text-black"
+            aria-label="Odwiedź nasz profil na Facebooku (otwiera się w nowej karcie)"
           >
             <SiFacebook size={32} />
           </a>
@@ -62,6 +63,7 @@ export const Navbar = () => {
             rel="noopener noreferrer"
             href="https://www.linkedin.com/company/aluwik-technologia-aluminiowa/?viewAsMember=true"
             className=" cursor-active transition hover:scale-105 hover:text-orangeAccent text-black"
+            aria-label="Odwiedź nasz profil na LinkedIn (otwiera się w nowej karcie)"
           >
             <SiLinkedin size={32} />
           </a>
@@ -70,6 +72,7 @@ export const Navbar = () => {
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 cursor-active transition hover:scale-105 hover:text-orangeAccent text-black"
+            aria-label="Skontaktuj się z nami przez WhatsApp (otwiera się w nowej karcie)"
           >
             <SiWhatsapp size={32} />
           </a>

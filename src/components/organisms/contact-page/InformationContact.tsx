@@ -70,6 +70,7 @@ const InformationContact = () => {
             href="https://www.facebook.com/profile.php?id=61577515076852"
             target="_blank"
             rel="noopener noreferrer"
+            aria-label="Odwiedź nasz profil na Facebooku (otwiera się w nowej karcie)"
           >
             <SiFacebook size={18} />
             <Text text="Facebook" size={16} />
@@ -79,6 +80,7 @@ const InformationContact = () => {
             href="https://www.linkedin.com/company/aluwik-technologia-aluminiowa/?viewAsMember=true"
             target="_blank"
             rel="noopener noreferrer"
+            aria-label="Odwiedź nasz profil na LinkedIn (otwiera się w nowej karcie)"
           >
             <SiLinkedin size={18} />
             <Text text="LinkedIn" size={16} />
@@ -88,6 +90,7 @@ const InformationContact = () => {
             href="https://wa.me/48609604571"
             target="_blank"
             rel="noopener noreferrer"
+            aria-label="Skontaktuj się z nami przez WhatsApp (otwiera się w nowej karcie)"
           >
             <SiWhatsapp size={18} />
             <Text text="WhatsApp" size={16} />

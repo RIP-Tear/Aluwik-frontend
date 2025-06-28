@@ -74,7 +74,7 @@ const CategoryPreviewRealization: React.FC = () => {
           {mobileCategoryButtons}
           {desktopCategorySidebar}
           <div className="flex flex-col items-center justify-center text-center flex-1 mb-10 sm:mb-[300px]">
-            <MoonLoader color="#C16200" />
+            <MoonLoader color="#A15000" />
           </div>
         </div>
       </PageSection>

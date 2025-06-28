@@ -38,7 +38,7 @@ export const Heading = <Tag extends AllowedTags = "h1">({
   const TagName = as ?? "h1";
   const sizeClass = sizeMap[size] ?? "text-base";
 
-  const defaultGradient = "linear-gradient(90deg, #C16200 0%, #D32027 100%)";
+  const defaultGradient = "linear-gradient(90deg, #A15000 0%, #D32027 100%)";
 
   const renderHighlightedText = () =>
     label.split(/(\s+)/).map((word, i) => {
