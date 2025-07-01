@@ -7,6 +7,7 @@ import { MoveUpRight } from "lucide-react";
 import Image from "next/image";
 import React, { useState } from "react";
 import { useIsMobile } from "@/hooks/useIsMobile"; // ← zakładam że plik znajduje się tam
+import { AnimatePresence, motion } from "framer-motion";
 
 export default function OfferCards() {
   const [activeIndex, setActiveIndex] = useState(0);
@@ -115,18 +116,28 @@ export default function OfferCards() {
           {/* ZDJĘCIE */}
           <div
             className="border-2 border-orangeAccent relative w-full aspect-[4/3] lg:aspect-[4/3]
-               rounded-xl overflow-hidden xl:aspect-auto h-[250px] lg:h-[350px] xl:h-[470px] xl:col-span-3 xl:row-start-2"
+    rounded-xl overflow-hidden xl:aspect-auto h-[250px] lg:h-[350px] xl:h-[470px] xl:col-span-3 xl:row-start-2"
           >
-            <Image
-              src={offers[activeIndex].image}
-              alt={offers[activeIndex].title}
-              fill
-              className="object-cover opacity-0 transition-opacity duration-500"
-              onLoadingComplete={img => img.classList.remove("opacity-0")}
-            />
+            <AnimatePresence mode="wait">
+              <motion.div
+                key={offers[activeIndex].image}
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                exit={{ opacity: 0 }}
+                transition={{ duration: 0.2 }}
+                className="absolute inset-0"
+              >
+                <Image
+                  src={offers[activeIndex].image}
+                  alt={offers[activeIndex].title}
+                  fill
+                  className="object-cover"
+                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 700px"
+                />
+              </motion.div>
+            </AnimatePresence>
           </div>
 
-          {/* Karuzela pod zdjęciem (mobile) */}
           {isMobile && (
             <div className="overflow-x-auto flex gap-4 pb-2 -mx-4 px-4 mobile-scroll-hide">
               {[...topCards, ...rightCards, ...bottomCards].map((card, i) => renderCard(card, i))}
@@ -134,7 +145,6 @@ export default function OfferCards() {
           )}
         </div>
 
-        {/* przycisk */}
         <Button
           label="Sprawdź naszą ofertę"
           icon={<MoveUpRight />}
