@@ -1,5 +1,6 @@
 import React from "react";
 import "./globals.css";
+import Script from "next/script";
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
@@ -97,7 +98,26 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           }}
         />
       </head>
-      <body className="bg-shadowMind text-softSync">{children}</body>
+      <body className="bg-shadowMind text-softSync">
+        {" "}
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=G-NWMD800V53"
+          strategy="afterInteractive"
+        />
+        <Script
+          id="ga4-init"
+          strategy="afterInteractive"
+          dangerouslySetInnerHTML={{
+            __html: `
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-NWMD800V53');
+      `,
+          }}
+        />
+        {children}
+      </body>
     </html>
   );
 }
