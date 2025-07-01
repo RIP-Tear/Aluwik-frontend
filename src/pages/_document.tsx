@@ -17,6 +17,8 @@ export default class MyDocument extends Document {
           />
           <meta name="robots" content="index, follow" />
           <meta name="author" content="ALUWIK" />
+          <meta name="site_name" content="ALUWIK" />
+          <meta property="og:site_name" content="ALUWIK" />
           <link rel="canonical" href="https://aluwik.pl" />
           <meta property="og:title" content="ALUWIK | Stolarka aluminiowa dla domu i biznesu" />
           <meta
@@ -96,6 +98,19 @@ export default class MyDocument extends Document {
               }),
             }}
           />
+          <script
+            type="application/ld+json"
+            dangerouslySetInnerHTML={{
+              __html: JSON.stringify({
+                "@context": "https://schema.org",
+                "@type": "Organization",
+                name: "ALUWIK",
+                url: "https://aluwik.pl",
+                logo: "https://aluwik.pl/android-chrome-512x512.png",
+              }),
+            }}
+          />
+
           <script async src="https://www.googletagmanager.com/gtag/js?id=G-NWMD800V53"></script>
           <script
             dangerouslySetInnerHTML={{
