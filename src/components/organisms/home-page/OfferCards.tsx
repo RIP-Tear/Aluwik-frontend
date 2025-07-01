@@ -118,7 +118,6 @@ export default function OfferCards() {
                rounded-xl overflow-hidden xl:aspect-auto h-[250px] lg:h-[350px] xl:h-[470px] xl:col-span-3 xl:row-start-2"
           >
             <Image
-              key={offers[activeIndex].image}
               src={offers[activeIndex].image}
               alt={offers[activeIndex].title}
               fill

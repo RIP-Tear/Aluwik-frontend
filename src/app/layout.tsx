@@ -99,7 +99,6 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         />
       </head>
       <body className="bg-shadowMind text-softSync">
-        {" "}
         <Script
           src="https://www.googletagmanager.com/gtag/js?id=G-NWMD800V53"
           strategy="afterInteractive"
