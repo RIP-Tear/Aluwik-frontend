@@ -1,57 +1,44 @@
-import { Button } from "@/components/atoms/button/Button";
+import React, { useEffect, useMemo, useState } from "react";
+import { motion, AnimatePresence } from "framer-motion";
+import Image from "next/image";
+import PageSection from "@/components/atoms/page-section/PageSection";
 import { Heading } from "@/components/atoms/heading/Heading";
 import { Text } from "@/components/atoms/text/Text";
+import { Button } from "@/components/atoms/button/Button";
 import { MoveUpRight } from "lucide-react";
-import Image from "next/image";
-import React, { useEffect, useMemo, useState } from "react";
-import { motion } from "framer-motion";
-import PageSection from "@/components/atoms/page-section/PageSection";
 import { offers } from "@/utils/mock/offers";
 
-const CHANGE_INTERVAL = 1500;
-const FADE_DURATION = 0.5;
-
-type FadeTile = {
-  visible: string;
-  incoming: string | null;
-};
+const CHANGE_INTERVAL = 3000;
+const FADE_DURATION = 0.6;
 
 const RealizationPreview = () => {
-  const allImages = useMemo(() => offers.map(b => b.image), []);
-  const [tiles, setTiles] = useState<FadeTile[]>(
-    allImages.slice(0, 4).map(src => ({ visible: src, incoming: null })),
-  );
+  const allImages = useMemo(() => offers.map(o => o.image), []);
+  const [tiles, setTiles] = useState<string[]>(allImages.slice(0, 4));
 
   useEffect(() => {
     const interval = setInterval(() => {
       setTiles(prev => {
-        const used = prev.map(t => t.visible);
+        const used = [...prev];
         const pool = allImages.filter(src => !used.includes(src));
         if (pool.length === 0) return prev;
 
         const tileIndex = Math.floor(Math.random() * prev.length);
         const newImage = pool[Math.floor(Math.random() * pool.length)];
 
-        return prev.map((t, i) =>
-          i === tileIndex ? { visible: t.visible, incoming: newImage } : t,
-        );
+        const updated = [...prev];
+        updated[tileIndex] = newImage;
+        return updated;
       });
-
-      setTimeout(() => {
-        setTiles(prev =>
-          prev.map(tile => (tile.incoming ? { visible: tile.incoming, incoming: null } : tile)),
-        );
-      }, FADE_DURATION * 1000);
     }, CHANGE_INTERVAL);
 
     return () => clearInterval(interval);
   }, [allImages]);
 
   return (
-    <PageSection className="bg-black ">
+    <PageSection className="bg-black">
       <div className="text-white leading-relaxed py-5 sm:py-10">
         <div className="flex flex-col xl:flex-row gap-8 items-center">
-          {/* Tekst po lewej */}
+          {/* Tekst */}
           <div className="flex-1 max-w-[800px]">
             <Heading
               label="Zapoznaj się z naszymi realizacjami"
@@ -76,39 +63,34 @@ Dbamy o to, aby satysfakcja z wybranych rozwiązań szła w parze z atrakcyjnymi
 
           {/* Mozaika 2x2 */}
           <div className="grid grid-cols-2 gap-4 w-full max-w-[600px]">
-            {tiles.map((tile, i) => (
+            {tiles.map((src, index) => (
               <div
-                key={i}
+                key={index}
                 className="relative w-full aspect-[4/3] rounded-xl overflow-hidden border-2 border-orangeAccent"
               >
-                {/* Widoczny obrazek */}
-                <Image
-                  src={tile.visible}
-                  alt={`Visible ${i}`}
-                  fill
-                  className="object-cover transition-opacity duration-700"
-                />
-
-                {/* Nadchodzący obrazek */}
-                {tile.incoming && (
+                <AnimatePresence mode="wait">
                   <motion.div
+                    key={src}
                     initial={{ opacity: 0 }}
                     animate={{ opacity: 1 }}
+                    exit={{ opacity: 0 }}
                     transition={{ duration: FADE_DURATION }}
                     className="absolute inset-0"
                   >
                     <Image
-                      src={tile.incoming}
-                      alt={`Incoming ${i}`}
+                      src={src}
+                      alt={`Realizacja ${index}`}
                       fill
+                      sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 300px"
                       className="object-cover"
                     />
                   </motion.div>
-                )}
+                </AnimatePresence>
               </div>
             ))}
           </div>
         </div>
+
         <div className="sm:hidden block w-fit mt-10">
           <Button label="Zobacz nasze realizacje" icon={<MoveUpRight />} href="/realizacje" />
         </div>
