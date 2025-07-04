@@ -56,7 +56,11 @@ Dbamy o to, aby satysfakcja z wybranych rozwiązań szła w parze z atrakcyjnymi
                 size={16}
               />
               <div className="w-fit mt-10 hidden sm:block">
-                <Button label="Zobacz nasze realizacje" icon={<MoveUpRight />} href="/realizacje" />
+                <Button
+                  label="Zobacz nasze realizacje"
+                  icon={<MoveUpRight />}
+                  href="/realizacje/"
+                />
               </div>
             </div>
           </div>
@@ -92,7 +96,7 @@ Dbamy o to, aby satysfakcja z wybranych rozwiązań szła w parze z atrakcyjnymi
         </div>
 
         <div className="sm:hidden block w-fit mt-10">
-          <Button label="Zobacz nasze realizacje" icon={<MoveUpRight />} href="/realizacje" />
+          <Button label="Zobacz nasze realizacje" icon={<MoveUpRight />} href="/realizacje/" />
         </div>
       </div>
     </PageSection>

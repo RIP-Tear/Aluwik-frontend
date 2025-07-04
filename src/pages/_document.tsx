@@ -19,13 +19,13 @@ export default class MyDocument extends Document {
           <meta name="author" content="ALUWIK" />
           <meta name="site_name" content="ALUWIK" />
           <meta property="og:site_name" content="ALUWIK" />
-          <link rel="canonical" href="https://aluwik.pl" />
+          <link rel="canonical" href="https://aluwik.pl/" />
           <meta property="og:title" content="ALUWIK | Stolarka aluminiowa dla domu i biznesu" />
           <meta
             property="og:description"
             content="Sprawdź naszą ofertę okien, drzwi, fasad i ogrodów zimowych z aluminium. ALUWIK — nowoczesne systemy dla wymagających."
           />
-          <meta property="og:url" content="https://aluwik.pl" />
+          <meta property="og:url" content="https://aluwik.pl/" />
           <meta name="viewport" content="width=device-width, initial-scale=1" />
           <meta property="og:site_name" content="ALUWIK" />
           <meta property="og:locale" content="pl_PL" />
@@ -52,7 +52,7 @@ export default class MyDocument extends Document {
                 "@context": "https://schema.org",
                 "@type": "LocalBusiness",
                 name: "ALUWIK",
-                url: "https://aluwik.pl",
+                url: "https://aluwik.pl/",
                 logo: "https://aluwik.pl/android-chrome-512x512.png",
                 image: "https://aluwik.pl/og-image.jpg",
                 description: "Producent stolarki aluminiowej: okna, drzwi, fasady, ogrody zimowe.",
@@ -105,7 +105,7 @@ export default class MyDocument extends Document {
                 "@context": "https://schema.org",
                 "@type": "Organization",
                 name: "ALUWIK",
-                url: "https://aluwik.pl",
+                url: "https://aluwik.pl/",
                 logo: "https://aluwik.pl/android-chrome-512x512.png",
               }),
             }}

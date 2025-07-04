@@ -30,7 +30,7 @@ usługami?"
             />
             <div className="sm:w-[400px] sm:flex justify-end">
               <div className="w-fit mt-10">
-                <Button label="Idź do kontaktu" icon={<MoveUpRight />} href="/kontakt" />
+                <Button label="Idź do kontaktu" icon={<MoveUpRight />} href="/kontakt/" />
               </div>
             </div>
           </div>

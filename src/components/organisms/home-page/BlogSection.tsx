@@ -49,7 +49,7 @@ const BlogSection = () => {
                   color="black"
                   size={14}
                   icon={<MoveUpRight size={14} />}
-                  href={`/blog/${featuredPost.href}`}
+                  href={`/blog/${featuredPost.href}/`}
                 />
               </div>
             </div>
@@ -82,7 +82,7 @@ const BlogSection = () => {
                     color="black"
                     size={14}
                     icon={<MoveUpRight size={14} />}
-                    href={`/blog/${post.href}`}
+                    href={`/blog/${post.href}/`}
                   />
                 </div>
               </div>
