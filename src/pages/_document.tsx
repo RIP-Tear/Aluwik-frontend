@@ -19,7 +19,6 @@ export default class MyDocument extends Document {
           <meta name="author" content="ALUWIK" />
           <meta name="site_name" content="ALUWIK" />
           <meta property="og:site_name" content="ALUWIK" />
-          <link rel="canonical" href="https://aluwik.pl/" />
           <meta property="og:title" content="ALUWIK | Stolarka aluminiowa dla domu i biznesu" />
           <meta
             property="og:description"

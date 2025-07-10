@@ -1,10 +1,5 @@
 module.exports = {
-  extends: [
-    "next",
-    "next/core-web-vitals",
-    "eslint:recommended",
-    "plugin:prettier/recommended",
-  ],
+  extends: ["next", "next/core-web-vitals", "eslint:recommended", "plugin:prettier/recommended"],
   plugins: ["unused-imports"],
   rules: {
     "unused-imports/no-unused-imports": "error",
