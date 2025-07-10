@@ -7,7 +7,7 @@ const ZaletyDrzwiPrzesuwnych = () => {
       title="5 zalet drzwi przesuwnych w nowoczesnych wnętrzach"
       highlightWords={["przesuwnych"]}
       heroImage={{
-        src: "/img/drzwi.webp",
+        src: "/blog/5-zalet-drzwi-przesuwnych-wn-owoczesnych-wnętrzach.webp",
         alt: "Drzwi przesuwne",
       }}
       sections={[

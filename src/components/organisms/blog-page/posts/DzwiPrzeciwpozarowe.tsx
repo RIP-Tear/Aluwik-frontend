@@ -7,7 +7,7 @@ const DrzwiPrzeciwpozarowe = () => {
       title="Drzwi przeciwpożarowe – bezpieczeństwo w nowoczesnej formie"
       highlightWords={["bezpieczeństwo"]}
       heroImage={{
-        src: "/img/przeciwpozarowe.webp",
+        src: "/blog/Drzwi-przeciwpożarowe-bezpieczeństwo-w-nowoczesnej-formie.webp",
         alt: "Drzwi przeciwpożarowe",
       }}
       sections={[
