@@ -8,6 +8,7 @@ import Image from "next/image";
 import React, { useState } from "react";
 import { useIsMobile } from "@/hooks/useIsMobile"; // ← zakładam że plik znajduje się tam
 import { AnimatePresence, motion } from "framer-motion";
+import Link from "next/link";
 
 export default function OfferCards() {
   const [activeIndex, setActiveIndex] = useState(0);
@@ -46,13 +47,13 @@ export default function OfferCards() {
           </div>
 
           {isMobile && (
-            <a
+            <Link
               href={href}
               className="ml-auto bg-orangeAccent rounded-full text-white p-4 w-6 h-6 flex items-center justify-center shadow-md transition hover:scale-105 cursor-active"
               aria-label={`Przejdź do ${title}`}
             >
               <MoveUpRight size={moveIconSize} className="shrink-0" />
-            </a>
+            </Link>
           )}
         </div>
 
@@ -62,13 +63,13 @@ export default function OfferCards() {
           )}
 
           {!isMobile && (
-            <a
+            <Link
               href={href}
               className="mt-auto ml-auto bg-orangeAccent rounded-full text-white w-8 h-8 sm:w-10 sm:h-10 flex items-center justify-center shadow-md transition hover:scale-105 cursor-active shrink-0"
               aria-label={`Przejdź do ${title}`}
             >
               <MoveUpRight size={moveIconSize} />
-            </a>
+            </Link>
           )}
         </div>
       </button>

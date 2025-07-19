@@ -16,7 +16,7 @@ const AluminiumWindowsOffer = () => {
       title="Okna aluminiowe"
       highlightWords={["aluminiowe"]}
       imageSrc="/img/okna-aluminiowe.webp"
-      imageAlt="Nowoczesne aluminiowe okna"
+      imageAlt="Okna aluminiowe Pomorskie – energooszczędna stolarka ALUWIK"
       relatedOffers={relatedOffers}
       boxes={[
         {

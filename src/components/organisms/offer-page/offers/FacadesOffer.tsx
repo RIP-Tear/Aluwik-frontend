@@ -86,7 +86,7 @@ const FacadesOffer = () => {
       title="Fasady aluminiowe"
       highlightWords={["Fasady"]}
       imageSrc="/img/fasady.webp"
-      imageAlt="Nowoczesne fasady aluminiowe"
+      imageAlt="Fasady aluminiowe dla obiektów komercyjnych – ALUWIK Tczew"
       boxes={boxes}
       sections={sections}
       relatedOffers={relatedOffers}

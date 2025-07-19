@@ -82,7 +82,7 @@ export const Footer = () => {
           <div className="text-center lg:text-end mt-2 lg:mt-0">
             <Text text={"Śledź nasze social media"} size={16} />
             <div className="flex justify-center lg:justify-end gap-4 mt-4">
-              <a
+              <Link
                 href="https://www.facebook.com/profile.php?id=61577515076852"
                 className="cursor-active transition hover:scale-105"
                 target="_blank"
@@ -90,8 +90,8 @@ export const Footer = () => {
                 aria-label="Odwiedź nasz profil na Facebooku (otwiera się w nowej karcie)"
               >
                 <SiFacebook size={24} />
-              </a>
-              <a
+              </Link>
+              <Link
                 href="https://www.linkedin.com/company/aluwik-technologia-aluminiowa/?viewAsMember=true"
                 className=" cursor-active transition hover:scale-105"
                 target="_blank"
@@ -99,8 +99,8 @@ export const Footer = () => {
                 aria-label="Odwiedź nasz profil na LinkedIn (otwiera się w nowej karcie)"
               >
                 <SiLinkedin size={24} />
-              </a>
-              <a
+              </Link>
+              <Link
                 href="https://wa.me/48609604571"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -108,7 +108,7 @@ export const Footer = () => {
                 aria-label="Skontaktuj się z nami przez WhatsApp (otwiera się w nowej karcie)"
               >
                 <SiWhatsapp size={24} color="#fff" />
-              </a>
+              </Link>
             </div>
           </div>
         </div>

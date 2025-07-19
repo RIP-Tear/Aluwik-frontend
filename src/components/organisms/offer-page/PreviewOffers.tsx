@@ -3,6 +3,7 @@ import { Text } from "@/components/atoms/text/Text";
 import { offers } from "@/utils/mock/offers";
 import { MoveUpRight } from "lucide-react";
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 
 const PreviewOffers = () => {
@@ -33,12 +34,12 @@ const PreviewOffers = () => {
               <Text text={offer.description} size={14} />
             </div>
 
-            <a
+            <Link
               className="absolute bottom-4 right-4 bg-orangeAccent rounded-full text-white w-10 h-10 flex items-center justify-center shadow-md transition hover:scale-105 cursor-active"
               href={offer.href}
             >
               <MoveUpRight size={20} />
-            </a>
+            </Link>
           </div>
         ))}
       </div>

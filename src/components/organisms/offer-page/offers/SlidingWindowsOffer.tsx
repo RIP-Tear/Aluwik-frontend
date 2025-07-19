@@ -16,7 +16,7 @@ const SlidingWindowsOffer = () => {
       title="Okna przesuwane"
       highlightWords={["przesuwane"]}
       imageSrc="/img/okna-przesuwane.webp"
-      imageAlt="Okna przesuwane"
+      imageAlt="Okna przesuwane aluminiowe – komfortowe rozwiązania od ALUWIK"
       relatedOffers={relatedOffers}
       boxes={[
         {

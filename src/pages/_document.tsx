@@ -111,6 +111,361 @@ export default class MyDocument extends Document {
             }}
           />
 
+          <script
+            type="application/ld+json"
+            dangerouslySetInnerHTML={{
+              __html: JSON.stringify({
+                "@context": "https://schema.org",
+                "@type": "ItemList",
+                name: "Oferta ALUWIK",
+                itemListElement: [
+                  {
+                    "@type": "Product",
+                    name: "Drzwi aluminiowe",
+                    image: "https://aluwik.pl/img/drzwi.webp",
+                    description:
+                      "Wytrzymałe drzwi z profili aluminiowych zapewniające bezpieczeństwo i styl.",
+                    url: "https://aluwik.pl/oferta/drzwi-aluminiowe/",
+                  },
+                  {
+                    "@type": "Product",
+                    name: "Okna aluminiowe",
+                    image: "https://aluwik.pl/img/okna-aluminiowe.webp",
+                    description:
+                      "Nowoczesne okna aluminiowe o znakomitej izolacji termicznej i akustycznej.",
+                    url: "https://aluwik.pl/oferta/okna-aluminiowe/",
+                  },
+                  {
+                    "@type": "Product",
+                    name: "Fasady",
+                    image: "https://aluwik.pl/img/fasady.webp",
+                    description:
+                      "Modułowe fasady słupowo–ryglowe i elementowe dla obiektów komercyjnych.",
+                    url: "https://aluwik.pl/oferta/fasady/",
+                  },
+                  {
+                    "@type": "Product",
+                    name: "Ogrody zimowe",
+                    image: "https://aluwik.pl/img/ogrody-zimowe.webp",
+                    description:
+                      "Całoroczne oranżerie z izolowanych profili aluminiowych do komfortowego relaksu.",
+                    url: "https://aluwik.pl/oferta/ogrody-zimowe/",
+                  },
+                  {
+                    "@type": "Product",
+                    name: "Systemy drzwi przesuwanych",
+                    image: "https://aluwik.pl/img/drzwi-przesuwane.webp",
+                    description:
+                      "Komfortowe i energooszczędne systemy przesuwne do dużych przeszkleń.",
+                    url: "https://aluwik.pl/oferta/systemy-drzwi-przesuwanych/",
+                  },
+                  {
+                    "@type": "Product",
+                    name: "Okna przesuwane",
+                    image: "https://aluwik.pl/img/okna-przesuwane.webp",
+                    description:
+                      "Lekko i cicho pracujące okna przesuwne zwiększające powierzchnię użytkową.",
+                    url: "https://aluwik.pl/oferta/okna-przesuwane/",
+                  },
+                  {
+                    "@type": "Product",
+                    name: "Ściany oddzielenia przeciwpożarowego",
+                    image: "https://aluwik.pl/img/sciany-oddzielenia-przeciwpozarowego.webp",
+                    description:
+                      "Konstrukcje EI30-EI120 do skutecznego wydzielenia stref pożarowych.",
+                    url: "https://aluwik.pl/oferta/sciany-oddzielenia-przeciwpozarowego/",
+                  },
+                  {
+                    "@type": "Product",
+                    name: "Drzwi przeciwpożarowe",
+                    image: "https://aluwik.pl/img/drzwi-przeciwpozarowe.webp",
+                    description:
+                      "Certyfikowane skrzydła EI30-EI120 gwarantujące bezpieczeństwo pożarowe.",
+                    url: "https://aluwik.pl/oferta/drzwi-przeciwpozarowe/",
+                  },
+                  {
+                    "@type": "Product",
+                    name: "Zadaszenia tarasów",
+                    image: "https://aluwik.pl/img/zadaszenia-tarasow.webp",
+                    description:
+                      "Aluminiowe pergole i dachy szklane chroniące przed deszczem i słońcem.",
+                    url: "https://aluwik.pl/oferta/zadaszenia-tarasow/",
+                  },
+                ],
+              }),
+            }}
+          />
+
+          <script
+            type="application/ld+json"
+            dangerouslySetInnerHTML={{
+              __html: JSON.stringify({
+                "@context": "https://schema.org",
+                "@type": "BreadcrumbList",
+                itemListElement: [
+                  {
+                    "@type": "ListItem",
+                    position: 1,
+                    name: "Strona główna",
+                    item: "https://aluwik.pl/",
+                  },
+                  {
+                    "@type": "ListItem",
+                    position: 2,
+                    name: "Oferta",
+                    item: "https://aluwik.pl/oferta/",
+                  },
+                  {
+                    "@type": "ListItem",
+                    position: 3,
+                    name: "Drzwi aluminiowe",
+                    item: "https://aluwik.pl/oferta/drzwi-aluminiowe/",
+                  },
+                ],
+              }),
+            }}
+          />
+
+          <script
+            type="application/ld+json"
+            dangerouslySetInnerHTML={{
+              __html: JSON.stringify({
+                "@context": "https://schema.org",
+                "@type": "BreadcrumbList",
+                itemListElement: [
+                  {
+                    "@type": "ListItem",
+                    position: 1,
+                    name: "Strona główna",
+                    item: "https://aluwik.pl/",
+                  },
+                  {
+                    "@type": "ListItem",
+                    position: 2,
+                    name: "Oferta",
+                    item: "https://aluwik.pl/oferta/",
+                  },
+                  {
+                    "@type": "ListItem",
+                    position: 3,
+                    name: "Okna aluminiowe",
+                    item: "https://aluwik.pl/oferta/okna-aluminiowe/",
+                  },
+                ],
+              }),
+            }}
+          />
+
+          <script
+            type="application/ld+json"
+            dangerouslySetInnerHTML={{
+              __html: JSON.stringify({
+                "@context": "https://schema.org",
+                "@type": "BreadcrumbList",
+                itemListElement: [
+                  {
+                    "@type": "ListItem",
+                    position: 1,
+                    name: "Strona główna",
+                    item: "https://aluwik.pl/",
+                  },
+                  {
+                    "@type": "ListItem",
+                    position: 2,
+                    name: "Oferta",
+                    item: "https://aluwik.pl/oferta/",
+                  },
+                  {
+                    "@type": "ListItem",
+                    position: 3,
+                    name: "Fasady",
+                    item: "https://aluwik.pl/oferta/fasady/",
+                  },
+                ],
+              }),
+            }}
+          />
+
+          <script
+            type="application/ld+json"
+            dangerouslySetInnerHTML={{
+              __html: JSON.stringify({
+                "@context": "https://schema.org",
+                "@type": "BreadcrumbList",
+                itemListElement: [
+                  {
+                    "@type": "ListItem",
+                    position: 1,
+                    name: "Strona główna",
+                    item: "https://aluwik.pl/",
+                  },
+                  {
+                    "@type": "ListItem",
+                    position: 2,
+                    name: "Oferta",
+                    item: "https://aluwik.pl/oferta/",
+                  },
+                  {
+                    "@type": "ListItem",
+                    position: 3,
+                    name: "Ogrody zimowe",
+                    item: "https://aluwik.pl/oferta/ogrody-zimowe/",
+                  },
+                ],
+              }),
+            }}
+          />
+
+          <script
+            type="application/ld+json"
+            dangerouslySetInnerHTML={{
+              __html: JSON.stringify({
+                "@context": "https://schema.org",
+                "@type": "BreadcrumbList",
+                itemListElement: [
+                  {
+                    "@type": "ListItem",
+                    position: 1,
+                    name: "Strona główna",
+                    item: "https://aluwik.pl/",
+                  },
+                  {
+                    "@type": "ListItem",
+                    position: 2,
+                    name: "Oferta",
+                    item: "https://aluwik.pl/oferta/",
+                  },
+                  {
+                    "@type": "ListItem",
+                    position: 3,
+                    name: "Systemy drzwi przesuwanych",
+                    item: "https://aluwik.pl/oferta/systemy-drzwi-przesuwanych/",
+                  },
+                ],
+              }),
+            }}
+          />
+
+          <script
+            type="application/ld+json"
+            dangerouslySetInnerHTML={{
+              __html: JSON.stringify({
+                "@context": "https://schema.org",
+                "@type": "BreadcrumbList",
+                itemListElement: [
+                  {
+                    "@type": "ListItem",
+                    position: 1,
+                    name: "Strona główna",
+                    item: "https://aluwik.pl/",
+                  },
+                  {
+                    "@type": "ListItem",
+                    position: 2,
+                    name: "Oferta",
+                    item: "https://aluwik.pl/oferta/",
+                  },
+                  {
+                    "@type": "ListItem",
+                    position: 3,
+                    name: "Okna przesuwane",
+                    item: "https://aluwik.pl/oferta/okna-przesuwane/",
+                  },
+                ],
+              }),
+            }}
+          />
+
+          <script
+            type="application/ld+json"
+            dangerouslySetInnerHTML={{
+              __html: JSON.stringify({
+                "@context": "https://schema.org",
+                "@type": "BreadcrumbList",
+                itemListElement: [
+                  {
+                    "@type": "ListItem",
+                    position: 1,
+                    name: "Strona główna",
+                    item: "https://aluwik.pl/",
+                  },
+                  {
+                    "@type": "ListItem",
+                    position: 2,
+                    name: "Oferta",
+                    item: "https://aluwik.pl/oferta/",
+                  },
+                  {
+                    "@type": "ListItem",
+                    position: 3,
+                    name: "Ściany oddzielenia przeciwpożarowego",
+                    item: "https://aluwik.pl/oferta/sciany-oddzielenia-przeciwpozarowego/",
+                  },
+                ],
+              }),
+            }}
+          />
+
+          <script
+            type="application/ld+json"
+            dangerouslySetInnerHTML={{
+              __html: JSON.stringify({
+                "@context": "https://schema.org",
+                "@type": "BreadcrumbList",
+                itemListElement: [
+                  {
+                    "@type": "ListItem",
+                    position: 1,
+                    name: "Strona główna",
+                    item: "https://aluwik.pl/",
+                  },
+                  {
+                    "@type": "ListItem",
+                    position: 2,
+                    name: "Oferta",
+                    item: "https://aluwik.pl/oferta/",
+                  },
+                  {
+                    "@type": "ListItem",
+                    position: 3,
+                    name: "Drzwi przeciwpożarowe",
+                    item: "https://aluwik.pl/oferta/drzwi-przeciwpozarowe/",
+                  },
+                ],
+              }),
+            }}
+          />
+
+          <script
+            type="application/ld+json"
+            dangerouslySetInnerHTML={{
+              __html: JSON.stringify({
+                "@context": "https://schema.org",
+                "@type": "BreadcrumbList",
+                itemListElement: [
+                  {
+                    "@type": "ListItem",
+                    position: 1,
+                    name: "Strona główna",
+                    item: "https://aluwik.pl/",
+                  },
+                  {
+                    "@type": "ListItem",
+                    position: 2,
+                    name: "Oferta",
+                    item: "https://aluwik.pl/oferta/",
+                  },
+                  {
+                    "@type": "ListItem",
+                    position: 3,
+                    name: "Zadaszenia tarasów",
+                    item: "https://aluwik.pl/oferta/zadaszenia-tarasow/",
+                  },
+                ],
+              }),
+            }}
+          />
+
           <script async src="https://www.googletagmanager.com/gtag/js?id=G-NWMD800V53"></script>
           <script
             dangerouslySetInnerHTML={{

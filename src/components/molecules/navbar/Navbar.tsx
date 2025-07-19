@@ -49,7 +49,7 @@ export const Navbar = () => {
         </div>
 
         <div className="xl:flex items-center justify-center hidden gap-x-10">
-          <a
+          <Link
             href="https://www.facebook.com/profile.php?id=61577515076852"
             target="_blank"
             rel="noopener noreferrer"
@@ -57,8 +57,8 @@ export const Navbar = () => {
             aria-label="Odwiedź nasz profil na Facebooku (otwiera się w nowej karcie)"
           >
             <SiFacebook size={32} />
-          </a>
-          <a
+          </Link>
+          <Link
             target="_blank"
             rel="noopener noreferrer"
             href="https://www.linkedin.com/company/aluwik-technologia-aluminiowa/?viewAsMember=true"
@@ -66,8 +66,8 @@ export const Navbar = () => {
             aria-label="Odwiedź nasz profil na LinkedIn (otwiera się w nowej karcie)"
           >
             <SiLinkedin size={32} />
-          </a>
-          <a
+          </Link>
+          <Link
             href="https://wa.me/48609604571"
             target="_blank"
             rel="noopener noreferrer"
@@ -75,7 +75,7 @@ export const Navbar = () => {
             aria-label="Skontaktuj się z nami przez WhatsApp (otwiera się w nowej karcie)"
           >
             <SiWhatsapp size={32} />
-          </a>
+          </Link>
         </div>
 
         {/* Mobile burger */}

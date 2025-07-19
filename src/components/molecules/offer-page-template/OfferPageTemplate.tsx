@@ -135,12 +135,12 @@ const OfferPageTemplate = ({
                     </div>
                   </div>
 
-                  <a
+                  <Link
                     className="absolute bottom-4 right-4 bg-orangeAccent rounded-full text-white w-10 h-10 flex items-center justify-center shadow-md transition hover:scale-105 cursor-active"
                     href={offer.href}
                   >
                     <MoveUpRight size={20} />
-                  </a>
+                  </Link>
                 </div>
               ))}
             </div>

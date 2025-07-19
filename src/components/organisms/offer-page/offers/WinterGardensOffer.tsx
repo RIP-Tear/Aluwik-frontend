@@ -16,7 +16,7 @@ const WinterGardensOffer = () => {
       title="Ogrody zimowe"
       highlightWords={["zimowe"]}
       imageSrc="/img/ogrody-zimowe.webp"
-      imageAlt="Ogród zimowy"
+      imageAlt="Ogrody zimowe z profili aluminiowych – Tczew, ALUWIK"
       relatedOffers={relatedOffers}
       boxes={[
         {

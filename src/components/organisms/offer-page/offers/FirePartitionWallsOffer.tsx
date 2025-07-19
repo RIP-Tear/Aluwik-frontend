@@ -16,7 +16,7 @@ const FirePartitionWallsOffer = () => {
       title="Ściany oddzielenia przeciwpożarowego"
       highlightWords={["przeciwpożarowego"]}
       imageSrc="/img/sciany-oddzielenia-przeciwpozarowego.webp"
-      imageAlt="Ściany oddzielenia przeciwpożarowego"
+      imageAlt="Ściany przeciwpożarowe EI30–EI120 – ALUWIK Tczew – zabezpieczenia budynków"
       relatedOffers={relatedOffers}
       boxes={[
         {

@@ -1,6 +1,6 @@
 import OfferPageTemplate from "@/components/molecules/offer-page-template/OfferPageTemplate";
 import { offers } from "@/utils/mock/offers";
-import { Boxes, CheckCircle, Hammer, MoveHorizontal } from "lucide-react";
+import { CheckCircle, Hammer, MoveHorizontal } from "lucide-react";
 
 const SlidingDoorSystemsOffer = () => {
   const relatedOffers = [
@@ -15,7 +15,7 @@ const SlidingDoorSystemsOffer = () => {
       title="Systemy drzwi przesuwnych"
       highlightWords={["drzwi"]}
       imageSrc="/img/drzwi-przesuwane.webp"
-      imageAlt="Systemy drzwi przesuwnych"
+      imageAlt="Systemy przesuwne aluminiowe – duże przeszklenia ALUWIK Pomorskie"
       relatedOffers={relatedOffers}
       boxes={[
         {
@@ -45,15 +45,6 @@ const SlidingDoorSystemsOffer = () => {
             "Naścienne i chowane w ścianie",
             "Jednoskrzydłowe i dwuskrzydłowe",
             "Systemy aluminiowe i szklane",
-          ],
-        },
-        {
-          icon: Boxes,
-          title: "Inne oferty",
-          links: [
-            { label: "Drzwi aluminiowe", href: "/oferta/drzwi-aluminiowe" },
-            { label: "Okna przesuwane", href: "/oferta/okna-przesuwane" },
-            { label: "Okna aluminiowe", href: "/oferta/okna-aluminiowe" },
           ],
         },
       ]}

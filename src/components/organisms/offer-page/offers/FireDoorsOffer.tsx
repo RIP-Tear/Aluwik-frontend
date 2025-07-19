@@ -16,7 +16,7 @@ const FireDoorsOffer = () => {
       title="Drzwi przeciwpożarowe"
       highlightWords={["przeciwpożarowe"]}
       imageSrc="/img/drzwi-przeciwpozarowe.webp"
-      imageAlt="Drzwi przeciwpożarowe"
+      imageAlt="Drzwi przeciwpożarowe aluminiowe EI30–EI120 – certyfikowane przez ALUWIK"
       relatedOffers={relatedOffers}
       boxes={[
         {
