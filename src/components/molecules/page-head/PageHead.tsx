@@ -9,7 +9,7 @@ type PageHeadProps = {
 
 export const PageHead = ({ title, description }: PageHeadProps) => {
   const router = useRouter();
-  const canonicalUrl = `https://aluwik.pl${router.asPath === "/" ? "" : router.asPath}`;
+  const canonicalUrl = `https://www.aluwik.pl${router.asPath === "/" ? "" : router.asPath.split("?")[0]}`;
 
   return (
     <Head>

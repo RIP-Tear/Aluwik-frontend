@@ -15,21 +15,27 @@ export default class MyDocument extends Document {
             name="keywords"
             content="aluwik, stolarka aluminiowa, okna aluminiowe, drzwi aluminiowe, fasady aluminiowe, ogrody zimowe, Aluprof, Ponzio, producent stolarki, aluminium, systemy okienno-drzwiowe"
           />
+          <meta
+            httpEquiv="Content-Security-Policy"
+            content="default-src 'self'; script-src 'self' https://www.googletagmanager.com https://www.google-analytics.com; style-src 'self' 'unsafe-inline'; img-src * data:; connect-src *; font-src 'self';"
+          />
+
           <meta name="robots" content="index, follow" />
+          <link rel="alternate" href="https://www.aluwik.pl/" hrefLang="pl" />
           <meta name="author" content="ALUWIK" />
           <meta name="site_name" content="ALUWIK" />
-          <meta property="og:site_name" content="ALUWIK" />
           <meta property="og:title" content="ALUWIK | Stolarka aluminiowa dla domu i biznesu" />
           <meta
             property="og:description"
             content="Sprawdź naszą ofertę okien, drzwi, fasad i ogrodów zimowych z aluminium. ALUWIK — nowoczesne systemy dla wymagających."
           />
-          <meta property="og:url" content="https://aluwik.pl/" />
+          <meta property="og:url" content="https://www.aluwik.pl/" />
           <meta name="viewport" content="width=device-width, initial-scale=1" />
           <meta property="og:site_name" content="ALUWIK" />
           <meta property="og:locale" content="pl_PL" />
           <meta property="og:type" content="website" />
           <meta property="og:image" content="https://aluwik.pl/og-image.jpg" />
+          <meta property="og:image:alt" content="Okna, drzwi i ogrody zimowe od ALUWIK" />
           <meta name="twitter:card" content="summary_large_image" />
           <meta
             name="twitter:description"
