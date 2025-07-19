@@ -1,7 +1,7 @@
 // src/components/pages/offer/TerraceRoofingOffer.tsx
 import OfferPageTemplate from "@/components/molecules/offer-page-template/OfferPageTemplate";
 import { offers } from "@/utils/mock/offers";
-import { Umbrella } from "lucide-react";
+import { MapPin, Umbrella } from "lucide-react";
 
 const TerraceRoofingOffer = () => {
   const relatedOffers = [
@@ -37,6 +37,16 @@ const TerraceRoofingOffer = () => {
             "Daszki szklane",
             "Konstrukcje żaluzjowe",
             "Markizy i warianty wolnostojące",
+          ],
+        },
+        {
+          icon: MapPin,
+          title: "Gdzie działamy?",
+          items: [
+            "Tczew i okolice",
+            "Województwo pomorskie",
+            "Cała Polska",
+            "Realizacje również za granicą",
           ],
         },
       ]}

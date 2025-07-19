@@ -1,7 +1,7 @@
 // src/components/pages/offer/WinterGardensOffer.tsx
 import OfferPageTemplate from "@/components/molecules/offer-page-template/OfferPageTemplate";
 import { offers } from "@/utils/mock/offers";
-import { SunSnow } from "lucide-react";
+import { MapPin, SunSnow } from "lucide-react";
 
 const WinterGardensOffer = () => {
   const relatedOffers = [
@@ -37,6 +37,16 @@ const WinterGardensOffer = () => {
             "Szkielet aluminiowy, drewniany, stalowy lub PCV",
             "Profile zimne lub izolowane termicznie",
             "Zgodność z nowoczesnym stylem architektury",
+          ],
+        },
+        {
+          icon: MapPin,
+          title: "Gdzie działamy?",
+          items: [
+            "Tczew i okolice",
+            "Województwo pomorskie",
+            "Cała Polska",
+            "Realizacje również za granicą",
           ],
         },
       ]}

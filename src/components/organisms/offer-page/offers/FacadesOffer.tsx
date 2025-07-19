@@ -1,6 +1,6 @@
 import OfferPageTemplate from "@/components/molecules/offer-page-template/OfferPageTemplate";
 import { offers } from "@/utils/mock/offers";
-import { ThermometerSnowflake, Ruler, Blocks, Building2 } from "lucide-react";
+import { ThermometerSnowflake, Ruler, Blocks, Building2, MapPin } from "lucide-react";
 
 const FacadesOffer = () => {
   const relatedOffers = [
@@ -45,6 +45,16 @@ const FacadesOffer = () => {
         "Doradztwo projektowe",
         "Profesjonalny montaż w Polsce i za granicą",
         "Serwis i wsparcie techniczne",
+      ],
+    },
+    {
+      icon: MapPin,
+      title: "Gdzie działamy?",
+      items: [
+        "Tczew i okolice",
+        "Województwo pomorskie",
+        "Cała Polska",
+        "Realizacje również za granicą",
       ],
     },
   ];

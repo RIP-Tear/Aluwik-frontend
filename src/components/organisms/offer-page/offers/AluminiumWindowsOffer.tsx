@@ -1,4 +1,4 @@
-import { AppWindow } from "lucide-react";
+import { AppWindow, MapPin } from "lucide-react";
 
 import OfferPageTemplate from "@/components/molecules/offer-page-template/OfferPageTemplate";
 import { offers } from "@/utils/mock/offers";
@@ -36,6 +36,16 @@ const AluminiumWindowsOffer = () => {
             "Uniwersalne zastosowanie w różnych typach budynków",
             "Kompatybilność z wieloma stylami wnętrz i elewacji",
             "Bezpieczeństwo potwierdzone certyfikatami",
+          ],
+        },
+        {
+          icon: MapPin,
+          title: "Gdzie działamy?",
+          items: [
+            "Tczew i okolice",
+            "Województwo pomorskie",
+            "Cała Polska",
+            "Realizacje również za granicą",
           ],
         },
       ]}

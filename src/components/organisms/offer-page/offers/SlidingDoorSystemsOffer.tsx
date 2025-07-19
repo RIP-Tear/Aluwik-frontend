@@ -1,6 +1,6 @@
 import OfferPageTemplate from "@/components/molecules/offer-page-template/OfferPageTemplate";
 import { offers } from "@/utils/mock/offers";
-import { CheckCircle, Hammer, MoveHorizontal } from "lucide-react";
+import { CheckCircle, Hammer, MapPin, MoveHorizontal } from "lucide-react";
 
 const SlidingDoorSystemsOffer = () => {
   const relatedOffers = [
@@ -45,6 +45,16 @@ const SlidingDoorSystemsOffer = () => {
             "Naścienne i chowane w ścianie",
             "Jednoskrzydłowe i dwuskrzydłowe",
             "Systemy aluminiowe i szklane",
+          ],
+        },
+        {
+          icon: MapPin,
+          title: "Gdzie działamy?",
+          items: [
+            "Tczew i okolice",
+            "Województwo pomorskie",
+            "Cała Polska",
+            "Realizacje również za granicą",
           ],
         },
       ]}

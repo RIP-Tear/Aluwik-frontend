@@ -1,5 +1,5 @@
 import React from "react";
-import { ShieldCheck, Paintbrush2, Snowflake, Wrench } from "lucide-react";
+import { ShieldCheck, Paintbrush2, Snowflake, Wrench, MapPin } from "lucide-react";
 import OfferPageTemplate from "@/components/molecules/offer-page-template/OfferPageTemplate";
 import { offers } from "@/utils/mock/offers";
 
@@ -40,6 +40,16 @@ const AluminiumDoorsOffer = () => {
       items: [
         "Odporność na korozję i warunki atmosferyczne",
         "Brak konieczności częstej konserwacji",
+      ],
+    },
+    {
+      icon: MapPin,
+      title: "Gdzie działamy?",
+      items: [
+        "Tczew i okolice",
+        "Województwo pomorskie",
+        "Cała Polska",
+        "Realizacje również za granicą",
       ],
     },
   ];

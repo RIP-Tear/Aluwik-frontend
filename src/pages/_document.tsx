@@ -60,6 +60,7 @@ export default class MyDocument extends Document {
                   "@type": "PostalAddress",
                   streetAddress: "Aleja Solidarności 8",
                   addressLocality: "Tczew",
+                  addressRegion: "Pomorskie",
                   postalCode: "83-110",
                   addressCountry: "PL",
                 },

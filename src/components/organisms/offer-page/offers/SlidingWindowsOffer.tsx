@@ -1,7 +1,7 @@
 // src/components/pages/offer/SlidingWindowsOffer.tsx
 import OfferPageTemplate from "@/components/molecules/offer-page-template/OfferPageTemplate";
 import { offers } from "@/utils/mock/offers";
-import { MoveHorizontal } from "lucide-react";
+import { MapPin, MoveHorizontal } from "lucide-react";
 
 const SlidingWindowsOffer = () => {
   const relatedOffers = [
@@ -37,6 +37,16 @@ const SlidingWindowsOffer = () => {
             "Pomieszczenia mieszkalne i użytkowe",
             "Wnętrza o ograniczonym metrażu",
             "Nowoczesne i klasyczne aranżacje",
+          ],
+        },
+        {
+          icon: MapPin,
+          title: "Gdzie działamy?",
+          items: [
+            "Tczew i okolice",
+            "Województwo pomorskie",
+            "Cała Polska",
+            "Realizacje również za granicą",
           ],
         },
       ]}

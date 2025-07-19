@@ -1,7 +1,7 @@
 // src/components/pages/offer/FirePartitionWallsOffer.tsx
 import OfferPageTemplate from "@/components/molecules/offer-page-template/OfferPageTemplate";
 import { offers } from "@/utils/mock/offers";
-import { Flame } from "lucide-react";
+import { Flame, MapPin } from "lucide-react";
 
 const FirePartitionWallsOffer = () => {
   const relatedOffers = [
@@ -37,6 +37,16 @@ const FirePartitionWallsOffer = () => {
             "Ochrona konstrukcji budynku",
             "Działanie jako zapora przeciwdymna",
             "Ułatwienie ewakuacji i działań służb ratunkowych",
+          ],
+        },
+        {
+          icon: MapPin,
+          title: "Gdzie działamy?",
+          items: [
+            "Tczew i okolice",
+            "Województwo pomorskie",
+            "Cała Polska",
+            "Realizacje również za granicą",
           ],
         },
       ]}

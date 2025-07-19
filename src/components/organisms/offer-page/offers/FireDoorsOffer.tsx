@@ -1,7 +1,7 @@
 // src/components/pages/offer/FireDoorsOffer.tsx
 import OfferPageTemplate from "@/components/molecules/offer-page-template/OfferPageTemplate";
 import { offers } from "@/utils/mock/offers";
-import { Shield } from "lucide-react";
+import { MapPin, Shield } from "lucide-react";
 
 const FireDoorsOffer = () => {
   const relatedOffers = [
@@ -39,6 +39,16 @@ const FireDoorsOffer = () => {
             "Specjalne uszczelki dymoszczelne",
             "Chronią przed rozprzestrzenianiem się ognia i dymu",
             "Zwiększają czas ewakuacji i ochronę mienia",
+          ],
+        },
+        {
+          icon: MapPin,
+          title: "Gdzie działamy?",
+          items: [
+            "Tczew i okolice",
+            "Województwo pomorskie",
+            "Cała Polska",
+            "Realizacje również za granicą",
           ],
         },
       ]}
