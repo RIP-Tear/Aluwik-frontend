@@ -1,8 +1,16 @@
 import React from "react";
 import { ShieldCheck, Paintbrush2, Snowflake, Wrench } from "lucide-react";
 import OfferPageTemplate from "@/components/molecules/offer-page-template/OfferPageTemplate";
+import { offers } from "@/utils/mock/offers";
 
 const AluminiumDoorsOffer = () => {
+  const relatedOffers = [
+    offers[1], // Okna aluminiowe
+    offers[2], // Fasady
+    offers[4], // Systemy drzwi przesuwanych
+    offers[7], // Drzwi przeciwpożarowe
+  ];
+
   const boxes = [
     {
       icon: ShieldCheck,
@@ -68,6 +76,7 @@ const AluminiumDoorsOffer = () => {
       imageAlt="Drzwi aluminiowe"
       boxes={boxes}
       sections={sections}
+      relatedOffers={relatedOffers}
     />
   );
 };

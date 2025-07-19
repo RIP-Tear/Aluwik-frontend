@@ -1,14 +1,23 @@
 // src/components/pages/offer/SlidingWindowsOffer.tsx
 import OfferPageTemplate from "@/components/molecules/offer-page-template/OfferPageTemplate";
+import { offers } from "@/utils/mock/offers";
 import { MoveHorizontal } from "lucide-react";
 
 const SlidingWindowsOffer = () => {
+  const relatedOffers = [
+    offers[1], // Okna aluminiowe
+    offers[4], // Systemy drzwi przesuwanych
+    offers[3], // Ogrody zimowe
+    offers[0], // Drzwi aluminiowe
+  ];
+
   return (
     <OfferPageTemplate
       title="Okna przesuwane"
       highlightWords={["przesuwane"]}
       imageSrc="/img/okna-przesuwane.webp"
       imageAlt="Okna przesuwane"
+      relatedOffers={relatedOffers}
       boxes={[
         {
           icon: MoveHorizontal,

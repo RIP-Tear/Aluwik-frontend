@@ -1,14 +1,23 @@
 // src/components/pages/offer/FireDoorsOffer.tsx
 import OfferPageTemplate from "@/components/molecules/offer-page-template/OfferPageTemplate";
+import { offers } from "@/utils/mock/offers";
 import { Shield } from "lucide-react";
 
 const FireDoorsOffer = () => {
+  const relatedOffers = [
+    offers[6], // Ściany oddzielenia przeciwpożarowego
+    offers[0], // Drzwi aluminiowe
+    offers[1], // Okna aluminiowe
+    offers[2], // Fasady
+  ];
+
   return (
     <OfferPageTemplate
       title="Drzwi przeciwpożarowe"
       highlightWords={["przeciwpożarowe"]}
       imageSrc="/img/drzwi-przeciwpozarowe.webp"
       imageAlt="Drzwi przeciwpożarowe"
+      relatedOffers={relatedOffers}
       boxes={[
         {
           icon: Shield,

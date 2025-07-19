@@ -1,14 +1,23 @@
 // src/components/pages/offer/FirePartitionWallsOffer.tsx
 import OfferPageTemplate from "@/components/molecules/offer-page-template/OfferPageTemplate";
+import { offers } from "@/utils/mock/offers";
 import { Flame } from "lucide-react";
 
 const FirePartitionWallsOffer = () => {
+  const relatedOffers = [
+    offers[7], // Drzwi przeciwpożarowe
+    offers[2], // Fasady
+    offers[0], // Drzwi aluminiowe
+    offers[1], // Okna aluminiowe
+  ];
+
   return (
     <OfferPageTemplate
       title="Ściany oddzielenia przeciwpożarowego"
       highlightWords={["przeciwpożarowego"]}
       imageSrc="/img/sciany-oddzielenia-przeciwpozarowego.webp"
       imageAlt="Ściany oddzielenia przeciwpożarowego"
+      relatedOffers={relatedOffers}
       boxes={[
         {
           icon: Flame,

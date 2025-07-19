@@ -1,14 +1,23 @@
 // src/components/pages/offer/TerraceRoofingOffer.tsx
 import OfferPageTemplate from "@/components/molecules/offer-page-template/OfferPageTemplate";
+import { offers } from "@/utils/mock/offers";
 import { Umbrella } from "lucide-react";
 
 const TerraceRoofingOffer = () => {
+  const relatedOffers = [
+    offers[3], // Ogrody zimowe
+    offers[5], // Okna przesuwane
+    offers[4], // Systemy drzwi przesuwanych
+    offers[0], // Drzwi aluminiowe
+  ];
+
   return (
     <OfferPageTemplate
       title="Zadaszenia tarasów"
       highlightWords={["tarasów"]}
       imageSrc="/img/zadaszenia-tarasow.webp"
       imageAlt="Zadaszenie tarasu"
+      relatedOffers={relatedOffers}
       boxes={[
         {
           icon: Umbrella,

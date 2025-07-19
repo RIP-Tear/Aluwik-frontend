@@ -2,10 +2,11 @@ import PageSection from "@/components/atoms/page-section/PageSection";
 import HeroText from "@/components/molecules/hero-text/HeroText";
 import Image from "next/image";
 import React from "react";
-import { LucideIcon } from "lucide-react";
+import { LucideIcon, MoveUpRight } from "lucide-react";
 import { Heading } from "@/components/atoms/heading/Heading";
 import { Text } from "@/components/atoms/text/Text";
 import Link from "next/link";
+import { offers } from "@/utils/mock/offers";
 
 type LinkItem = {
   label: string;
@@ -31,6 +32,7 @@ type OfferPageTemplateProps = {
   imageAlt: string;
   boxes: BoxItem[];
   sections: SectionItem[];
+  relatedOffers: typeof offers;
 };
 
 const OfferPageTemplate = ({
@@ -40,6 +42,7 @@ const OfferPageTemplate = ({
   imageAlt,
   boxes,
   sections,
+  relatedOffers,
 }: OfferPageTemplateProps) => {
   return (
     <>
@@ -54,10 +57,7 @@ const OfferPageTemplate = ({
           {/* BOXY */}
           <div className="space-y-6">
             {boxes.map(({ icon: Icon, title, items, links }, index) => (
-              <div
-                key={index}
-                className="border-2 border-orangeAccent rounded-xl p-5 bg-white shadow-sm"
-              >
+              <div key={index} className="border-2 border-orangeAccent rounded-xl p-5 bg-white">
                 <div className="flex items-center gap-2 mb-3">
                   <Icon className="w-5 h-5 flex-shrink-0 text-orangeAccent" />
                   <Heading
@@ -99,7 +99,7 @@ const OfferPageTemplate = ({
           </div>
 
           {/* OPIS */}
-          <div className="lg:col-span-2 space-y-6 text-gray-800 text-sm leading-relaxed">
+          <div className="lg:col-span-2 space-y-6 leading-relaxed">
             {sections.map((section, index) => (
               <div key={index}>
                 <Heading label={section.heading} className="mb-2 text-start" as="h2" size={24} />
@@ -116,6 +116,34 @@ const OfferPageTemplate = ({
                 )}
               </div>
             ))}
+            <Heading
+              label="Sprawdź nasze inne oferty"
+              className="mb-5 text-start mt-10"
+              as="h2"
+              size={24}
+            />
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+              {relatedOffers.map((offer, index) => (
+                <div
+                  key={index}
+                  className="bg-white relative border-2 border-orangeAccent rounded-xl overflow-hidden group"
+                >
+                  <div className="p-4 pb-14">
+                    <div className="flex items-center gap-2 justify-start mb-5">
+                      <offer.icon size={24} className="text-orangeAccent flex-shrink-0" />
+                      <Text text={offer.title} size={18} />
+                    </div>
+                  </div>
+
+                  <a
+                    className="absolute bottom-4 right-4 bg-orangeAccent rounded-full text-white w-10 h-10 flex items-center justify-center shadow-md transition hover:scale-105 cursor-active"
+                    href={offer.href}
+                  >
+                    <MoveUpRight size={20} />
+                  </a>
+                </div>
+              ))}
+            </div>
           </div>
         </div>
       </PageSection>

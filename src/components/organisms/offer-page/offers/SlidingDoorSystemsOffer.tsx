@@ -1,13 +1,22 @@
 import OfferPageTemplate from "@/components/molecules/offer-page-template/OfferPageTemplate";
+import { offers } from "@/utils/mock/offers";
 import { Boxes, CheckCircle, Hammer, MoveHorizontal } from "lucide-react";
 
 const SlidingDoorSystemsOffer = () => {
+  const relatedOffers = [
+    offers[0], // Drzwi aluminiowe
+    offers[5], // Okna przesuwane
+    offers[2], // Fasady
+    offers[8], // Zadaszenia tarasów
+  ];
+
   return (
     <OfferPageTemplate
       title="Systemy drzwi przesuwnych"
       highlightWords={["drzwi"]}
       imageSrc="/img/drzwi-przesuwane.webp"
       imageAlt="Systemy drzwi przesuwnych"
+      relatedOffers={relatedOffers}
       boxes={[
         {
           icon: CheckCircle,

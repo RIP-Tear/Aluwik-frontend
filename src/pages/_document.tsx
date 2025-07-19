@@ -15,11 +15,6 @@ export default class MyDocument extends Document {
             name="keywords"
             content="aluwik, stolarka aluminiowa, okna aluminiowe, drzwi aluminiowe, fasady aluminiowe, ogrody zimowe, Aluprof, Ponzio, producent stolarki, aluminium, systemy okienno-drzwiowe"
           />
-          <meta
-            httpEquiv="Content-Security-Policy"
-            content="default-src 'self'; script-src 'self' https://www.googletagmanager.com https://www.google-analytics.com; style-src 'self' 'unsafe-inline'; img-src * data:; connect-src *; font-src 'self';"
-          />
-
           <meta name="robots" content="index, follow" />
           <link rel="alternate" href="https://www.aluwik.pl/" hrefLang="pl" />
           <meta name="author" content="ALUWIK" />

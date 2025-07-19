@@ -1,7 +1,15 @@
 import OfferPageTemplate from "@/components/molecules/offer-page-template/OfferPageTemplate";
+import { offers } from "@/utils/mock/offers";
 import { ThermometerSnowflake, Ruler, Blocks, Building2 } from "lucide-react";
 
 const FacadesOffer = () => {
+  const relatedOffers = [
+    offers[0], // Drzwi aluminiowe
+    offers[1], // Okna aluminiowe
+    offers[6], // Ściany oddzielenia przeciwpożarowego
+    offers[4], // Systemy drzwi przesuwanych
+  ];
+
   const boxes = [
     {
       icon: ThermometerSnowflake,
@@ -81,6 +89,7 @@ const FacadesOffer = () => {
       imageAlt="Nowoczesne fasady aluminiowe"
       boxes={boxes}
       sections={sections}
+      relatedOffers={relatedOffers}
     />
   );
 };

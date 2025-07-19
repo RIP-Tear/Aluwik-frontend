@@ -1,14 +1,23 @@
 import { AppWindow } from "lucide-react";
 
 import OfferPageTemplate from "@/components/molecules/offer-page-template/OfferPageTemplate";
+import { offers } from "@/utils/mock/offers";
 
 const AluminiumWindowsOffer = () => {
+  const relatedOffers = [
+    offers[0], // Drzwi aluminiowe
+    offers[2], // Fasady
+    offers[5], // Okna przesuwane
+    offers[3], // Ogrody zimowe
+  ];
+
   return (
     <OfferPageTemplate
       title="Okna aluminiowe"
       highlightWords={["aluminiowe"]}
       imageSrc="/img/okna-aluminiowe.webp"
       imageAlt="Nowoczesne aluminiowe okna"
+      relatedOffers={relatedOffers}
       boxes={[
         {
           icon: AppWindow,

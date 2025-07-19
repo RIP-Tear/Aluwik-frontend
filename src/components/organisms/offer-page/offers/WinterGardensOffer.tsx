@@ -1,14 +1,23 @@
 // src/components/pages/offer/WinterGardensOffer.tsx
 import OfferPageTemplate from "@/components/molecules/offer-page-template/OfferPageTemplate";
+import { offers } from "@/utils/mock/offers";
 import { SunSnow } from "lucide-react";
 
 const WinterGardensOffer = () => {
+  const relatedOffers = [
+    offers[1], // Okna aluminiowe
+    offers[5], // Okna przesuwane
+    offers[8], // Zadaszenia tarasów
+    offers[0], // Drzwi aluminiowe
+  ];
+
   return (
     <OfferPageTemplate
       title="Ogrody zimowe"
       highlightWords={["zimowe"]}
       imageSrc="/img/ogrody-zimowe.webp"
       imageAlt="Ogród zimowy"
+      relatedOffers={relatedOffers}
       boxes={[
         {
           icon: SunSnow,
