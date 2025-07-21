@@ -7,7 +7,7 @@ const TarasyKompozytowe = () => {
       title="Tarasy kompozytowe – trwałość i styl na lata"
       highlightWords={["kompozytowe"]}
       heroImage={{
-        src: "/blog/Tarasy-kompozytowe-trwałość-i-styl-na-lata.webp",
+        src: "/blog/composite-decking.webp",
         alt: "Taras kompozytowy",
       }}
       sections={[

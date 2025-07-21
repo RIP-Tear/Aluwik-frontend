@@ -7,7 +7,7 @@ const OgrodZimowyIdealny = () => {
       title="Jak zorganizować idealny ogród zimowy?"
       highlightWords={["ogród"]}
       heroImage={{
-        src: "/blog/Jak-zorganizować-idealny-ogród-zimowy.webp",
+        src: "/blog/perfect-winter-garden.webp",
         alt: "Ogród zimowy",
       }}
       sections={[
