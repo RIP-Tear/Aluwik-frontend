@@ -4,7 +4,7 @@ import { Text } from "@/components/atoms/text/Text";
 import { Mail, MapPin, Phone } from "lucide-react";
 import Link from "next/link";
 import React from "react";
-import { SiFacebook, SiLinkedin, SiWhatsapp } from "react-icons/si";
+import { SiFacebook, SiInstagram, SiLinkedin, SiWhatsapp } from "react-icons/si";
 
 const InformationContact = () => {
   return (
@@ -74,6 +74,16 @@ const InformationContact = () => {
           >
             <SiFacebook size={18} />
             <Text text="Facebook" size={16} />
+          </Link>
+          <Link
+            className="flex items-center gap-2 cursor-active hover:underline"
+            href="https://www.instagram.com/aluwik_pl/"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Odwiedź nasz profil na Instagramie (otwiera się w nowej karcie)"
+          >
+            <SiInstagram size={18} />
+            <Text text="Instagram" size={16} />
           </Link>
           <Link
             className="flex items-center gap-2 cursor-active hover:underline"

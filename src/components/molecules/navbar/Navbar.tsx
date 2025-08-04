@@ -6,7 +6,7 @@ import Link from "next/link";
 import { useRouter } from "next/router";
 import { useState } from "react";
 import { Button } from "@/components/atoms/button/Button";
-import { SiFacebook, SiLinkedin, SiWhatsapp } from "react-icons/si";
+import { SiFacebook, SiInstagram, SiLinkedin, SiWhatsapp } from "react-icons/si";
 
 const navLinks = [
   { href: "/", label: "Strona główna" },
@@ -57,6 +57,15 @@ export const Navbar = () => {
             aria-label="Odwiedź nasz profil na Facebooku (otwiera się w nowej karcie)"
           >
             <SiFacebook size={32} />
+          </Link>
+          <Link
+            href="https://www.instagram.com/aluwik_pl/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="cursor-active transition hover:scale-105 hover:text-orangeAccent text-black"
+            aria-label="Odwiedź nasz profil na Instagramie (otwiera się w nowej karcie)"
+          >
+            <SiInstagram size={32} />
           </Link>
           <Link
             target="_blank"

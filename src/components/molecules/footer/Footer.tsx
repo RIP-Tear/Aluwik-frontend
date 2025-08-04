@@ -1,5 +1,5 @@
 import { ChevronRight } from "lucide-react";
-import { SiFacebook, SiLinkedin, SiWhatsapp } from "react-icons/si";
+import { SiFacebook, SiInstagram, SiLinkedin, SiWhatsapp } from "react-icons/si";
 import Link from "next/link";
 import clsx from "clsx";
 import React, { useState } from "react";
@@ -90,6 +90,15 @@ export const Footer = () => {
                 aria-label="Odwiedź nasz profil na Facebooku (otwiera się w nowej karcie)"
               >
                 <SiFacebook size={24} />
+              </Link>
+              <Link
+                href="https://www.instagram.com/aluwik_pl/"
+                className="cursor-active transition hover:scale-105"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Odwiedź nasz profil na Instagramie (otwiera się w nowej karcie)"
+              >
+                <SiInstagram size={24} />
               </Link>
               <Link
                 href="https://www.linkedin.com/company/aluwik-technologia-aluminiowa/?viewAsMember=true"
