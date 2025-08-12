@@ -1,5 +1,6 @@
 import { Heading } from "@/components/atoms/heading/Heading";
 import PageSection from "@/components/atoms/page-section/PageSection";
+import Link from "next/link";
 import React from "react";
 
 const TermsAndConditions = () => {
@@ -130,9 +131,9 @@ const TermsAndConditions = () => {
         </h3>
         <p className="mt-2 leading-relaxed text-gray-700">
           Zasady przetwarzania danych oraz wykorzystywania plików cookies opisuje{" "}
-          <a href="/polityka-prywatnosci" className="text-orangeAccent underline cursor-active">
+          <Link href="/polityka-prywatnosci" className="text-orangeAccent underline cursor-active">
             Polityka prywatności
-          </a>
+          </Link>
           , stanowiąca integralną część niniejszego Regulaminu.
         </p>
 
