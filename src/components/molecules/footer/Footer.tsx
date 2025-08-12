@@ -157,27 +157,35 @@ export const Footer = () => {
               />
             </ul>
           </Section>
-          <div className="mt-10 flex flex-col items-center text-xs gap-2 text-center">
-            <Link
-              href="https://www.rip-tear.com/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="hover:underline flex items-center gap-2 cursor-active"
-            >
-              <Text text="RIP & Tear" size={14} className="text-greyVariant" />
-              <Image
-                src="https://www.rip-tear.com/favicon.ico"
-                alt="RIP & Tear"
-                width={30}
-                height={30}
-              />
-            </Link>
-            <Text
-              text="© 2025 ALUWIK · Wszelkie prawa zastrzeżone"
-              size={14}
-              className="text-greyVariant"
+
+          <Section title="Informacje prawne">
+            <ul>
+              <ListItem label="Regulamin" href="/regulamin/" />
+              <ListItem label="Polityka prywatności" href="/polityka-prywatnosci/" />
+            </ul>
+          </Section>
+        </div>
+        <div className="mt-10 flex justify-center items-center text-xs gap-2 text-center">
+          <Text
+            text="© 2025 ALUWIK · Wszelkie prawa zastrzeżone"
+            size={14}
+            className="text-greyVariant"
+          />{" "}
+          | <Text text={"Realizacja"} size={14} />
+          <Link
+            href="https://www.rip-tear.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:underline flex items-center gap-2 cursor-active"
+          >
+            <Image
+              src="https://www.rip-tear.com/favicon.ico"
+              alt="RIP & Tear"
+              width={30}
+              height={30}
             />
-          </div>
+            <Text text="RIP & Tear" size={14} className="text-greyVariant" />
+          </Link>
         </div>
       </PageSection>
     </footer>

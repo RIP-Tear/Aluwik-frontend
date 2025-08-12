@@ -1,0 +1,30 @@
+.cookieBanner {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: #222;
+  color: white;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 9999;
+}
+
+.actions {
+  display: flex;
+  gap: 10px;
+}
+
+.button {
+  background: #4caf50;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+}
+
+.button:last-child {
+  background: #f44336;
+}
