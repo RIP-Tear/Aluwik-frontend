@@ -7,6 +7,7 @@ export default class MyDocument extends Document {
       <Html lang="pl">
         <Head>
           <meta charSet="utf-8" />
+          <meta name="facebook-domain-verification" content="9t36g5864gcep8fccwgmk2vtutodrp" />
           <meta
             name="description"
             content="ALUWIK to producent wysokiej jakości stolarki aluminiowej: okien, drzwi, fasad i ogrodów zimowych. Oferujemy trwałe rozwiązania z profili Aluprof i Ponzio dla klientów indywidualnych i firm."
