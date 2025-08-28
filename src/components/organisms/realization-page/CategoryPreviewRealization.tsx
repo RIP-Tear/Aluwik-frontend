@@ -1,12 +1,15 @@
-import React, { useState } from "react";
-import { useRealizations } from "@/services/useRealizations";
+import React, { useMemo, useState } from "react";
 import PageSection from "@/components/atoms/page-section/PageSection";
-import Image from "next/image";
 import clsx from "clsx";
 import { MoonLoader } from "react-spinners";
 import { Text } from "@/components/atoms/text/Text";
 import { DoorOpen, Layers3, SunSnow, Flame, TriangleAlert } from "lucide-react";
 import ImageModal from "./ImageModal";
+import { Cloudinary } from "@cloudinary/url-gen";
+import { AdvancedImage } from "@cloudinary/react";
+import { auto } from "@cloudinary/url-gen/actions/resize";
+import { autoGravity } from "@cloudinary/url-gen/qualifiers/gravity";
+import { useCloudinaryRealizations } from "@/hooks/useCloudinaryRealizations";
 
 const CATEGORY_CONFIG: Record<string, { title: string; icon: React.ElementType }> = {
   systemyOkiennoDzwiowe: { title: "Systemy okienno-dzwiowe", icon: DoorOpen },
@@ -17,13 +20,20 @@ const CATEGORY_CONFIG: Record<string, { title: string; icon: React.ElementType }
 
 const CATEGORY_KEYS = Object.keys(CATEGORY_CONFIG);
 
-const buildImageSrc = (img: any) =>
-  `${process.env.NEXT_PUBLIC_API_URL}${img.formats?.medium?.url || img.url}`;
+const buildImageSrc = (img: any) => img.url;
 
 const CategoryPreviewRealization: React.FC = () => {
-  const { data, isLoading, isError, error } = useRealizations();
+  const { data, isLoading, isError, error } = useCloudinaryRealizations();
   const [activeCategory, setActiveCategory] = useState("systemyOkiennoDzwiowe");
   const [openedIndex, setOpenedIndex] = useState<number | null>(null);
+
+  const cld = useMemo(
+    () =>
+      new Cloudinary({
+        cloud: { cloudName: process.env.NEXT_PUBLIC_CLOUDINARY_CLOUD_NAME! },
+      }),
+    [],
+  );
 
   const mobileCategoryButtons = (
     <div className="flex flex-col gap-4 w-full md:hidden mb-6">
@@ -81,7 +91,7 @@ const CategoryPreviewRealization: React.FC = () => {
     );
   }
 
-  if (isError || !data?.data) {
+  if (isError || !data) {
     return (
       <PageSection>
         <div className="flex flex-col md:flex-row gap-8">
@@ -107,7 +117,7 @@ const CategoryPreviewRealization: React.FC = () => {
     );
   }
 
-  const realizations = data!.data;
+  const realizations = data; // już w docelowym formacie
   const filtered = realizations.filter(r => r.category === activeCategory);
 
   const openModal = (index: number) => setOpenedIndex(index);
@@ -120,20 +130,27 @@ const CategoryPreviewRealization: React.FC = () => {
         {desktopCategorySidebar}
 
         <div className="grid grid-cols-2 lg:grid-cols-3 gap-6 flex-1 mb-10 sm:mb-[100px]">
-          {filtered.map(({ id, image }, index) => (
-            <div
-              key={id}
-              className="border-2 border-orangeAccent group relative w-full aspect-[4/3] overflow-hidden rounded-xl cursor-active"
-              onClick={() => openModal(index)}
-            >
-              <Image
-                src={buildImageSrc(image)}
-                alt={image.name}
-                fill
-                className="object-cover transition-transform duration-300 group-hover:scale-105"
-              />
-            </div>
-          ))}
+          {filtered.map(({ id, image }, index) => {
+            const cldImg = cld
+              .image(image.publicId)
+              .format("auto")
+              .quality("auto")
+              .resize(auto().gravity(autoGravity()).width(800).height(600));
+
+            return (
+              <div
+                key={id}
+                className="border-2 border-orangeAccent group relative w-full aspect-[4/3] overflow-hidden rounded-xl cursor-active"
+                onClick={() => openModal(index)}
+              >
+                <AdvancedImage
+                  cldImg={cldImg}
+                  className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
+                />
+              </div>
+            );
+          })}
+
           {filtered.length === 0 && (
             <Text
               text="Brak realizacji w tej kategorii."
