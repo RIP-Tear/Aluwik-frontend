@@ -248,5 +248,465 @@
       "name": "okna-przesuwane_htkvpz",
       "publicId": "okna-przesuwane_htkvpz"
     }
+  },
+  {
+    "id": 25,
+    "category": "fasady",
+    "image": {
+      "url": "https://res.cloudinary.com/dmqbipspn/image/upload/f_auto,q_auto/v1756400476/14.fasada-1_fmqc6r.jpg",
+      "thumbUrl": "https://res.cloudinary.com/dmqbipspn/image/upload/c_fill,w_800,h_600,f_auto,q_auto/v1756400476/14.fasada-1_fmqc6r.jpg",
+      "name": "14.fasada-1_fmqc6r",
+      "publicId": "14.fasada-1_fmqc6r"
+    }
+  },
+  {
+    "id": 26,
+    "category": "fasady",
+    "image": {
+      "url": "https://res.cloudinary.com/dmqbipspn/image/upload/f_auto,q_auto/v1756400466/1649849859860_wrsuza.jpg",
+      "thumbUrl": "https://res.cloudinary.com/dmqbipspn/image/upload/c_fill,w_800,h_600,f_auto,q_auto/v1756400466/1649849859860_wrsuza.jpg",
+      "name": "1649849859860_wrsuza",
+      "publicId": "1649849859860_wrsuza"
+    }
+  },
+  {
+    "id": 27,
+    "category": "fasady",
+    "image": {
+      "url": "https://res.cloudinary.com/dmqbipspn/image/upload/f_auto,q_auto/v1756400465/1649849859868_u38w74.jpg",
+      "thumbUrl": "https://res.cloudinary.com/dmqbipspn/image/upload/c_fill,w_800,h_600,f_auto,q_auto/v1756400465/1649849859868_u38w74.jpg",
+      "name": "1649849859868_u38w74",
+      "publicId": "1649849859868_u38w74"
+    }
+  },
+  {
+    "id": 28,
+    "category": "fasady",
+    "image": {
+      "url": "https://res.cloudinary.com/dmqbipspn/image/upload/f_auto,q_auto/v1756400463/1649849859880_p80pjh.jpg",
+      "thumbUrl": "https://res.cloudinary.com/dmqbipspn/image/upload/c_fill,w_800,h_600,f_auto,q_auto/v1756400463/1649849859880_p80pjh.jpg",
+      "name": "1649849859880_p80pjh",
+      "publicId": "1649849859880_p80pjh"
+    }
+  },
+  {
+    "id": 29,
+    "category": "fasady",
+    "image": {
+      "url": "https://res.cloudinary.com/dmqbipspn/image/upload/f_auto,q_auto/v1756400461/1649849859911_rmlv17.jpg",
+      "thumbUrl": "https://res.cloudinary.com/dmqbipspn/image/upload/c_fill,w_800,h_600,f_auto,q_auto/v1756400461/1649849859911_rmlv17.jpg",
+      "name": "1649849859911_rmlv17",
+      "publicId": "1649849859911_rmlv17"
+    }
+  },
+  {
+    "id": 30,
+    "category": "fasady",
+    "image": {
+      "url": "https://res.cloudinary.com/dmqbipspn/image/upload/f_auto,q_auto/v1756400474/17.-fasada-4_v5bjuc.jpg",
+      "thumbUrl": "https://res.cloudinary.com/dmqbipspn/image/upload/c_fill,w_800,h_600,f_auto,q_auto/v1756400474/17.-fasada-4_v5bjuc.jpg",
+      "name": "17.-fasada-4_v5bjuc",
+      "publicId": "17.-fasada-4_v5bjuc"
+    }
+  },
+  {
+    "id": 31,
+    "category": "fasady",
+    "image": {
+      "url": "https://res.cloudinary.com/dmqbipspn/image/upload/f_auto,q_auto/v1756400470/20200917_164019_vzkys4.jpg",
+      "thumbUrl": "https://res.cloudinary.com/dmqbipspn/image/upload/c_fill,w_800,h_600,f_auto,q_auto/v1756400470/20200917_164019_vzkys4.jpg",
+      "name": "20200917_164019_vzkys4",
+      "publicId": "20200917_164019_vzkys4"
+    }
+  },
+  {
+    "id": 32,
+    "category": "fasady",
+    "image": {
+      "url": "https://res.cloudinary.com/dmqbipspn/image/upload/f_auto,q_auto/v1756400468/20210121_150826-1_hktpve.jpg",
+      "thumbUrl": "https://res.cloudinary.com/dmqbipspn/image/upload/c_fill,w_800,h_600,f_auto,q_auto/v1756400468/20210121_150826-1_hktpve.jpg",
+      "name": "20210121_150826-1_hktpve",
+      "publicId": "20210121_150826-1_hktpve"
+    }
+  },
+  {
+    "id": 33,
+    "category": "fasady",
+    "image": {
+      "url": "https://res.cloudinary.com/dmqbipspn/image/upload/f_auto,q_auto/v1756400472/26.salon-viessman-2_r2sjjg.jpg",
+      "thumbUrl": "https://res.cloudinary.com/dmqbipspn/image/upload/c_fill,w_800,h_600,f_auto,q_auto/v1756400472/26.salon-viessman-2_r2sjjg.jpg",
+      "name": "26.salon-viessman-2_r2sjjg",
+      "publicId": "26.salon-viessman-2_r2sjjg"
+    }
+  },
+  {
+    "id": 34,
+    "category": "fasady",
+    "image": {
+      "url": "https://res.cloudinary.com/dmqbipspn/image/upload/f_auto,q_auto/v1756400459/fasada-3_qsvlhy.jpg",
+      "thumbUrl": "https://res.cloudinary.com/dmqbipspn/image/upload/c_fill,w_800,h_600,f_auto,q_auto/v1756400459/fasada-3_qsvlhy.jpg",
+      "name": "fasada-3_qsvlhy",
+      "publicId": "fasada-3_qsvlhy"
+    }
+  },
+  {
+    "id": 35,
+    "category": "fasady",
+    "image": {
+      "url": "https://res.cloudinary.com/dmqbipspn/image/upload/f_auto,q_auto/v1756400456/fasada2_bbthj8.jpg",
+      "thumbUrl": "https://res.cloudinary.com/dmqbipspn/image/upload/c_fill,w_800,h_600,f_auto,q_auto/v1756400456/fasada2_bbthj8.jpg",
+      "name": "fasada2_bbthj8",
+      "publicId": "fasada2_bbthj8"
+    }
+  },
+  {
+    "id": 36,
+    "category": "fasady",
+    "image": {
+      "url": "https://res.cloudinary.com/dmqbipspn/image/upload/f_auto,q_auto/v1756400457/fasada_npy4nl.jpg",
+      "thumbUrl": "https://res.cloudinary.com/dmqbipspn/image/upload/c_fill,w_800,h_600,f_auto,q_auto/v1756400457/fasada_npy4nl.jpg",
+      "name": "fasada_npy4nl",
+      "publicId": "fasada_npy4nl"
+    }
+  },
+  {
+    "id": 37,
+    "category": "fasady",
+    "image": {
+      "url": "https://res.cloudinary.com/dmqbipspn/image/upload/f_auto,q_auto/v1756400454/fasady_ad67g2.jpg",
+      "thumbUrl": "https://res.cloudinary.com/dmqbipspn/image/upload/c_fill,w_800,h_600,f_auto,q_auto/v1756400454/fasady_ad67g2.jpg",
+      "name": "fasady_ad67g2",
+      "publicId": "fasady_ad67g2"
+    }
+  },
+  {
+    "id": 38,
+    "category": "fasady",
+    "image": {
+      "url": "https://res.cloudinary.com/dmqbipspn/image/upload/f_auto,q_auto/v1756400452/img_20170820_151251_p0q2gk.jpg",
+      "thumbUrl": "https://res.cloudinary.com/dmqbipspn/image/upload/c_fill,w_800,h_600,f_auto,q_auto/v1756400452/img_20170820_151251_p0q2gk.jpg",
+      "name": "img_20170820_151251_p0q2gk",
+      "publicId": "img_20170820_151251_p0q2gk"
+    }
+  },
+  {
+    "id": 39,
+    "category": "fasady",
+    "image": {
+      "url": "https://res.cloudinary.com/dmqbipspn/image/upload/f_auto,q_auto/v1756400450/img_20180315_151014_ubfmhu.jpg",
+      "thumbUrl": "https://res.cloudinary.com/dmqbipspn/image/upload/c_fill,w_800,h_600,f_auto,q_auto/v1756400450/img_20180315_151014_ubfmhu.jpg",
+      "name": "img_20180315_151014_ubfmhu",
+      "publicId": "img_20180315_151014_ubfmhu"
+    }
+  },
+  {
+    "id": 40,
+    "category": "fasady",
+    "image": {
+      "url": "https://res.cloudinary.com/dmqbipspn/image/upload/f_auto,q_auto/v1756400449/img_20180616_110320_obdjtv.jpg",
+      "thumbUrl": "https://res.cloudinary.com/dmqbipspn/image/upload/c_fill,w_800,h_600,f_auto,q_auto/v1756400449/img_20180616_110320_obdjtv.jpg",
+      "name": "img_20180616_110320_obdjtv",
+      "publicId": "img_20180616_110320_obdjtv"
+    }
+  },
+  {
+    "id": 41,
+    "category": "fasady",
+    "image": {
+      "url": "https://res.cloudinary.com/dmqbipspn/image/upload/f_auto,q_auto/v1756400447/img_20180630_135607_herv6i.webp",
+      "thumbUrl": "https://res.cloudinary.com/dmqbipspn/image/upload/c_fill,w_800,h_600,f_auto,q_auto/v1756400447/img_20180630_135607_herv6i.webp",
+      "name": "img_20180630_135607_herv6i",
+      "publicId": "img_20180630_135607_herv6i"
+    }
+  },
+  {
+    "id": 42,
+    "category": "fasady",
+    "image": {
+      "url": "https://res.cloudinary.com/dmqbipspn/image/upload/f_auto,q_auto/v1756400445/img_20180724_151140_wsmub2.webp",
+      "thumbUrl": "https://res.cloudinary.com/dmqbipspn/image/upload/c_fill,w_800,h_600,f_auto,q_auto/v1756400445/img_20180724_151140_wsmub2.webp",
+      "name": "img_20180724_151140_wsmub2",
+      "publicId": "img_20180724_151140_wsmub2"
+    }
+  },
+  {
+    "id": 43,
+    "category": "fasady",
+    "image": {
+      "url": "https://res.cloudinary.com/dmqbipspn/image/upload/f_auto,q_auto/v1756400444/img_20180728_125911_pbra95.webp",
+      "thumbUrl": "https://res.cloudinary.com/dmqbipspn/image/upload/c_fill,w_800,h_600,f_auto,q_auto/v1756400444/img_20180728_125911_pbra95.webp",
+      "name": "img_20180728_125911_pbra95",
+      "publicId": "img_20180728_125911_pbra95"
+    }
+  },
+  {
+    "id": 44,
+    "category": "fasady",
+    "image": {
+      "url": "https://res.cloudinary.com/dmqbipspn/image/upload/f_auto,q_auto/v1756400442/img_20190315_111000_ftqdhl.jpg",
+      "thumbUrl": "https://res.cloudinary.com/dmqbipspn/image/upload/c_fill,w_800,h_600,f_auto,q_auto/v1756400442/img_20190315_111000_ftqdhl.jpg",
+      "name": "img_20190315_111000_ftqdhl",
+      "publicId": "img_20190315_111000_ftqdhl"
+    }
+  },
+  {
+    "id": 45,
+    "category": "fasady",
+    "image": {
+      "url": "https://res.cloudinary.com/dmqbipspn/image/upload/f_auto,q_auto/v1756400440/img_20190719_170027_gjh9mr.webp",
+      "thumbUrl": "https://res.cloudinary.com/dmqbipspn/image/upload/c_fill,w_800,h_600,f_auto,q_auto/v1756400440/img_20190719_170027_gjh9mr.webp",
+      "name": "img_20190719_170027_gjh9mr",
+      "publicId": "img_20190719_170027_gjh9mr"
+    }
+  },
+  {
+    "id": 46,
+    "category": "fasady",
+    "image": {
+      "url": "https://res.cloudinary.com/dmqbipspn/image/upload/f_auto,q_auto/v1756400440/img_20190719_170219_uzi2ea.jpg",
+      "thumbUrl": "https://res.cloudinary.com/dmqbipspn/image/upload/c_fill,w_800,h_600,f_auto,q_auto/v1756400440/img_20190719_170219_uzi2ea.jpg",
+      "name": "img_20190719_170219_uzi2ea",
+      "publicId": "img_20190719_170219_uzi2ea"
+    }
+  },
+  {
+    "id": 47,
+    "category": "fasady",
+    "image": {
+      "url": "https://res.cloudinary.com/dmqbipspn/image/upload/f_auto,q_auto/v1756400437/img_20191113_115427_di4luu.jpg",
+      "thumbUrl": "https://res.cloudinary.com/dmqbipspn/image/upload/c_fill,w_800,h_600,f_auto,q_auto/v1756400437/img_20191113_115427_di4luu.jpg",
+      "name": "img_20191113_115427_di4luu",
+      "publicId": "img_20191113_115427_di4luu"
+    }
+  },
+  {
+    "id": 48,
+    "category": "fasady",
+    "image": {
+      "url": "https://res.cloudinary.com/dmqbipspn/image/upload/f_auto,q_auto/v1756400437/img_20200124_095442_he2nes.webp",
+      "thumbUrl": "https://res.cloudinary.com/dmqbipspn/image/upload/c_fill,w_800,h_600,f_auto,q_auto/v1756400437/img_20200124_095442_he2nes.webp",
+      "name": "img_20200124_095442_he2nes",
+      "publicId": "img_20200124_095442_he2nes"
+    }
+  },
+  {
+    "id": 49,
+    "category": "fasady",
+    "image": {
+      "url": "https://res.cloudinary.com/dmqbipspn/image/upload/f_auto,q_auto/v1756400434/img_20200701_155359_qg6ulm.webp",
+      "thumbUrl": "https://res.cloudinary.com/dmqbipspn/image/upload/c_fill,w_800,h_600,f_auto,q_auto/v1756400434/img_20200701_155359_qg6ulm.webp",
+      "name": "img_20200701_155359_qg6ulm",
+      "publicId": "img_20200701_155359_qg6ulm"
+    }
+  },
+  {
+    "id": 50,
+    "category": "fasady",
+    "image": {
+      "url": "https://res.cloudinary.com/dmqbipspn/image/upload/f_auto,q_auto/v1756400432/img_20200904_092849_resized_20201116_035354598_hpgnvc.jpg",
+      "thumbUrl": "https://res.cloudinary.com/dmqbipspn/image/upload/c_fill,w_800,h_600,f_auto,q_auto/v1756400432/img_20200904_092849_resized_20201116_035354598_hpgnvc.jpg",
+      "name": "img_20200904_092849_resized_20201116_035354598_hpgnvc",
+      "publicId": "img_20200904_092849_resized_20201116_035354598_hpgnvc"
+    }
+  },
+  {
+    "id": 51,
+    "category": "fasady",
+    "image": {
+      "url": "https://res.cloudinary.com/dmqbipspn/image/upload/f_auto,q_auto/v1756400431/img_20200904_092941_resized_20201116_035352842_uro2qg.jpg",
+      "thumbUrl": "https://res.cloudinary.com/dmqbipspn/image/upload/c_fill,w_800,h_600,f_auto,q_auto/v1756400431/img_20200904_092941_resized_20201116_035352842_uro2qg.jpg",
+      "name": "img_20200904_092941_resized_20201116_035352842_uro2qg",
+      "publicId": "img_20200904_092941_resized_20201116_035352842_uro2qg"
+    }
+  },
+  {
+    "id": 52,
+    "category": "fasady",
+    "image": {
+      "url": "https://res.cloudinary.com/dmqbipspn/image/upload/f_auto,q_auto/v1756400429/zadaszenia-tarasow_ykyoto.jpg",
+      "thumbUrl": "https://res.cloudinary.com/dmqbipspn/image/upload/c_fill,w_800,h_600,f_auto,q_auto/v1756400429/zadaszenia-tarasow_ykyoto.jpg",
+      "name": "zadaszenia-tarasow_ykyoto",
+      "publicId": "zadaszenia-tarasow_ykyoto"
+    }
+  },
+  {
+    "id": 53,
+    "category": "stolarkaPrzeciwpozarowa",
+    "image": {
+      "url": "https://res.cloudinary.com/dmqbipspn/image/upload/f_auto,q_auto/v1756400308/dzwi-przeciwpozarowe_yblquk.jpg",
+      "thumbUrl": "https://res.cloudinary.com/dmqbipspn/image/upload/c_fill,w_800,h_600,f_auto,q_auto/v1756400308/dzwi-przeciwpozarowe_yblquk.jpg",
+      "name": "dzwi-przeciwpozarowe_yblquk",
+      "publicId": "dzwi-przeciwpozarowe_yblquk"
+    }
+  },
+  {
+    "id": 54,
+    "category": "stolarkaPrzeciwpozarowa",
+    "image": {
+      "url": "https://res.cloudinary.com/dmqbipspn/image/upload/f_auto,q_auto/v1756400309/img_20170619_082858_ttcqks.jpg",
+      "thumbUrl": "https://res.cloudinary.com/dmqbipspn/image/upload/c_fill,w_800,h_600,f_auto,q_auto/v1756400309/img_20170619_082858_ttcqks.jpg",
+      "name": "img_20170619_082858_ttcqks",
+      "publicId": "img_20170619_082858_ttcqks"
+    }
+  },
+  {
+    "id": 55,
+    "category": "stolarkaPrzeciwpozarowa",
+    "image": {
+      "url": "https://res.cloudinary.com/dmqbipspn/image/upload/f_auto,q_auto/v1756400309/img_20170929_141957_dgx5wb.jpg",
+      "thumbUrl": "https://res.cloudinary.com/dmqbipspn/image/upload/c_fill,w_800,h_600,f_auto,q_auto/v1756400309/img_20170929_141957_dgx5wb.jpg",
+      "name": "img_20170929_141957_dgx5wb",
+      "publicId": "img_20170929_141957_dgx5wb"
+    }
+  },
+  {
+    "id": 56,
+    "category": "stolarkaPrzeciwpozarowa",
+    "image": {
+      "url": "https://res.cloudinary.com/dmqbipspn/image/upload/f_auto,q_auto/v1756400310/img_20200208_150723_nsu8a0.jpg",
+      "thumbUrl": "https://res.cloudinary.com/dmqbipspn/image/upload/c_fill,w_800,h_600,f_auto,q_auto/v1756400310/img_20200208_150723_nsu8a0.jpg",
+      "name": "img_20200208_150723_nsu8a0",
+      "publicId": "img_20200208_150723_nsu8a0"
+    }
+  },
+  {
+    "id": 57,
+    "category": "stolarkaPrzeciwpozarowa",
+    "image": {
+      "url": "https://res.cloudinary.com/dmqbipspn/image/upload/f_auto,q_auto/v1756400310/img_20200526_155444_ixn2mq.jpg",
+      "thumbUrl": "https://res.cloudinary.com/dmqbipspn/image/upload/c_fill,w_800,h_600,f_auto,q_auto/v1756400310/img_20200526_155444_ixn2mq.jpg",
+      "name": "img_20200526_155444_ixn2mq",
+      "publicId": "img_20200526_155444_ixn2mq"
+    }
+  },
+  {
+    "id": 58,
+    "category": "stolarkaPrzeciwpozarowa",
+    "image": {
+      "url": "https://res.cloudinary.com/dmqbipspn/image/upload/f_auto,q_auto/v1756400311/sciany-oddzielenia-przeciwpozarowego_rki35o.jpg",
+      "thumbUrl": "https://res.cloudinary.com/dmqbipspn/image/upload/c_fill,w_800,h_600,f_auto,q_auto/v1756400311/sciany-oddzielenia-przeciwpozarowego_rki35o.jpg",
+      "name": "sciany-oddzielenia-przeciwpozarowego_rki35o",
+      "publicId": "sciany-oddzielenia-przeciwpozarowego_rki35o"
+    }
+  },
+  {
+    "id": 59,
+    "category": "ogrodyZimowe",
+    "image": {
+      "url": "https://res.cloudinary.com/dmqbipspn/image/upload/f_auto,q_auto/v1756400352/img_20160802_124521_lo1jid.jpg",
+      "thumbUrl": "https://res.cloudinary.com/dmqbipspn/image/upload/c_fill,w_800,h_600,f_auto,q_auto/v1756400352/img_20160802_124521_lo1jid.jpg",
+      "name": "img_20160802_124521_lo1jid",
+      "publicId": "img_20160802_124521_lo1jid"
+    }
+  },
+  {
+    "id": 60,
+    "category": "ogrodyZimowe",
+    "image": {
+      "url": "https://res.cloudinary.com/dmqbipspn/image/upload/f_auto,q_auto/v1756400353/img_20161002_175753_awsl9a.jpg",
+      "thumbUrl": "https://res.cloudinary.com/dmqbipspn/image/upload/c_fill,w_800,h_600,f_auto,q_auto/v1756400353/img_20161002_175753_awsl9a.jpg",
+      "name": "img_20161002_175753_awsl9a",
+      "publicId": "img_20161002_175753_awsl9a"
+    }
+  },
+  {
+    "id": 61,
+    "category": "ogrodyZimowe",
+    "image": {
+      "url": "https://res.cloudinary.com/dmqbipspn/image/upload/f_auto,q_auto/v1756400354/img_20161002_175923_jmj4dz.jpg",
+      "thumbUrl": "https://res.cloudinary.com/dmqbipspn/image/upload/c_fill,w_800,h_600,f_auto,q_auto/v1756400354/img_20161002_175923_jmj4dz.jpg",
+      "name": "img_20161002_175923_jmj4dz",
+      "publicId": "img_20161002_175923_jmj4dz"
+    }
+  },
+  {
+    "id": 62,
+    "category": "ogrodyZimowe",
+    "image": {
+      "url": "https://res.cloudinary.com/dmqbipspn/image/upload/f_auto,q_auto/v1756400355/img_20170215_111038_mawdiw.jpg",
+      "thumbUrl": "https://res.cloudinary.com/dmqbipspn/image/upload/c_fill,w_800,h_600,f_auto,q_auto/v1756400355/img_20170215_111038_mawdiw.jpg",
+      "name": "img_20170215_111038_mawdiw",
+      "publicId": "img_20170215_111038_mawdiw"
+    }
+  },
+  {
+    "id": 63,
+    "category": "ogrodyZimowe",
+    "image": {
+      "url": "https://res.cloudinary.com/dmqbipspn/image/upload/f_auto,q_auto/v1756400356/img_20170224_145513_d0nb87.jpg",
+      "thumbUrl": "https://res.cloudinary.com/dmqbipspn/image/upload/c_fill,w_800,h_600,f_auto,q_auto/v1756400356/img_20170224_145513_d0nb87.jpg",
+      "name": "img_20170224_145513_d0nb87",
+      "publicId": "img_20170224_145513_d0nb87"
+    }
+  },
+  {
+    "id": 64,
+    "category": "ogrodyZimowe",
+    "image": {
+      "url": "https://res.cloudinary.com/dmqbipspn/image/upload/f_auto,q_auto/v1756400358/img_20170303_124326_f6w7x2.jpg",
+      "thumbUrl": "https://res.cloudinary.com/dmqbipspn/image/upload/c_fill,w_800,h_600,f_auto,q_auto/v1756400358/img_20170303_124326_f6w7x2.jpg",
+      "name": "img_20170303_124326_f6w7x2",
+      "publicId": "img_20170303_124326_f6w7x2"
+    }
+  },
+  {
+    "id": 65,
+    "category": "ogrodyZimowe",
+    "image": {
+      "url": "https://res.cloudinary.com/dmqbipspn/image/upload/f_auto,q_auto/v1756400359/img_20170506_134344_aw54zl.webp",
+      "thumbUrl": "https://res.cloudinary.com/dmqbipspn/image/upload/c_fill,w_800,h_600,f_auto,q_auto/v1756400359/img_20170506_134344_aw54zl.webp",
+      "name": "img_20170506_134344_aw54zl",
+      "publicId": "img_20170506_134344_aw54zl"
+    }
+  },
+  {
+    "id": 66,
+    "category": "ogrodyZimowe",
+    "image": {
+      "url": "https://res.cloudinary.com/dmqbipspn/image/upload/f_auto,q_auto/v1756400360/img_20170506_134703_tciatv.webp",
+      "thumbUrl": "https://res.cloudinary.com/dmqbipspn/image/upload/c_fill,w_800,h_600,f_auto,q_auto/v1756400360/img_20170506_134703_tciatv.webp",
+      "name": "img_20170506_134703_tciatv",
+      "publicId": "img_20170506_134703_tciatv"
+    }
+  },
+  {
+    "id": 67,
+    "category": "ogrodyZimowe",
+    "image": {
+      "url": "https://res.cloudinary.com/dmqbipspn/image/upload/f_auto,q_auto/v1756400361/img_20170508_173939_jdg1hm.webp",
+      "thumbUrl": "https://res.cloudinary.com/dmqbipspn/image/upload/c_fill,w_800,h_600,f_auto,q_auto/v1756400361/img_20170508_173939_jdg1hm.webp",
+      "name": "img_20170508_173939_jdg1hm",
+      "publicId": "img_20170508_173939_jdg1hm"
+    }
+  },
+  {
+    "id": 68,
+    "category": "ogrodyZimowe",
+    "image": {
+      "url": "https://res.cloudinary.com/dmqbipspn/image/upload/f_auto,q_auto/v1756400363/img_20170824_183107_y1b7uz.webp",
+      "thumbUrl": "https://res.cloudinary.com/dmqbipspn/image/upload/c_fill,w_800,h_600,f_auto,q_auto/v1756400363/img_20170824_183107_y1b7uz.webp",
+      "name": "img_20170824_183107_y1b7uz",
+      "publicId": "img_20170824_183107_y1b7uz"
+    }
+  },
+  {
+    "id": 69,
+    "category": "ogrodyZimowe",
+    "image": {
+      "url": "https://res.cloudinary.com/dmqbipspn/image/upload/f_auto,q_auto/v1756400364/ogrody-zimowe_raaodt.jpg",
+      "thumbUrl": "https://res.cloudinary.com/dmqbipspn/image/upload/c_fill,w_800,h_600,f_auto,q_auto/v1756400364/ogrody-zimowe_raaodt.jpg",
+      "name": "ogrody-zimowe_raaodt",
+      "publicId": "ogrody-zimowe_raaodt"
+    }
+  },
+  {
+    "id": 70,
+    "category": "ogrodyZimowe",
+    "image": {
+      "url": "https://res.cloudinary.com/dmqbipspn/image/upload/f_auto,q_auto/v1756400365/wiatrolap_yxwi7a.jpg",
+      "thumbUrl": "https://res.cloudinary.com/dmqbipspn/image/upload/c_fill,w_800,h_600,f_auto,q_auto/v1756400365/wiatrolap_yxwi7a.jpg",
+      "name": "wiatrolap_yxwi7a",
+      "publicId": "wiatrolap_yxwi7a"
+    }
   }
 ]
