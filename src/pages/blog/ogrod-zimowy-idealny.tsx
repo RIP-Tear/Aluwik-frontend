@@ -6,7 +6,7 @@ import NavbarContact from "@/components/molecules/navbar-contact/NavbarContact";
 import OgrodZimowyIdealny from "@/components/organisms/blog-page/posts/OgrodZimowyIdealny";
 import ContactHero from "@/components/organisms/home-page/ContactHero";
 
-export default function ContactPage() {
+export default function OgrodZimowyIdealnyPage() {
   return (
     <>
       <PageHead

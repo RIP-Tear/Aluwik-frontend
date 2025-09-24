@@ -3,22 +3,21 @@ import { PageHead } from "@/components/molecules/page-head/PageHead";
 import "../../app/globals.css";
 import { Footer } from "@/components/molecules/footer/Footer";
 import NavbarContact from "@/components/molecules/navbar-contact/NavbarContact";
-import DzwiPrzeciwpozarowe from "@/components/organisms/blog-page/posts/DzwiPrzeciwpozarowe";
 import ContactHero from "@/components/organisms/home-page/ContactHero";
+import DrzwiAluminioweTczew from "@/components/organisms/blog-page/posts/DrzwiAluminioweTczew";
 
-export default function DrzwiPrzeciwpozarowePage() {
+export default function DrzwiAluminioweTczewPage() {
   return (
     <>
       <PageHead
-        title="Drzwi przeciwpożarowe – bezpieczeństwo w nowoczesnej formie | Blog ALUWIK"
-        description="Dowiedz się, dlaczego drzwi przeciwpożarowe są kluczowym elementem zabezpieczeń w nowoczesnym budownictwie. Sprawdź, jak łączymy estetykę z funkcjonalnością i odpornością na ogień."
+        title="Drzwi aluminiowe Tczew | Drzwi przesuwane Tczew – ALUWIK"
+        description="Drzwi aluminiowe Tczew i drzwi przesuwane Tczew od lokalnego producenta. Nowoczesny design, trwałość i elegancja dopasowana do Twojego domu."
       />
-
       <div className="hidden xl:block">
         <NavbarContact />
       </div>
       <Navbar />
-      <DzwiPrzeciwpozarowe />
+      <DrzwiAluminioweTczew />
       <ContactHero />
       <Footer />
     </>

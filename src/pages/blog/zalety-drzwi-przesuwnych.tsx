@@ -6,7 +6,7 @@ import NavbarContact from "@/components/molecules/navbar-contact/NavbarContact";
 import ZaletyDzwiPrzesuwanych from "@/components/organisms/blog-page/posts/ZaletyDzwiPrzesuwanych";
 import ContactHero from "@/components/organisms/home-page/ContactHero";
 
-export default function ContactPage() {
+export default function ZaletyDzwiPrzesuwanychPage() {
   return (
     <>
       <PageHead

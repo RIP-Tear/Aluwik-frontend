@@ -158,7 +158,7 @@ export const Footer = () => {
             </ul>
           </Section>
 
-          <Section title="Informacje prawne">
+          <Section title="Informacje">
             <ul>
               <ListItem label="Regulamin" href="/regulamin/" />
               <ListItem label="Polityka prywatności" href="/polityka-prywatnosci/" />

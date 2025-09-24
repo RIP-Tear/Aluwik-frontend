@@ -8,6 +8,30 @@ export type BlogPost = {
 
 export const blogPosts: BlogPost[] = [
   {
+    title: "Okna w Tczewie – nowoczesne rozwiązania od lokalnego producenta",
+    excerpt:
+      "Dowiedz się, dlaczego warto wybrać okna od lokalnego producenta w Tczewie i jakie korzyści dają systemy przesuwne.",
+    image: "/blog/windows-tczew.webp",
+    date: "Lipiec 2025",
+    href: "okna-tczew",
+  },
+  {
+    title: "Drzwi aluminiowe w Tczewie – trwałość i elegancja",
+    excerpt:
+      "Sprawdź, dlaczego drzwi aluminiowe to idealne połączenie nowoczesnego designu, trwałości i komfortu użytkowania.",
+    image: "/blog/aluminium-doors-tczew.webp",
+    date: "Sierpień 2025",
+    href: "drzwi-aluminiowe-tczew",
+  },
+  {
+    title: "Pergole tarasowe w Tczewie – komfort i elegancja z montażem",
+    excerpt:
+      "Pergole tarasowe to funkcjonalne i stylowe rozwiązanie do ogrodu lub tarasu. Poznaj ich zalety i możliwości montażu.",
+    image: "/blog/pergola-tczew.webp",
+    date: "Wrzesień 2025",
+    href: "pergole-tczew",
+  },
+  {
     title: "Jak zorganizować idealny ogród zimowy?",
     excerpt: "Dowiedz się, jak stworzyć ogród zimowy, który będzie cieszył oczy przez cały rok.",
     image: "/blog/perfect-winter-garden.webp",
