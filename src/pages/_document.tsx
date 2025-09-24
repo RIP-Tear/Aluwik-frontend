@@ -128,6 +128,12 @@ export default class MyDocument extends Document {
                     description:
                       "Wytrzymałe drzwi z profili aluminiowych zapewniające bezpieczeństwo i styl.",
                     url: "https://aluwik.pl/oferta/drzwi-aluminiowe/",
+                    offers: {
+                      "@type": "Offer",
+                      price: "0",
+                      priceCurrency: "PLN",
+                      availability: "https://schema.org/InStock",
+                    },
                   },
                   {
                     "@type": "Product",
@@ -136,6 +142,12 @@ export default class MyDocument extends Document {
                     description:
                       "Nowoczesne okna aluminiowe o znakomitej izolacji termicznej i akustycznej.",
                     url: "https://aluwik.pl/oferta/okna-aluminiowe/",
+                    offers: {
+                      "@type": "Offer",
+                      price: "0",
+                      priceCurrency: "PLN",
+                      availability: "https://schema.org/InStock",
+                    },
                   },
                   {
                     "@type": "Product",
@@ -144,6 +156,12 @@ export default class MyDocument extends Document {
                     description:
                       "Modułowe fasady słupowo–ryglowe i elementowe dla obiektów komercyjnych.",
                     url: "https://aluwik.pl/oferta/fasady/",
+                    offers: {
+                      "@type": "Offer",
+                      price: "0",
+                      priceCurrency: "PLN",
+                      availability: "https://schema.org/InStock",
+                    },
                   },
                   {
                     "@type": "Product",
@@ -152,6 +170,12 @@ export default class MyDocument extends Document {
                     description:
                       "Całoroczne oranżerie z izolowanych profili aluminiowych do komfortowego relaksu.",
                     url: "https://aluwik.pl/oferta/ogrody-zimowe/",
+                    offers: {
+                      "@type": "Offer",
+                      price: "0",
+                      priceCurrency: "PLN",
+                      availability: "https://schema.org/InStock",
+                    },
                   },
                   {
                     "@type": "Product",
@@ -160,6 +184,12 @@ export default class MyDocument extends Document {
                     description:
                       "Komfortowe i energooszczędne systemy przesuwne do dużych przeszkleń.",
                     url: "https://aluwik.pl/oferta/systemy-drzwi-przesuwanych/",
+                    offers: {
+                      "@type": "Offer",
+                      price: "0",
+                      priceCurrency: "PLN",
+                      availability: "https://schema.org/InStock",
+                    },
                   },
                   {
                     "@type": "Product",
@@ -168,6 +198,12 @@ export default class MyDocument extends Document {
                     description:
                       "Lekko i cicho pracujące okna przesuwne zwiększające powierzchnię użytkową.",
                     url: "https://aluwik.pl/oferta/okna-przesuwane/",
+                    offers: {
+                      "@type": "Offer",
+                      price: "0",
+                      priceCurrency: "PLN",
+                      availability: "https://schema.org/InStock",
+                    },
                   },
                   {
                     "@type": "Product",
@@ -176,6 +212,12 @@ export default class MyDocument extends Document {
                     description:
                       "Konstrukcje EI30-EI120 do skutecznego wydzielenia stref pożarowych.",
                     url: "https://aluwik.pl/oferta/sciany-oddzielenia-przeciwpozarowego/",
+                    offers: {
+                      "@type": "Offer",
+                      price: "0",
+                      priceCurrency: "PLN",
+                      availability: "https://schema.org/InStock",
+                    },
                   },
                   {
                     "@type": "Product",
@@ -184,6 +226,12 @@ export default class MyDocument extends Document {
                     description:
                       "Certyfikowane skrzydła EI30-EI120 gwarantujące bezpieczeństwo pożarowe.",
                     url: "https://aluwik.pl/oferta/drzwi-przeciwpozarowe/",
+                    offers: {
+                      "@type": "Offer",
+                      price: "0",
+                      priceCurrency: "PLN",
+                      availability: "https://schema.org/InStock",
+                    },
                   },
                   {
                     "@type": "Product",
@@ -192,6 +240,12 @@ export default class MyDocument extends Document {
                     description:
                       "Aluminiowe pergole i dachy szklane chroniące przed deszczem i słońcem.",
                     url: "https://aluwik.pl/oferta/zadaszenia-tarasow/",
+                    offers: {
+                      "@type": "Offer",
+                      price: "0",
+                      priceCurrency: "PLN",
+                      availability: "https://schema.org/InStock",
+                    },
                   },
                 ],
               }),
