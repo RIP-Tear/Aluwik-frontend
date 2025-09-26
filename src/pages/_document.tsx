@@ -133,6 +133,7 @@ export default class MyDocument extends Document {
                       price: "0",
                       priceCurrency: "PLN",
                       availability: "https://schema.org/InStock",
+                      priceValidUntil: "2026-09-26",
                     },
                   },
                   {
@@ -147,6 +148,7 @@ export default class MyDocument extends Document {
                       price: "0",
                       priceCurrency: "PLN",
                       availability: "https://schema.org/InStock",
+                      priceValidUntil: "2026-09-26",
                     },
                   },
                   {
@@ -161,6 +163,7 @@ export default class MyDocument extends Document {
                       price: "0",
                       priceCurrency: "PLN",
                       availability: "https://schema.org/InStock",
+                      priceValidUntil: "2026-09-26",
                     },
                   },
                   {
@@ -175,6 +178,7 @@ export default class MyDocument extends Document {
                       price: "0",
                       priceCurrency: "PLN",
                       availability: "https://schema.org/InStock",
+                      priceValidUntil: "2026-09-26",
                     },
                   },
                   {
@@ -189,6 +193,7 @@ export default class MyDocument extends Document {
                       price: "0",
                       priceCurrency: "PLN",
                       availability: "https://schema.org/InStock",
+                      priceValidUntil: "2026-09-26",
                     },
                   },
                   {
@@ -203,6 +208,7 @@ export default class MyDocument extends Document {
                       price: "0",
                       priceCurrency: "PLN",
                       availability: "https://schema.org/InStock",
+                      priceValidUntil: "2026-09-26",
                     },
                   },
                   {
@@ -217,6 +223,7 @@ export default class MyDocument extends Document {
                       price: "0",
                       priceCurrency: "PLN",
                       availability: "https://schema.org/InStock",
+                      priceValidUntil: "2026-09-26",
                     },
                   },
                   {
@@ -231,6 +238,7 @@ export default class MyDocument extends Document {
                       price: "0",
                       priceCurrency: "PLN",
                       availability: "https://schema.org/InStock",
+                      priceValidUntil: "2026-09-26",
                     },
                   },
                   {
@@ -245,6 +253,7 @@ export default class MyDocument extends Document {
                       price: "0",
                       priceCurrency: "PLN",
                       availability: "https://schema.org/InStock",
+                      priceValidUntil: "2026-09-26",
                     },
                   },
                 ],
