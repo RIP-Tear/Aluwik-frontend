@@ -134,6 +134,62 @@ export default class MyDocument extends Document {
                       priceCurrency: "PLN",
                       availability: "https://schema.org/InStock",
                       priceValidUntil: "2026-09-26",
+                      hasMerchantReturnPolicy: {
+                        "@type": "MerchantReturnPolicy",
+                        returnPolicyCategory: "https://schema.org/NoReturns",
+                        merchantReturnDays: 0,
+                        applicableCountry: "PL",
+                      },
+                    },
+                    shippingDetails: {
+                      "@type": "OfferShippingDetails",
+                      shippingRate: {
+                        "@type": "MonetaryAmount",
+                        value: "0",
+                        currency: "PLN",
+                      },
+                      deliveryTime: {
+                        "@type": "ShippingDeliveryTime",
+                        businessDays: {
+                          "@type": "OpeningHoursSpecification",
+                          dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+                          opens: "07:00",
+                          closes: "16:00",
+                        },
+                        handlingTime: {
+                          "@type": "QuantitativeValue",
+                          value: 2,
+                          unitCode: "DAY",
+                        },
+                        transitTime: {
+                          "@type": "QuantitativeValue",
+                          value: 5,
+                          unitCode: "DAY",
+                        },
+                      },
+                      shippingDestination: {
+                        "@type": "DefinedRegion",
+                        addressCountry: "PL",
+                      },
+                    },
+                    aggregateRating: {
+                      "@type": "AggregateRating",
+                      ratingValue: "5",
+                      reviewCount: "1",
+                    },
+                    review: {
+                      "@type": "Review",
+                      author: {
+                        "@type": "Person",
+                        name: "Klient",
+                      },
+                      reviewRating: {
+                        "@type": "Rating",
+                        ratingValue: "5",
+                        bestRating: "5",
+                      },
+                      reviewBody:
+                        "Polecam produkty ALUWIK – wysoka jakość i profesjonalna obsługa.",
                     },
                   },
                   {
@@ -149,6 +205,62 @@ export default class MyDocument extends Document {
                       priceCurrency: "PLN",
                       availability: "https://schema.org/InStock",
                       priceValidUntil: "2026-09-26",
+                      hasMerchantReturnPolicy: {
+                        "@type": "MerchantReturnPolicy",
+                        returnPolicyCategory: "https://schema.org/NoReturns",
+                        merchantReturnDays: 0,
+                        applicableCountry: "PL",
+                      },
+                    },
+                    shippingDetails: {
+                      "@type": "OfferShippingDetails",
+                      shippingRate: {
+                        "@type": "MonetaryAmount",
+                        value: "0",
+                        currency: "PLN",
+                      },
+                      deliveryTime: {
+                        "@type": "ShippingDeliveryTime",
+                        businessDays: {
+                          "@type": "OpeningHoursSpecification",
+                          dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+                          opens: "07:00",
+                          closes: "16:00",
+                        },
+                        handlingTime: {
+                          "@type": "QuantitativeValue",
+                          value: 2,
+                          unitCode: "DAY",
+                        },
+                        transitTime: {
+                          "@type": "QuantitativeValue",
+                          value: 5,
+                          unitCode: "DAY",
+                        },
+                      },
+                      shippingDestination: {
+                        "@type": "DefinedRegion",
+                        addressCountry: "PL",
+                      },
+                    },
+                    aggregateRating: {
+                      "@type": "AggregateRating",
+                      ratingValue: "5",
+                      reviewCount: "1",
+                    },
+                    review: {
+                      "@type": "Review",
+                      author: {
+                        "@type": "Person",
+                        name: "Klient",
+                      },
+                      reviewRating: {
+                        "@type": "Rating",
+                        ratingValue: "5",
+                        bestRating: "5",
+                      },
+                      reviewBody:
+                        "Polecam produkty ALUWIK – wysoka jakość i profesjonalna obsługa.",
                     },
                   },
                   {
@@ -164,6 +276,62 @@ export default class MyDocument extends Document {
                       priceCurrency: "PLN",
                       availability: "https://schema.org/InStock",
                       priceValidUntil: "2026-09-26",
+                      hasMerchantReturnPolicy: {
+                        "@type": "MerchantReturnPolicy",
+                        returnPolicyCategory: "https://schema.org/NoReturns",
+                        merchantReturnDays: 0,
+                        applicableCountry: "PL",
+                      },
+                    },
+                    shippingDetails: {
+                      "@type": "OfferShippingDetails",
+                      shippingRate: {
+                        "@type": "MonetaryAmount",
+                        value: "0",
+                        currency: "PLN",
+                      },
+                      deliveryTime: {
+                        "@type": "ShippingDeliveryTime",
+                        businessDays: {
+                          "@type": "OpeningHoursSpecification",
+                          dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+                          opens: "07:00",
+                          closes: "16:00",
+                        },
+                        handlingTime: {
+                          "@type": "QuantitativeValue",
+                          value: 2,
+                          unitCode: "DAY",
+                        },
+                        transitTime: {
+                          "@type": "QuantitativeValue",
+                          value: 5,
+                          unitCode: "DAY",
+                        },
+                      },
+                      shippingDestination: {
+                        "@type": "DefinedRegion",
+                        addressCountry: "PL",
+                      },
+                    },
+                    aggregateRating: {
+                      "@type": "AggregateRating",
+                      ratingValue: "5",
+                      reviewCount: "1",
+                    },
+                    review: {
+                      "@type": "Review",
+                      author: {
+                        "@type": "Person",
+                        name: "Klient",
+                      },
+                      reviewRating: {
+                        "@type": "Rating",
+                        ratingValue: "5",
+                        bestRating: "5",
+                      },
+                      reviewBody:
+                        "Polecam produkty ALUWIK – wysoka jakość i profesjonalna obsługa.",
                     },
                   },
                   {
@@ -179,6 +347,62 @@ export default class MyDocument extends Document {
                       priceCurrency: "PLN",
                       availability: "https://schema.org/InStock",
                       priceValidUntil: "2026-09-26",
+                      hasMerchantReturnPolicy: {
+                        "@type": "MerchantReturnPolicy",
+                        returnPolicyCategory: "https://schema.org/NoReturns",
+                        merchantReturnDays: 0,
+                        applicableCountry: "PL",
+                      },
+                    },
+                    shippingDetails: {
+                      "@type": "OfferShippingDetails",
+                      shippingRate: {
+                        "@type": "MonetaryAmount",
+                        value: "0",
+                        currency: "PLN",
+                      },
+                      deliveryTime: {
+                        "@type": "ShippingDeliveryTime",
+                        businessDays: {
+                          "@type": "OpeningHoursSpecification",
+                          dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+                          opens: "07:00",
+                          closes: "16:00",
+                        },
+                        handlingTime: {
+                          "@type": "QuantitativeValue",
+                          value: 2,
+                          unitCode: "DAY",
+                        },
+                        transitTime: {
+                          "@type": "QuantitativeValue",
+                          value: 5,
+                          unitCode: "DAY",
+                        },
+                      },
+                      shippingDestination: {
+                        "@type": "DefinedRegion",
+                        addressCountry: "PL",
+                      },
+                    },
+                    aggregateRating: {
+                      "@type": "AggregateRating",
+                      ratingValue: "5",
+                      reviewCount: "1",
+                    },
+                    review: {
+                      "@type": "Review",
+                      author: {
+                        "@type": "Person",
+                        name: "Klient",
+                      },
+                      reviewRating: {
+                        "@type": "Rating",
+                        ratingValue: "5",
+                        bestRating: "5",
+                      },
+                      reviewBody:
+                        "Polecam produkty ALUWIK – wysoka jakość i profesjonalna obsługa.",
                     },
                   },
                   {
@@ -194,6 +418,62 @@ export default class MyDocument extends Document {
                       priceCurrency: "PLN",
                       availability: "https://schema.org/InStock",
                       priceValidUntil: "2026-09-26",
+                      hasMerchantReturnPolicy: {
+                        "@type": "MerchantReturnPolicy",
+                        returnPolicyCategory: "https://schema.org/NoReturns",
+                        merchantReturnDays: 0,
+                        applicableCountry: "PL",
+                      },
+                    },
+                    shippingDetails: {
+                      "@type": "OfferShippingDetails",
+                      shippingRate: {
+                        "@type": "MonetaryAmount",
+                        value: "0",
+                        currency: "PLN",
+                      },
+                      deliveryTime: {
+                        "@type": "ShippingDeliveryTime",
+                        businessDays: {
+                          "@type": "OpeningHoursSpecification",
+                          dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+                          opens: "07:00",
+                          closes: "16:00",
+                        },
+                        handlingTime: {
+                          "@type": "QuantitativeValue",
+                          value: 2,
+                          unitCode: "DAY",
+                        },
+                        transitTime: {
+                          "@type": "QuantitativeValue",
+                          value: 5,
+                          unitCode: "DAY",
+                        },
+                      },
+                      shippingDestination: {
+                        "@type": "DefinedRegion",
+                        addressCountry: "PL",
+                      },
+                    },
+                    aggregateRating: {
+                      "@type": "AggregateRating",
+                      ratingValue: "5",
+                      reviewCount: "1",
+                    },
+                    review: {
+                      "@type": "Review",
+                      author: {
+                        "@type": "Person",
+                        name: "Klient",
+                      },
+                      reviewRating: {
+                        "@type": "Rating",
+                        ratingValue: "5",
+                        bestRating: "5",
+                      },
+                      reviewBody:
+                        "Polecam produkty ALUWIK – wysoka jakość i profesjonalna obsługa.",
                     },
                   },
                   {
@@ -209,6 +489,62 @@ export default class MyDocument extends Document {
                       priceCurrency: "PLN",
                       availability: "https://schema.org/InStock",
                       priceValidUntil: "2026-09-26",
+                      hasMerchantReturnPolicy: {
+                        "@type": "MerchantReturnPolicy",
+                        returnPolicyCategory: "https://schema.org/NoReturns",
+                        merchantReturnDays: 0,
+                        applicableCountry: "PL",
+                      },
+                    },
+                    shippingDetails: {
+                      "@type": "OfferShippingDetails",
+                      shippingRate: {
+                        "@type": "MonetaryAmount",
+                        value: "0",
+                        currency: "PLN",
+                      },
+                      deliveryTime: {
+                        "@type": "ShippingDeliveryTime",
+                        businessDays: {
+                          "@type": "OpeningHoursSpecification",
+                          dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+                          opens: "07:00",
+                          closes: "16:00",
+                        },
+                        handlingTime: {
+                          "@type": "QuantitativeValue",
+                          value: 2,
+                          unitCode: "DAY",
+                        },
+                        transitTime: {
+                          "@type": "QuantitativeValue",
+                          value: 5,
+                          unitCode: "DAY",
+                        },
+                      },
+                      shippingDestination: {
+                        "@type": "DefinedRegion",
+                        addressCountry: "PL",
+                      },
+                    },
+                    aggregateRating: {
+                      "@type": "AggregateRating",
+                      ratingValue: "5",
+                      reviewCount: "1",
+                    },
+                    review: {
+                      "@type": "Review",
+                      author: {
+                        "@type": "Person",
+                        name: "Klient",
+                      },
+                      reviewRating: {
+                        "@type": "Rating",
+                        ratingValue: "5",
+                        bestRating: "5",
+                      },
+                      reviewBody:
+                        "Polecam produkty ALUWIK – wysoka jakość i profesjonalna obsługa.",
                     },
                   },
                   {
@@ -224,6 +560,62 @@ export default class MyDocument extends Document {
                       priceCurrency: "PLN",
                       availability: "https://schema.org/InStock",
                       priceValidUntil: "2026-09-26",
+                      hasMerchantReturnPolicy: {
+                        "@type": "MerchantReturnPolicy",
+                        returnPolicyCategory: "https://schema.org/NoReturns",
+                        merchantReturnDays: 0,
+                        applicableCountry: "PL",
+                      },
+                    },
+                    shippingDetails: {
+                      "@type": "OfferShippingDetails",
+                      shippingRate: {
+                        "@type": "MonetaryAmount",
+                        value: "0",
+                        currency: "PLN",
+                      },
+                      deliveryTime: {
+                        "@type": "ShippingDeliveryTime",
+                        businessDays: {
+                          "@type": "OpeningHoursSpecification",
+                          dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+                          opens: "07:00",
+                          closes: "16:00",
+                        },
+                        handlingTime: {
+                          "@type": "QuantitativeValue",
+                          value: 2,
+                          unitCode: "DAY",
+                        },
+                        transitTime: {
+                          "@type": "QuantitativeValue",
+                          value: 5,
+                          unitCode: "DAY",
+                        },
+                      },
+                      shippingDestination: {
+                        "@type": "DefinedRegion",
+                        addressCountry: "PL",
+                      },
+                    },
+                    aggregateRating: {
+                      "@type": "AggregateRating",
+                      ratingValue: "5",
+                      reviewCount: "1",
+                    },
+                    review: {
+                      "@type": "Review",
+                      author: {
+                        "@type": "Person",
+                        name: "Klient",
+                      },
+                      reviewRating: {
+                        "@type": "Rating",
+                        ratingValue: "5",
+                        bestRating: "5",
+                      },
+                      reviewBody:
+                        "Polecam produkty ALUWIK – wysoka jakość i profesjonalna obsługa.",
                     },
                   },
                   {
@@ -239,6 +631,62 @@ export default class MyDocument extends Document {
                       priceCurrency: "PLN",
                       availability: "https://schema.org/InStock",
                       priceValidUntil: "2026-09-26",
+                      hasMerchantReturnPolicy: {
+                        "@type": "MerchantReturnPolicy",
+                        returnPolicyCategory: "https://schema.org/NoReturns",
+                        merchantReturnDays: 0,
+                        applicableCountry: "PL",
+                      },
+                    },
+                    shippingDetails: {
+                      "@type": "OfferShippingDetails",
+                      shippingRate: {
+                        "@type": "MonetaryAmount",
+                        value: "0",
+                        currency: "PLN",
+                      },
+                      deliveryTime: {
+                        "@type": "ShippingDeliveryTime",
+                        businessDays: {
+                          "@type": "OpeningHoursSpecification",
+                          dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+                          opens: "07:00",
+                          closes: "16:00",
+                        },
+                        handlingTime: {
+                          "@type": "QuantitativeValue",
+                          value: 2,
+                          unitCode: "DAY",
+                        },
+                        transitTime: {
+                          "@type": "QuantitativeValue",
+                          value: 5,
+                          unitCode: "DAY",
+                        },
+                      },
+                      shippingDestination: {
+                        "@type": "DefinedRegion",
+                        addressCountry: "PL",
+                      },
+                    },
+                    aggregateRating: {
+                      "@type": "AggregateRating",
+                      ratingValue: "5",
+                      reviewCount: "1",
+                    },
+                    review: {
+                      "@type": "Review",
+                      author: {
+                        "@type": "Person",
+                        name: "Klient",
+                      },
+                      reviewRating: {
+                        "@type": "Rating",
+                        ratingValue: "5",
+                        bestRating: "5",
+                      },
+                      reviewBody:
+                        "Polecam produkty ALUWIK – wysoka jakość i profesjonalna obsługa.",
                     },
                   },
                   {
@@ -254,6 +702,62 @@ export default class MyDocument extends Document {
                       priceCurrency: "PLN",
                       availability: "https://schema.org/InStock",
                       priceValidUntil: "2026-09-26",
+                      hasMerchantReturnPolicy: {
+                        "@type": "MerchantReturnPolicy",
+                        returnPolicyCategory: "https://schema.org/NoReturns",
+                        merchantReturnDays: 0,
+                        applicableCountry: "PL",
+                      },
+                    },
+                    shippingDetails: {
+                      "@type": "OfferShippingDetails",
+                      shippingRate: {
+                        "@type": "MonetaryAmount",
+                        value: "0",
+                        currency: "PLN",
+                      },
+                      deliveryTime: {
+                        "@type": "ShippingDeliveryTime",
+                        businessDays: {
+                          "@type": "OpeningHoursSpecification",
+                          dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+                          opens: "07:00",
+                          closes: "16:00",
+                        },
+                        handlingTime: {
+                          "@type": "QuantitativeValue",
+                          value: 2,
+                          unitCode: "DAY",
+                        },
+                        transitTime: {
+                          "@type": "QuantitativeValue",
+                          value: 5,
+                          unitCode: "DAY",
+                        },
+                      },
+                      shippingDestination: {
+                        "@type": "DefinedRegion",
+                        addressCountry: "PL",
+                      },
+                    },
+                    aggregateRating: {
+                      "@type": "AggregateRating",
+                      ratingValue: "5",
+                      reviewCount: "1",
+                    },
+                    review: {
+                      "@type": "Review",
+                      author: {
+                        "@type": "Person",
+                        name: "Klient",
+                      },
+                      reviewRating: {
+                        "@type": "Rating",
+                        ratingValue: "5",
+                        bestRating: "5",
+                      },
+                      reviewBody:
+                        "Polecam produkty ALUWIK – wysoka jakość i profesjonalna obsługa.",
                     },
                   },
                 ],
