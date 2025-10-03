@@ -2,8 +2,7 @@ import React, { JSX } from "react";
 import clsx from "clsx";
 import { Text } from "../text/Text";
 import { MoonLoader } from "react-spinners";
-
-type AllowedSizes = 14 | 16 | 18 | 24 | 32 | 64;
+import { AllowedSizes } from "@/utils/sizeMap";
 
 type ButtonProps = {
   label?: string;

@@ -1,16 +1,6 @@
 import React from "react";
 import clsx from "clsx";
-
-type AllowedSizes = 14 | 16 | 18 | 24 | 32 | 64;
-
-const sizeMap: Record<AllowedSizes, string> = {
-  14: "sm:text-sm text-xs",
-  16: "sm:text-base text-sm",
-  18: "sm:text-lg text-base",
-  24: "sm:text-2xl text-lg",
-  32: "sm:text-4xl text-2xl",
-  64: "sm:text-6xl text-4xl",
-};
+import { AllowedSizes, sizeMap } from "@/utils/sizeMap";
 
 type AllowedTags = "p" | "span" | "div";
 type TextProps<Tag extends AllowedTags = "p"> = {

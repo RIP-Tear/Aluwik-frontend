@@ -2,18 +2,9 @@
 import React from "react";
 import clsx from "clsx";
 import styles from "./heading.module.css";
+import { AllowedSizes, sizeMap } from "@/utils/sizeMap";
 
-type AllowedSizes = 14 | 16 | 18 | 24 | 32 | 64;
 type AllowedTags = "h1" | "h2" | "h3" | "h4" | "h5" | "h6";
-
-const sizeMap: Record<AllowedSizes, string> = {
-  14: "sm:text-sm text-xs",
-  16: "sm:text-base text-sm",
-  18: "sm:text-lg text-base",
-  24: "sm:text-2xl text-lg",
-  32: "sm:text-4xl text-2xl",
-  64: "sm:text-6xl text-4xl",
-};
 
 type HeadingProps<Tag extends AllowedTags = "h1"> = {
   as?: Tag;
@@ -28,7 +19,7 @@ type HeadingProps<Tag extends AllowedTags = "h1"> = {
 export const Heading = <Tag extends AllowedTags = "h1">({
   as,
   label,
-  size = 64,
+  size = 60,
   className,
   highlightWords = [],
   highlightColor,
