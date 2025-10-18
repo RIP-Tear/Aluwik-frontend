@@ -19,6 +19,7 @@ const GlassPartitionWallOffer = () => {
       imageSrc="/img/scianka-dzialowa-szklana.webp"
       imageAlt="Ścianka działowa szklana – nowoczesne rozwiązania ALUWIK"
       relatedOffers={relatedOffers}
+      value="sciankaDzialowaSzklana"
       boxes={[
         {
           icon: AppWindow,

@@ -19,6 +19,7 @@ const RoofSkylightsOffer = () => {
       imageSrc="/img/swietliki-dachowe.webp"
       imageAlt="Świetliki dachowe – naturalne doświetlenie wnętrz ALUWIK"
       relatedOffers={relatedOffers}
+      value="swietlikiDachowe"
       boxes={[
         {
           icon: AppWindow,

@@ -2,11 +2,13 @@ import PageSection from "@/components/atoms/page-section/PageSection";
 import HeroText from "@/components/molecules/hero-text/HeroText";
 import Image from "next/image";
 import React from "react";
+import { useCloudinaryRealizations } from "@/hooks/useCloudinaryRealizations";
 import { LucideIcon, MoveUpRight } from "lucide-react";
 import { Heading } from "@/components/atoms/heading/Heading";
 import { Text } from "@/components/atoms/text/Text";
 import Link from "next/link";
 import { offers } from "@/utils/mock/offers";
+import { Button } from "@/components/atoms/button/Button";
 
 type LinkItem = {
   label: string;
@@ -33,6 +35,7 @@ type OfferPageTemplateProps = {
   boxes: BoxItem[];
   sections: SectionItem[];
   relatedOffers: typeof offers;
+  value: string;
 };
 
 const OfferPageTemplate = ({
@@ -43,7 +46,19 @@ const OfferPageTemplate = ({
   boxes,
   sections,
   relatedOffers,
+  value,
 }: OfferPageTemplateProps) => {
+  // Pobierz realizacje z Cloudinary
+  const { data: realizations, isLoading } = useCloudinaryRealizations();
+  // Ustal kategorię na podstawie przekazanego value
+  const categoryValue = value;
+  const realizacjeOferty = realizations?.filter(r => r.category === categoryValue) || [];
+  const realizacjePreview = realizacjeOferty.slice(0, 4);
+
+  const handleGoToRealizations = () => {
+    window.location.href = `/realizacje?kategoria=${categoryValue}`;
+  };
+
   return (
     <>
       <HeroText label={title} highlightWords={highlightWords} />
@@ -116,9 +131,46 @@ const OfferPageTemplate = ({
                 )}
               </div>
             ))}
+
+            {/* NOWA SEKCJA REALIZACJE */}
+            <Heading
+              label="Zobacz realizacje"
+              className="mb-5 text-start mt-10"
+              as="h2"
+              size={24}
+            />
+            <div className="grid grid-cols-2 gap-4 mb-6">
+              {isLoading ? (
+                <Text text="Ładowanie zdjęć..." size={14} />
+              ) : realizacjePreview.length === 0 ? (
+                <Text text="Brak realizacji dla tej oferty." size={14} />
+              ) : (
+                realizacjePreview.map(real => (
+                  <div
+                    key={real.id}
+                    className="relative w-full aspect-[2/1] rounded-xl overflow-hidden border-2 border-orangeAccent cursor-active group"
+                    onClick={handleGoToRealizations}
+                  >
+                    <Image
+                      src={real.image.url}
+                      alt={real.image.name}
+                      fill
+                      className="object-cover group-hover:scale-105 transition-transform duration-300"
+                    />
+                  </div>
+                ))
+              )}
+            </div>
+            <Button
+              label="Przejdź do realizacji"
+              icon={<MoveUpRight />}
+              onClick={handleGoToRealizations}
+            />
+
+            {/* OFERTY */}
             <Heading
               label="Sprawdź nasze inne oferty"
-              className="mb-5 text-start mt-10"
+              className="mb-5 text-start mt-5"
               as="h2"
               size={24}
             />

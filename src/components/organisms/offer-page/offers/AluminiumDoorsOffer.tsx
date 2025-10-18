@@ -17,6 +17,7 @@ const AluminiumDoorsOffer = () => {
       imageSrc="/img/drzwi-aluminiowe.webp"
       imageAlt="Drzwi aluminiowe Tczew – producent stolarki aluminiowej ALUWIK"
       relatedOffers={relatedOffers}
+      value="drzwiAluminiowe"
       boxes={[
         {
           icon: DoorClosed,

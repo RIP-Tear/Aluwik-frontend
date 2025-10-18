@@ -18,6 +18,7 @@ const WinterGardensOffer = () => {
       imageSrc="/img/ogrody-zimowe.webp"
       imageAlt="Ogrody zimowe z profili aluminiowych – Tczew, ALUWIK"
       relatedOffers={relatedOffers}
+      value="ogrodyZimowe"
       boxes={[
         {
           icon: SunSnow,

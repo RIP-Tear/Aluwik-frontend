@@ -19,6 +19,7 @@ const InteriorStructuresOffer = () => {
       imageSrc="/img/zabudowania-wewnetrzne.webp"
       imageAlt="Zabudowania wewnętrzne aluminiowe – nowoczesne rozwiązania ALUWIK"
       relatedOffers={relatedOffers}
+      value="zabudowaniaWewnetrzne"
       boxes={[
         {
           icon: AppWindow,

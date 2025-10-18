@@ -17,6 +17,7 @@ const FacadesOffer = () => {
       imageSrc="/img/fasady.webp"
       imageAlt="Fasady aluminiowe dla obiektów komercyjnych – ALUWIK Tczew"
       relatedOffers={relatedOffers}
+      value="fasady"
       boxes={[
         {
           icon: Layers3,

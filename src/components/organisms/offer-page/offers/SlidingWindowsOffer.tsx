@@ -18,6 +18,7 @@ const SlidingWindowsOffer = () => {
       imageSrc="/img/okna-przesuwane.webp"
       imageAlt="Okna przesuwane aluminiowe – komfortowe rozwiązania od ALUWIK"
       relatedOffers={relatedOffers}
+      value="oknaPrzesuwane"
       boxes={[
         {
           icon: MoveHorizontal,

@@ -20,6 +20,7 @@ const ExteriorStructuresOffer = () => {
       imageSrc="/img/zabudowania-zewnetrzne.webp"
       imageAlt="Zabudowania zewnętrzne aluminiowe – nowoczesne konstrukcje ALUWIK"
       relatedOffers={relatedOffers}
+      value="zabudowaniaZewnetrzne"
       boxes={[
         {
           icon: AppWindow,

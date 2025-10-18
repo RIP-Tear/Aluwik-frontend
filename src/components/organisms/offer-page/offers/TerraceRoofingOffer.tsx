@@ -18,6 +18,7 @@ const TerraceRoofingOffer = () => {
       imageSrc="/img/zadaszenia-tarasow.webp"
       imageAlt="Aluminiowe zadaszenia tarasów i pergole – Tczew, producent ALUWIK"
       relatedOffers={relatedOffers}
+      value="zadaszeniaTarasow"
       boxes={[
         {
           icon: Umbrella,

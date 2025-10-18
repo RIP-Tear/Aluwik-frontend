@@ -18,6 +18,7 @@ const AluminiumWindowsOffer = () => {
       imageSrc="/img/okna-aluminiowe.webp"
       imageAlt="Okna aluminiowe Pomorskie – energooszczędna stolarka ALUWIK"
       relatedOffers={relatedOffers}
+      value="oknaAluminiowe"
       boxes={[
         {
           icon: AppWindow,

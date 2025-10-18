@@ -17,6 +17,7 @@ const SlidingDoorSystemsOffer = () => {
       imageSrc="/img/systemy-drzwi-przesuwanych.webp"
       imageAlt="Systemy przesuwne aluminiowe – duże przeszklenia ALUWIK Pomorskie"
       relatedOffers={relatedOffers}
+      value="systemyDrzwiPrzesuwanych"
       boxes={[
         {
           icon: CheckCircle,
