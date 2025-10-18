@@ -133,12 +133,7 @@ const OfferPageTemplate = ({
             ))}
 
             {/* NOWA SEKCJA REALIZACJE */}
-            <Heading
-              label="Zobacz realizacje"
-              className="mb-5 text-start mt-10"
-              as="h2"
-              size={24}
-            />
+            <Heading label="Zobacz realizacje" className="mb-5 text-start mt-5" as="h2" size={24} />
             <div className="grid grid-cols-2 gap-4 mb-6">
               {isLoading ? (
                 <Text text="Ładowanie zdjęć..." size={14} />

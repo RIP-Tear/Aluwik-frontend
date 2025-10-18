@@ -4,7 +4,7 @@ import PageSection from "@/components/atoms/page-section/PageSection";
 import clsx from "clsx";
 import { MoonLoader } from "react-spinners";
 import { Text } from "@/components/atoms/text/Text";
-import { TriangleAlert } from "lucide-react";
+import { TriangleAlert, MoveUpRight } from "lucide-react";
 import ImageModal from "./ImageModal";
 import { Cloudinary } from "@cloudinary/url-gen";
 import { AdvancedImage } from "@cloudinary/react";
@@ -13,6 +13,7 @@ import { autoGravity } from "@cloudinary/url-gen/qualifiers/gravity";
 import { useCloudinaryRealizations } from "@/hooks/useCloudinaryRealizations";
 
 import { offers } from "@/utils/mock/offers";
+import Link from "next/link";
 
 const CATEGORY_CONFIG = offers.reduce(
   (acc, offer) => {
@@ -149,7 +150,22 @@ const CategoryPreviewRealization: React.FC = () => {
         {desktopCategorySidebar}
 
         <div className="flex-1 w-full">
-          <Text text={CATEGORY_CONFIG[activeCategory].title} size={24} className="mb-5" />
+          <div className="w-full border-2 border-orangeAccent rounded-xl p-4 mb-6 bg-white flex items-center gap-3 justify-between">
+            <div className="flex items-center gap-3">
+              {(() => {
+                const Icon = CATEGORY_CONFIG[activeCategory].icon;
+                return Icon ? <Icon size={24} className="text-orangeAccent" /> : null;
+              })()}
+              <Text text={CATEGORY_CONFIG[activeCategory].title} size={18} />
+            </div>
+            <Link
+              href={offers.find(o => o.value === activeCategory)?.href || "#"}
+              className="bg-orangeAccent rounded-full text-white w-10 h-10 flex items-center justify-center shadow-md transition hover:scale-105 cursor-active"
+              title="Przejdź do oferty"
+            >
+              <MoveUpRight size={20} />
+            </Link>
+          </div>
           <div className="grid grid-cols-2 lg:grid-cols-3 gap-6 mb-10 sm:mb-[100px]">
             {filtered.map(({ id, image }, index) => {
               const cldImg = cld
