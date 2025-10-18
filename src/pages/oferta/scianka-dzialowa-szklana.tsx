@@ -6,21 +6,21 @@ import { Navbar } from "@/components/molecules/navbar/Navbar";
 import NavbarContact from "@/components/molecules/navbar-contact/NavbarContact";
 import { Footer } from "@/components/molecules/footer/Footer";
 import ContactHero from "@/components/organisms/home-page/ContactHero";
-import FirePartitionWallsOffer from "@/components/organisms/offer-page/offers/FirePartitionWallsOffer";
+import GlassPartitionWallOffer from "@/components/organisms/offer-page/offers/GlassPartitionWallOffer";
 
-export default function FirePartitionWallsPage() {
+export default function GlassPartitionWallPage() {
   return (
     <>
       <PageHead
-        title="ALUWIK | Ściany oddzielenia przeciwpożarowego"
-        description="Bezpieczne i certyfikowane ściany oddzielenia przeciwpożarowego od ALUWIK. Tworzymy konstrukcje aluminiowe EI30, EI60 i EI120 zgodne z normami pożarowymi. Sprawdź nasze realizacje!"
+        title="ALUWIK | Ścianka działowa szklana – nowoczesność i trwałość"
+        description="Oferujemy ścianki działowe szklane o wysokiej odporności, izolacyjności i nowoczesnym wyglądzie. Idealne do domów, biur i budynków komercyjnych. Zaufaj jakości profili Aluprof i Ponzio."
       />
 
       <div className="hidden xl:block">
         <NavbarContact />
       </div>
       <Navbar />
-      <FirePartitionWallsOffer />
+      <GlassPartitionWallOffer />
       <ContactHero />
       <Footer />
     </>

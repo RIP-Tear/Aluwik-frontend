@@ -14,7 +14,7 @@ const SlidingDoorSystemsOffer = () => {
     <OfferPageTemplate
       title="Systemy drzwi przesuwnych"
       highlightWords={["drzwi"]}
-      imageSrc="/img/drzwi-przesuwane.webp"
+      imageSrc="/img/systemy-drzwi-przesuwanych.webp"
       imageAlt="Systemy przesuwne aluminiowe – duże przeszklenia ALUWIK Pomorskie"
       relatedOffers={relatedOffers}
       boxes={[

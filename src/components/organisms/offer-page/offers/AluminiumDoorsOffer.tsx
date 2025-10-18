@@ -82,7 +82,7 @@ const AluminiumDoorsOffer = () => {
     <OfferPageTemplate
       title="Drzwi aluminiowe"
       highlightWords={["aluminiowe"]}
-      imageSrc="/img/drzwi.webp"
+      imageSrc="/img/drzwi-aluminiowe.webp"
       imageAlt="Drzwi aluminiowe Tczew – producent stolarki aluminiowej ALUWIK"
       boxes={boxes}
       sections={sections}
