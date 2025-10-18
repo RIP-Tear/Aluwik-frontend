@@ -171,9 +171,10 @@ const OfferPageTemplate = ({
             />
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
               {relatedOffers.map((offer, index) => (
-                <div
+                <Link
                   key={index}
-                  className="bg-white relative border-2 border-orangeAccent rounded-xl overflow-hidden group"
+                  className="hover:bg-white transition duration-300 relative border-2 border-orangeAccent rounded-xl overflow-hidden group cursor-active"
+                  href={offer.href}
                 >
                   <div className="p-4 pb-14">
                     <div className="flex items-center gap-2 justify-start mb-5">
@@ -182,13 +183,10 @@ const OfferPageTemplate = ({
                     </div>
                   </div>
 
-                  <Link
-                    className="absolute bottom-4 right-4 bg-orangeAccent rounded-full text-white w-10 h-10 flex items-center justify-center shadow-md transition hover:scale-105 cursor-active"
-                    href={offer.href}
-                  >
+                  <div className="absolute bottom-4 right-4 bg-orangeAccent rounded-full text-white w-10 h-10 flex items-center justify-center shadow-md transition hover:scale-105 cursor-active">
                     <MoveUpRight size={20} />
-                  </Link>
-                </div>
+                  </div>
+                </Link>
               ))}
             </div>
           </div>

@@ -11,9 +11,10 @@ const PreviewOffers = () => {
     <PageSection className="mb-10 sm:mb-[100px]">
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
         {offers.map((offer, index) => (
-          <div
+          <Link
             key={index}
-            className="relative border-2 border-orangeAccent rounded-xl overflow-hidden group"
+            className="relative border-2 border-orangeAccent rounded-xl overflow-hidden group hover:bg-white transition duration-300 cursor-active"
+            href={offer.href}
           >
             <div className="relative w-full h-48">
               <Image
@@ -34,13 +35,10 @@ const PreviewOffers = () => {
               <Text text={offer.description} size={14} />
             </div>
 
-            <Link
-              className="absolute bottom-4 right-4 bg-orangeAccent rounded-full text-white w-10 h-10 flex items-center justify-center shadow-md transition hover:scale-105 cursor-active"
-              href={offer.href}
-            >
+            <div className="absolute bottom-4 right-4 bg-orangeAccent rounded-full text-white w-10 h-10 flex items-center justify-center shadow-md transition hover:scale-105 cursor-active">
               <MoveUpRight size={20} />
-            </Link>
-          </div>
+            </div>
+          </Link>
         ))}
       </div>
     </PageSection>
