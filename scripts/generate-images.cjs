@@ -16,7 +16,20 @@ if (!apiSecret) throw new Error("Missing CLOUDINARY_API_SECRET");
 
 cloudinary.config({ cloud_name: cloudName, api_key: apiKey, api_secret: apiSecret });
 
-const CATS = ["systemyOkiennoDzwiowe", "fasady", "stolarkaPrzeciwpozarowa", "ogrodyZimowe"];
+const CATS = [
+  "drzwiAluminiowe",
+  "oknaAluminiowe",
+  "fasady",
+  "ogrodyZimowe",
+  "systemyDrzwiPrzesuwanych",
+  "oknaPrzesuwane",
+  "swietlikiDachowe",
+  "zabudowaniaZewnetrzne",
+  "zabudowaniaWewnetrzne",
+  "sciankaDzialowaSzklana",
+  "drzwiPrzeciwpozarowe",
+  "zadaszeniaTarasow",
+];
 
 (async () => {
   try {

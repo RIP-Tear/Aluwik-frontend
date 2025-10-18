@@ -3,7 +3,7 @@ import PageSection from "@/components/atoms/page-section/PageSection";
 import clsx from "clsx";
 import { MoonLoader } from "react-spinners";
 import { Text } from "@/components/atoms/text/Text";
-import { DoorOpen, Layers3, SunSnow, Flame, TriangleAlert } from "lucide-react";
+import { TriangleAlert } from "lucide-react";
 import ImageModal from "./ImageModal";
 import { Cloudinary } from "@cloudinary/url-gen";
 import { AdvancedImage } from "@cloudinary/react";
@@ -11,12 +11,15 @@ import { auto } from "@cloudinary/url-gen/actions/resize";
 import { autoGravity } from "@cloudinary/url-gen/qualifiers/gravity";
 import { useCloudinaryRealizations } from "@/hooks/useCloudinaryRealizations";
 
-const CATEGORY_CONFIG: Record<string, { title: string; icon: React.ElementType }> = {
-  systemyOkiennoDzwiowe: { title: "Systemy okienno-dzwiowe", icon: DoorOpen },
-  fasady: { title: "Fasady", icon: Layers3 },
-  stolarkaPrzeciwpozarowa: { title: "Stolarka przeciwpożarowa", icon: Flame },
-  ogrodyZimowe: { title: "Ogrody zimowe", icon: SunSnow },
-};
+import { offers } from "@/utils/mock/offers";
+
+const CATEGORY_CONFIG = offers.reduce(
+  (acc, offer) => {
+    acc[offer.value] = { title: offer.title, icon: offer.icon };
+    return acc;
+  },
+  {} as Record<string, { title: string; icon: React.ElementType }>,
+);
 
 const CATEGORY_KEYS = Object.keys(CATEGORY_CONFIG);
 
@@ -24,7 +27,7 @@ const buildImageSrc = (img: any) => img.url;
 
 const CategoryPreviewRealization: React.FC = () => {
   const { data, isLoading, isError, error } = useCloudinaryRealizations();
-  const [activeCategory, setActiveCategory] = useState("systemyOkiennoDzwiowe");
+  const [activeCategory, setActiveCategory] = useState(CATEGORY_KEYS[0]);
   const [openedIndex, setOpenedIndex] = useState<number | null>(null);
 
   const cld = useMemo(
@@ -36,20 +39,19 @@ const CategoryPreviewRealization: React.FC = () => {
   );
 
   const mobileCategoryButtons = (
-    <div className="flex flex-col gap-4 w-full md:hidden mb-6">
+    <div className="flex flex-row flex-wrap gap-4 md:hidden mb-6">
       {CATEGORY_KEYS.map(key => {
-        const { icon: Icon, title } = CATEGORY_CONFIG[key];
+        const { icon: Icon } = CATEGORY_CONFIG[key];
         return (
           <button
             key={key}
             onClick={() => setActiveCategory(key)}
             className={clsx(
-              "relative w-full border-2 border-orangeAccent rounded-xl p-4 transition flex items-center gap-3 text-left cursor-active",
+              "relative max-w-xs border-2 border-orangeAccent rounded-xl p-4 transition flex items-center gap-3 text-left cursor-active",
               activeCategory === key ? "bg-white shadow-md" : "hover:bg-white",
             )}
           >
-            <Icon size={36} className="text-orangeAccent" />
-            <Text text={title} size={18} />
+            <Icon size={24} className="text-orangeAccent" />
           </button>
         );
       })}
@@ -59,7 +61,7 @@ const CategoryPreviewRealization: React.FC = () => {
   const desktopCategorySidebar = (
     <div className="hidden md:flex flex-col gap-4 sticky top-10 self-start h-fit">
       {CATEGORY_KEYS.map(key => {
-        const { icon: Icon, title } = CATEGORY_CONFIG[key];
+        const { icon: Icon } = CATEGORY_CONFIG[key];
         return (
           <button
             key={key}
@@ -69,8 +71,7 @@ const CategoryPreviewRealization: React.FC = () => {
               activeCategory === key ? "bg-white shadow-md" : "hover:bg-white",
             )}
           >
-            <Icon size={36} className="text-orangeAccent" />
-            <Text text={title} size={18} />
+            <Icon size={24} className="text-orangeAccent" />
           </button>
         );
       })}
@@ -129,34 +130,37 @@ const CategoryPreviewRealization: React.FC = () => {
         {mobileCategoryButtons}
         {desktopCategorySidebar}
 
-        <div className="grid grid-cols-2 lg:grid-cols-3 gap-6 flex-1 mb-10 sm:mb-[100px]">
-          {filtered.map(({ id, image }, index) => {
-            const cldImg = cld
-              .image(image.publicId)
-              .format("auto")
-              .quality("auto")
-              .resize(auto().gravity(autoGravity()).width(800).height(600));
+        <div className="flex-1 w-full">
+          <Text text={CATEGORY_CONFIG[activeCategory].title} size={24} className="mb-5" />
+          <div className="grid grid-cols-2 lg:grid-cols-3 gap-6 mb-10 sm:mb-[100px]">
+            {filtered.map(({ id, image }, index) => {
+              const cldImg = cld
+                .image(image.publicId)
+                .format("auto")
+                .quality("auto")
+                .resize(auto().gravity(autoGravity()).width(800).height(600));
 
-            return (
-              <div
-                key={id}
-                className="border-2 border-orangeAccent group relative w-full aspect-[4/3] overflow-hidden rounded-xl cursor-active"
-                onClick={() => openModal(index)}
-              >
-                <AdvancedImage
-                  cldImg={cldImg}
-                  className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
-                />
-              </div>
-            );
-          })}
+              return (
+                <div
+                  key={id}
+                  className="border-2 border-orangeAccent group relative w-full aspect-[4/3] overflow-hidden rounded-xl cursor-active"
+                  onClick={() => openModal(index)}
+                >
+                  <AdvancedImage
+                    cldImg={cldImg}
+                    className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
+                  />
+                </div>
+              );
+            })}
 
-          {filtered.length === 0 && (
-            <Text
-              text="Brak realizacji w tej kategorii."
-              className="text-greyVariant col-span-full"
-            />
-          )}
+            {filtered.length === 0 && (
+              <Text
+                text="Brak realizacji w tej kategorii."
+                className="text-greyVariant col-span-full"
+              />
+            )}
+          </div>
         </div>
       </div>
 
