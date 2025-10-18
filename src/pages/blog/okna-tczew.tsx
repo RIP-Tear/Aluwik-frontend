@@ -10,7 +10,7 @@ export default function OknaTczewPage() {
   return (
     <>
       <PageHead
-        title="Okna Tczew | Okna producent i okna przesuwane Tczew – ALUWIK"
+        title="Okna Tczew - Blog | ALUWIK"
         description="Okna Tczew od lokalnego producenta. Energooszczędne okna przesuwane Tczew – funkcjonalne, estetyczne i trwałe rozwiązania do Twojego domu."
       />
       <div className="hidden xl:block">

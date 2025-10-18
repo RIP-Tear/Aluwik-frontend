@@ -10,7 +10,7 @@ export default function PergoleTarasoweTczewPage() {
   return (
     <>
       <PageHead
-        title="Pergole tarasowe Tczew z montażem | Pergole Tczew – ALUWIK"
+        title="Pergole tarasowe Tczew z montażem - Blog | ALUWIK"
         description="Pergole tarasowe Tczew z montażem od lokalnego producenta. Nowoczesne pergole Tczew – eleganckie, funkcjonalne i dopasowane do Twojego tarasu."
       />
       <div className="hidden xl:block">

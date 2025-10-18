@@ -26,7 +26,6 @@ export default class MyDocument extends Document {
             content="Sprawdź naszą ofertę okien, drzwi, fasad i ogrodów zimowych z aluminium. ALUWIK — nowoczesne systemy dla wymagających."
           />
           <meta property="og:url" content="https://www.aluwik.pl/" />
-          <meta name="viewport" content="width=device-width, initial-scale=1" />
           <meta property="og:site_name" content="ALUWIK" />
           <meta property="og:locale" content="pl_PL" />
           <meta property="og:type" content="website" />

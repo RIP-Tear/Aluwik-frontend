@@ -10,7 +10,7 @@ export default function DrzwiPrzeciwpozarowePage() {
   return (
     <>
       <PageHead
-        title="Drzwi przeciwpożarowe – bezpieczeństwo w nowoczesnej formie | Blog ALUWIK"
+        title="Drzwi przeciwpożarowe – bezpieczeństwo w nowoczesnej formie - Blog | ALUWIK"
         description="Dowiedz się, dlaczego drzwi przeciwpożarowe są kluczowym elementem zabezpieczeń w nowoczesnym budownictwie. Sprawdź, jak łączymy estetykę z funkcjonalnością i odpornością na ogień."
       />
 

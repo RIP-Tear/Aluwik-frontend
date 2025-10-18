@@ -10,7 +10,7 @@ export default function DrzwiAluminioweTczewPage() {
   return (
     <>
       <PageHead
-        title="Drzwi aluminiowe Tczew | Drzwi przesuwane Tczew – ALUWIK"
+        title="Drzwi aluminiowe Tczew - Blog | ALUWIK"
         description="Drzwi aluminiowe Tczew i drzwi przesuwane Tczew od lokalnego producenta. Nowoczesny design, trwałość i elegancja dopasowana do Twojego domu."
       />
       <div className="hidden xl:block">

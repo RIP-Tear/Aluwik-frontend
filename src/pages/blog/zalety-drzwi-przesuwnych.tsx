@@ -10,7 +10,7 @@ export default function ZaletyDzwiPrzesuwanychPage() {
   return (
     <>
       <PageHead
-        title="5 zalet drzwi przesuwnych w nowoczesnych wnętrzach | Blog ALUWIK"
+        title="5 zalet drzwi przesuwnych w nowoczesnych wnętrzach - Blog | ALUWIK"
         description="Poznaj największe atuty drzwi przesuwnych – oszczędność miejsca, elegancki design i funkcjonalność. Sprawdź, dlaczego to idealne rozwiązanie do współczesnych domów i mieszkań."
       />
       <div className="hidden xl:block">

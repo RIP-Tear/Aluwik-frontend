@@ -10,7 +10,7 @@ export default function TarasyKompozytowePage() {
   return (
     <>
       <PageHead
-        title="Tarasy kompozytowe – trwałość i styl na lata | Blog ALUWIK"
+        title="Tarasy kompozytowe – trwałość i styl na lata - Blog | ALUWIK"
         description="Sprawdź, dlaczego tarasy kompozytowe to idealne połączenie estetyki i odporności na warunki atmosferyczne. Poznaj ich zalety i dowiedz się, jak stworzyć elegancki taras na lata."
       />
       <div className="hidden xl:block">

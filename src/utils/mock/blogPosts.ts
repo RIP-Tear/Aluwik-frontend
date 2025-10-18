@@ -8,6 +8,22 @@ export type BlogPost = {
 
 export const blogPosts: BlogPost[] = [
   {
+    title: "Świetliki dachowe z aluminium i szkła – naturalne światło w nowoczesnym wydaniu",
+    excerpt:
+      "Świetliki dachowe aluminiowe to połączenie funkcjonalności i estetyki. Dowiedz się, dlaczego warto wybrać konstrukcje aluminiowo-szklane do swojego domu lub biura.",
+    image: "/blog/aluminium-rooflight.webp",
+    date: "Październik 2025",
+    href: "swietliki-dachowe-aluminiowe",
+  },
+  {
+    title: "Zabudowy aluminiowe – nowoczesne rozwiązania do wnętrz i elewacji",
+    excerpt:
+      "Poznaj zalety zabudów aluminiowych – idealnych do wnętrz biurowych i nowoczesnych elewacji. Lekkie, trwałe i stylowe konstrukcje dopasowane do każdego projektu.",
+    image: "/blog/aluminium-partitions.webp",
+    date: "Listopad 2025",
+    href: "zabudowy-aluminiowe",
+  },
+  {
     title: "Okna w Tczewie – nowoczesne rozwiązania od lokalnego producenta",
     excerpt:
       "Dowiedz się, dlaczego warto wybrać okna od lokalnego producenta w Tczewie i jakie korzyści dają systemy przesuwne.",
