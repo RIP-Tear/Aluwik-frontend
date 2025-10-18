@@ -6,7 +6,7 @@ import { offers } from "@/utils/mock/offers";
 import { MoveUpRight } from "lucide-react";
 import Image from "next/image";
 import React, { useState } from "react";
-import { useIsMobile } from "@/hooks/useIsMobile"; // ← zakładam że plik znajduje się tam
+import { useIsMobile } from "@/hooks/useIsMobile";
 import { AnimatePresence, motion } from "framer-motion";
 import Link from "next/link";
 
