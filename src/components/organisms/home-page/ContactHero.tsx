@@ -23,7 +23,7 @@ const ContactHero = () => {
             <Heading
               label="Jesteś zainteresowany naszymi
 usługami?"
-              size={32}
+              size={36}
               className=" text-start mb-4"
               as="h2"
               highlightWords={["usługami"]}

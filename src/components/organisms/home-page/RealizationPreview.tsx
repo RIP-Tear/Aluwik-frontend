@@ -42,7 +42,7 @@ const RealizationPreview = () => {
           <div className="flex-1 max-w-[800px]">
             <Heading
               label="Zapoznaj się z naszymi realizacjami"
-              size={32}
+              size={36}
               className="text-start mb-5 sm:mb-[50px]"
               as="h2"
               highlightWords={["realizacjami"]}

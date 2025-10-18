@@ -68,7 +68,7 @@ const FormContact: React.FC = () => {
         <div className="space-y-4">
           <Heading
             label="Masz pytania? Napisz do nas"
-            size={32}
+            size={36}
             as="h2"
             highlightWords={["pytania"]}
           />

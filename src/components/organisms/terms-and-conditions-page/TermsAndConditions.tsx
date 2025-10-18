@@ -8,7 +8,7 @@ const TermsAndConditions = () => {
     <PageSection className="mb-10 sm:mb-[100px]">
       <Heading
         label={"Regulamin i warunki korzystania"}
-        size={32}
+        size={36}
         className="text-start mb-5 sm:mb-[50px]"
         as="h2"
         highlightWords={["warunki"]}

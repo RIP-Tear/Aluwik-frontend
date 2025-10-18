@@ -56,7 +56,7 @@ export const Navbar = () => {
             className="cursor-active transition hover:scale-105 hover:text-orangeAccent text-black"
             aria-label="Odwiedź nasz profil na Facebooku (otwiera się w nowej karcie)"
           >
-            <SiFacebook size={32} />
+            <SiFacebook size={36} />
           </Link>
           <Link
             href="https://www.instagram.com/aluwik_pl/"
@@ -65,7 +65,7 @@ export const Navbar = () => {
             className="cursor-active transition hover:scale-105 hover:text-orangeAccent text-black"
             aria-label="Odwiedź nasz profil na Instagramie (otwiera się w nowej karcie)"
           >
-            <SiInstagram size={32} />
+            <SiInstagram size={36} />
           </Link>
           <Link
             target="_blank"
@@ -74,7 +74,7 @@ export const Navbar = () => {
             className=" cursor-active transition hover:scale-105 hover:text-orangeAccent text-black"
             aria-label="Odwiedź nasz profil na LinkedIn (otwiera się w nowej karcie)"
           >
-            <SiLinkedin size={32} />
+            <SiLinkedin size={36} />
           </Link>
           <Link
             href="https://wa.me/48609604571"
@@ -83,7 +83,7 @@ export const Navbar = () => {
             className="inline-flex items-center gap-2 cursor-active transition hover:scale-105 hover:text-orangeAccent text-black"
             aria-label="Skontaktuj się z nami przez WhatsApp (otwiera się w nowej karcie)"
           >
-            <SiWhatsapp size={32} />
+            <SiWhatsapp size={36} />
           </Link>
         </div>
 

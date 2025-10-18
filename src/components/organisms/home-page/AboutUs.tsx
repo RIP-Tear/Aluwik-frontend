@@ -21,7 +21,7 @@ const AboutUs = () => {
       <PageSection className="text-white leading-relaxed py-5 sm:py-10">
         <Heading
           label={"Poznaj nas bliżej"}
-          size={32}
+          size={36}
           className="text-start mb-5 sm:mb-[50px]"
           as="h2"
           highlightWords={["bliżej"]}

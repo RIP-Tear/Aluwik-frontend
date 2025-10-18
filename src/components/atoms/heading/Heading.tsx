@@ -19,7 +19,7 @@ type HeadingProps<Tag extends AllowedTags = "h1"> = {
 export const Heading = <Tag extends AllowedTags = "h1">({
   as,
   label,
-  size = 60,
+  size = 48,
   className,
   highlightWords = [],
   highlightColor,

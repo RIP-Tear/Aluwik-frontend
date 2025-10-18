@@ -10,13 +10,7 @@ type HeroTextProps = {
 const HeroText: React.FC<HeroTextProps> = ({ label, highlightWords }) => {
   return (
     <PageSection>
-      <Heading
-        label={label}
-        className="text-left"
-        size={64}
-        highlightWords={highlightWords}
-        as="h1"
-      />
+      <Heading label={label} className="text-left" highlightWords={highlightWords} as="h1" />
     </PageSection>
   );
 };

@@ -15,7 +15,7 @@ const BlogSection = () => {
     <PageSection className="mb-5 sm:mb-[50px]">
       <Heading
         label="Zobacz najnowsze wpisy na blogu"
-        size={32}
+        size={36}
         className="mb-5 sm:mb-[50px]"
         highlightWords={["wpisy"]}
         as="h2"

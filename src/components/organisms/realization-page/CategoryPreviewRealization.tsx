@@ -48,7 +48,7 @@ const CategoryPreviewRealization: React.FC = () => {
               activeCategory === key ? "bg-white shadow-md" : "hover:bg-white",
             )}
           >
-            <Icon size={32} className="text-orangeAccent" />
+            <Icon size={36} className="text-orangeAccent" />
             <Text text={title} size={18} />
           </button>
         );
@@ -69,7 +69,7 @@ const CategoryPreviewRealization: React.FC = () => {
               activeCategory === key ? "bg-white shadow-md" : "hover:bg-white",
             )}
           >
-            <Icon size={32} className="text-orangeAccent" />
+            <Icon size={36} className="text-orangeAccent" />
             <Text text={title} size={18} />
           </button>
         );

@@ -81,14 +81,14 @@ export default function OfferCards() {
       <PageSection>
         <Heading
           label="Oferta dopasowana"
-          size={32}
+          size={36}
           as="h2"
           highlightWords={["Oferta"]}
           className="text-left"
         />
         <Heading
           label="do twoich potrzeb"
-          size={32}
+          size={36}
           as="h2"
           className="text-left mb-5 lg:mb-[50px]"
         />
