@@ -13,6 +13,7 @@ import { SiFacebook, SiInstagram, SiLinkedin, SiWhatsapp } from "react-icons/si"
 const navLinks = [
   { href: "/", label: "Strona główna" },
   { href: "/oferta/", label: "Oferta" },
+  { href: "/o-firmie/", label: "O firmie" },
   { href: "/realizacje/", label: "Realizacje" },
   { href: "/blog/", label: "Blog" },
   { href: "/kontakt/", label: "Kontakt" },

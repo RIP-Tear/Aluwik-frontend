@@ -130,6 +130,7 @@ export const Footer = () => {
             <ul>
               <ListItem label="Strona główna" href="/" />
               <ListItem label="Oferta" href="/oferta" />
+              <ListItem label="O firmie" href="/o-firmie/" />
               <ListItem label="Realizacja" href="/realizacje/" />
               <ListItem label="Blog" href="/blog" />
               <ListItem label="Kontakt" href="/kontakt/" />
