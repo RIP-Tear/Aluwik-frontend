@@ -103,7 +103,7 @@ const AboutPage = () => {
               <Text
                 text="Jako producent stolarki aluminiowej posiadamy wszystkie wymagane certyfikaty i aprobaty techniczne, gwarantując najwyższą jakość systemu aluminiowego."
                 size={14}
-                className="text-gray-300"
+                className="text-white"
               />
             </div>
 
@@ -120,7 +120,7 @@ const AboutPage = () => {
               <Text
                 text="Wykorzystujemy najnowsze technologie produkcji stolarki okiennej i wysokiej jakości profile aluminiowe konstrukcyjne Aluprof i Ponzio."
                 size={14}
-                className="text-gray-300"
+                className="text-white"
               />
             </div>
 
@@ -137,7 +137,7 @@ const AboutPage = () => {
               <Text
                 text="Każdy projekt traktujemy indywidualnie, dostosowując rozwiązania do specyficznych potrzeb klienta."
                 size={14}
-                className="text-gray-300"
+                className="text-white"
               />
             </div>
 
@@ -149,7 +149,7 @@ const AboutPage = () => {
               <Text
                 text="Oferujemy kompleksową gwarancję na wszystkie produkty oraz profesjonalny serwis posprzedażowy."
                 size={14}
-                className="text-gray-300"
+                className="text-white"
               />
             </div>
 
@@ -166,7 +166,7 @@ const AboutPage = () => {
               <Text
                 text="Dbamy o terminową realizację zleceń, zachowując najwyższą jakość wykonania każdego produktu."
                 size={14}
-                className="text-gray-300"
+                className="text-white"
               />
             </div>
 
@@ -178,7 +178,7 @@ const AboutPage = () => {
               <Text
                 text="Z siedzibą w Tczewie obsługujemy klientów w całym województwie pomorskim i Polsce, oferując montaż stolarki otworowej."
                 size={14}
-                className="text-gray-300"
+                className="text-white"
               />
             </div>
           </div>
@@ -200,7 +200,7 @@ const AboutPage = () => {
               <Text
                 text="Nasze biuro i zakład produkcyjny znajdują się w Tczewie przy Alei Solidarności. Jako doświadczony producent stolarki okiennej i drzwiowej prowdzimy tutaj pełną produkcję wyrobów z aluminium - od projektowania po gotowy produkt."
                 size={16}
-                className="text-gray-700 leading-relaxed"
+                className="leading-relaxed"
               />
             </div>
             <div className="flex flex-col sm:flex-row gap-4">
