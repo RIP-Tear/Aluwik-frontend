@@ -1,9 +1,11 @@
+"use client";
+
 import { Logo } from "@/components/atoms/logo/Logo";
 import { Text } from "@/components/atoms/text/Text";
 import clsx from "clsx";
 import { MapPin, Menu, MessageCircle, Phone, X } from "lucide-react";
 import Link from "next/link";
-import { useRouter } from "next/router";
+import { usePathname } from "next/navigation";
 import { useState } from "react";
 import { Button } from "@/components/atoms/button/Button";
 import { SiFacebook, SiInstagram, SiLinkedin, SiWhatsapp } from "react-icons/si";
@@ -17,8 +19,7 @@ const navLinks = [
 ];
 
 export const Navbar = () => {
-  const router = useRouter();
-  const { pathname } = router;
+  const pathname = usePathname();
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
@@ -32,7 +33,7 @@ export const Navbar = () => {
         {/* Desktop links */}
         <div className="hidden xl:flex gap-x-10">
           {navLinks.map(({ href, label }) => {
-            const isActive = pathname === href;
+            const isActive = href === "/" ? pathname === "/" : pathname.startsWith(href);
             return (
               <Link key={href} href={href}>
                 <Text
@@ -138,10 +139,10 @@ export const Navbar = () => {
           </div>
           <div className="w-fit">
             <Button
-              label={"biuro.aluwik@gmail.com"}
+              label={"biuro@aluwik.pl"}
               icon={<MessageCircle />}
               color="black"
-              href="mailto:biuro.aluwik@gmail.com"
+              href="mailto:biuro@aluwik.pl"
               size={14}
             />
           </div>

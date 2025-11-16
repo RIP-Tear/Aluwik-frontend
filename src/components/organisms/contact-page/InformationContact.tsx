@@ -29,11 +29,11 @@ const InformationContact = () => {
             <Text text="798 953 877" size={16} />
           </Link>
           <Link
-            href="mailto:biuro.aluwik@gmail.com"
+            href="mailto:biuro@aluwik.pl"
             className="cursor-active hover:underline flex items-center gap-2"
           >
             <Mail size={16} />
-            <Text text="biuro.aluwik@gmail.com" size={16} />
+            <Text text="biuro@aluwik.pl" size={16} />
           </Link>
         </div>
 

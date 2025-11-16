@@ -1,3 +1,5 @@
+"use client";
+
 import { ChevronRight } from "lucide-react";
 import { SiFacebook, SiInstagram, SiLinkedin, SiWhatsapp } from "react-icons/si";
 import Link from "next/link";
@@ -127,9 +129,9 @@ export const Footer = () => {
           <Section title="Nawigacja">
             <ul>
               <ListItem label="Strona główna" href="/" />
-              <ListItem label="Oferta" href="/oferta/" />
+              <ListItem label="Oferta" href="/oferta" />
               <ListItem label="Realizacja" href="/realizacje/" />
-              <ListItem label="Blog" href="/blog/" />
+              <ListItem label="Blog" href="/blog" />
               <ListItem label="Kontakt" href="/kontakt/" />
             </ul>
           </Section>
@@ -146,11 +148,7 @@ export const Footer = () => {
             <ul>
               <ListItem label="609 604 571" href="tel:609604571" isExternal />
               <ListItem label="798 953 877" href="tel:798953877" isExternal />
-              <ListItem
-                label="biuro.aluwik@gmail.com"
-                href="mailto:biuro.aluwik@gmail.com"
-                isExternal
-              />
+              <ListItem label="biuro@aluwik.pl" href="mailto:biuro@aluwik.pl" isExternal />
               <ListItem
                 label="Aleja Solidarności 8, 83-110 Tczew"
                 href="https://www.google.com/maps?q=Aleja+Solidarności+8,+83-110+Tczew"

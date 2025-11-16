@@ -70,7 +70,7 @@ const BlogPostTemplate = ({
                           color="black"
                           size={14}
                           icon={<MoveUpRight size={14} />}
-                          href={`/blog/${post.href}/`}
+                          href={`/blog/${post.href}`}
                         />
                       </div>
                     </div>

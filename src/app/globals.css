@@ -2,10 +2,10 @@
 
 @theme {
   /* 🎨 Kolory */
-  --color-orangeAccent: #A15000;
-  --color-greyVariant: #E1E1E6;
-  --color-alertRed: #D32027;
-  --color-greenAccept: #2E7D32;
+  --color-orangeAccent: #a15000;
+  --color-greyVariant: #e1e1e6;
+  --color-alertRed: #d32027;
+  --color-greenAccept: #2e7d32;
 
   /* 🔠 Rozmiary tekstu (REM + waga) */
   --text-64: 4rem;
@@ -32,31 +32,40 @@ body {
 }
 
 body {
-  background-color: #E1E1E6;
-  cursor: url("/cursors/cursor2.svg") 0 0, auto;
+  background-color: #e1e1e6;
+  cursor:
+    url("/cursors/cursor2.svg") 0 0,
+    auto;
 }
-
 
 ::-webkit-scrollbar {
   width: 8px;
   height: 12px;
-  cursor: url("/cursors/cursor2.svg") 0 0, auto;
+  cursor:
+    url("/cursors/cursor2.svg") 0 0,
+    auto;
 }
 
 ::-webkit-scrollbar-track {
   background: transparent;
-  cursor: url("/cursors/cursor2.svg") 0 0, auto;
+  cursor:
+    url("/cursors/cursor2.svg") 0 0,
+    auto;
 }
 
 ::-webkit-scrollbar-thumb {
   background-color: #000;
   border-radius: 10px;
-  cursor: url("/cursors/cursor2.svg") 0 0, auto;
+  cursor:
+    url("/cursors/cursor2.svg") 0 0,
+    auto;
 }
 
 ::-webkit-scrollbar-thumb:hover {
   background-color: var(--color-orangeAccent);
-  cursor: url("/cursors/cursor1.svg") 0 0, auto;
+  cursor:
+    url("/cursors/cursor1.svg") 0 0,
+    auto;
 }
 
 @media (max-width: 768px) {

@@ -1,18 +1,26 @@
 import { Navbar } from "@/components/molecules/navbar/Navbar";
-import { PageHead } from "@/components/molecules/page-head/PageHead";
-import "../app/globals.css";
 import { Footer } from "@/components/molecules/footer/Footer";
 import NavbarContact from "@/components/molecules/navbar-contact/NavbarContact";
 import PrivacyPolicy from "@/components/organisms/privacy-policy-page/PrivacyPolicy";
 import ContactHero from "@/components/organisms/home-page/ContactHero";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Polityka prywatności",
+  description:
+    "Polityka prywatności serwisu ALUWIK. Informacje o przetwarzaniu danych osobowych zgodnie z RODO.",
+  alternates: {
+    canonical: "/polityka-prywatnosci/",
+  },
+  robots: {
+    index: false,
+    follow: true,
+  },
+};
 
 export default function PrivacyPolicyPage() {
   return (
     <>
-      <PageHead
-        title="ALUWIK | Regulamin serwisu i warunki korzystania"
-        description="Sprawdź regulamin aluwik.pl: zasady korzystania z serwisu, składanie zamówień, płatności, reklamacje, odstąpienie od umowy oraz dane kontaktowe."
-      />
       <div className="hidden xl:block">
         <NavbarContact />
       </div>

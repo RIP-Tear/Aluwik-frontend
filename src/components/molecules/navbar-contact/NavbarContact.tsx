@@ -25,10 +25,10 @@ const NavbarContact = () => {
           size={14}
         />
         <Button
-          label={"biuro.aluwik@gmail.com"}
+          label={"biuro@aluwik.pl"}
           icon={<MessageCircle />}
           color="black"
-          href="mailto:biuro.aluwik@gmail.com"
+          href="mailto:biuro@aluwik.pl"
           size={14}
         />
         <Button

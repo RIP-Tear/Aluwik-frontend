@@ -1,4 +1,4 @@
 .reserve::after {
-  content: '';
+  content: "";
   display: inline-block;
 }

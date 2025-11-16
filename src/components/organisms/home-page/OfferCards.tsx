@@ -149,7 +149,7 @@ export default function OfferCards() {
         <Button
           label="Sprawdź naszą ofertę"
           icon={<MoveUpRight />}
-          href="/oferta/"
+          href="/oferta"
           className="mt-10"
         />
       </PageSection>

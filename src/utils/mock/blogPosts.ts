@@ -18,7 +18,7 @@ export const blogPosts: BlogPost[] = [
   {
     title: "Zabudowy aluminiowe – nowoczesne rozwiązania do wnętrz i elewacji",
     excerpt:
-      "Poznaj zalety zabudów aluminiowych – idealnych do wnętrz biurowych i nowoczesnych elewacji. Lekkie, trwałe i stylowe konstrukcje dopasowane do każdego projektu.",
+      "Poznaj zalety zabudów aluminiowych – idealnych do wnętrz biurowych i nowoczesnych elewacji. Lekkie, trwałe i stylowe konstrukcje.",
     image: "/blog/aluminium-partitions.webp",
     date: "Listopad 2025",
     href: "zabudowy-aluminiowe",
