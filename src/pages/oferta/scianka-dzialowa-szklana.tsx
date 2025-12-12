@@ -16,7 +16,7 @@ export default function GlassPartitionWallPage() {
         title="ALUWIK | Ścianka działowa szklana – nowoczesność i trwałość"
         description="Oferujemy ścianki działowe szklane o wysokiej odporności, izolacyjności i nowoczesnym wyglądzie. Idealne do domów, biur i budynków komercyjnych. Zaufaj jakości profili Aluprof i Ponzio."
       />
-
+      <HolidayNavbar />
       <div className="hidden xl:block">
         <NavbarContact />
       </div>

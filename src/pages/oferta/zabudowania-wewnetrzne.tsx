@@ -16,7 +16,7 @@ export default function InteriorStructuresPage() {
         title="ALUWIK | Zabudowania wewnętrzne – nowoczesność i trwałość"
         description="Oferujemy zabudowania wewnętrzne o wysokiej odporności, izolacyjności i nowoczesnym wyglądzie. Idealne do domów, biur i budynków komercyjnych. Zaufaj jakości profili Aluprof i Ponzio."
       />
-
+      <HolidayNavbar />
       <div className="hidden xl:block">
         <NavbarContact />
       </div>
