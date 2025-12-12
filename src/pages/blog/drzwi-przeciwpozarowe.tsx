@@ -3,6 +3,7 @@ import { PageHead } from "@/components/molecules/page-head/PageHead";
 import "../../app/globals.css";
 import { Footer } from "@/components/molecules/footer/Footer";
 import NavbarContact from "@/components/molecules/navbar-contact/NavbarContact";
+import HolidayNavbar from "@/components/molecules/holiday-navbar/HolidayNavbar";
 import DzwiPrzeciwpozarowe from "@/components/organisms/blog-page/posts/DzwiPrzeciwpozarowe";
 import ContactHero from "@/components/organisms/home-page/ContactHero";
 
@@ -13,7 +14,7 @@ export default function DrzwiPrzeciwpozarowePage() {
         title="Drzwi przeciwpożarowe – bezpieczeństwo w nowoczesnej formie - Blog | ALUWIK"
         description="Dowiedz się, dlaczego drzwi przeciwpożarowe są kluczowym elementem zabezpieczeń w nowoczesnym budownictwie. Sprawdź, jak łączymy estetykę z funkcjonalnością i odpornością na ogień."
       />
-
+      <HolidayNavbar />
       <div className="hidden xl:block">
         <NavbarContact />
       </div>

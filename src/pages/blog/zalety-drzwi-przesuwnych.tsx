@@ -3,6 +3,7 @@ import { PageHead } from "@/components/molecules/page-head/PageHead";
 import "../../app/globals.css";
 import { Footer } from "@/components/molecules/footer/Footer";
 import NavbarContact from "@/components/molecules/navbar-contact/NavbarContact";
+import HolidayNavbar from "@/components/molecules/holiday-navbar/HolidayNavbar";
 import ZaletyDzwiPrzesuwanych from "@/components/organisms/blog-page/posts/ZaletyDzwiPrzesuwanych";
 import ContactHero from "@/components/organisms/home-page/ContactHero";
 
@@ -13,6 +14,7 @@ export default function ZaletyDzwiPrzesuwanychPage() {
         title="5 zalet drzwi przesuwnych w nowoczesnych wnętrzach - Blog | ALUWIK"
         description="Poznaj największe atuty drzwi przesuwnych – oszczędność miejsca, elegancki design i funkcjonalność. Sprawdź, dlaczego to idealne rozwiązanie do współczesnych domów i mieszkań."
       />
+      <HolidayNavbar />
       <div className="hidden xl:block">
         <NavbarContact />
       </div>

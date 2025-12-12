@@ -3,6 +3,7 @@ import { PageHead } from "@/components/molecules/page-head/PageHead";
 import "../../app/globals.css";
 import { Footer } from "@/components/molecules/footer/Footer";
 import NavbarContact from "@/components/molecules/navbar-contact/NavbarContact";
+import HolidayNavbar from "@/components/molecules/holiday-navbar/HolidayNavbar";
 import OgrodZimowyIdealny from "@/components/organisms/blog-page/posts/OgrodZimowyIdealny";
 import ContactHero from "@/components/organisms/home-page/ContactHero";
 
@@ -13,6 +14,7 @@ export default function OgrodZimowyIdealnyPage() {
         title="Jak zorganizować idealny ogród zimowy? - Blog | ALUWIK"
         description="Poznaj praktyczne wskazówki, jak zaprojektować i urządzić ogród zimowy. Dowiedz się, jakie materiały wybrać, jak zadbać o izolację i jak stworzyć przytulną przestrzeń przez cały rok."
       />
+      <HolidayNavbar />
       <div className="hidden xl:block">
         <NavbarContact />
       </div>

@@ -8,6 +8,7 @@ import { Footer } from "@/components/molecules/footer/Footer";
 import NavbarContact from "@/components/molecules/navbar-contact/NavbarContact";
 import ContactHero from "@/components/organisms/home-page/ContactHero";
 import BlogTemplate from "@/templates/BlogTemplate";
+import HolidayNavbar from "@/components/molecules/holiday-navbar/HolidayNavbar";
 
 export default function BlogPage() {
   return (
@@ -16,6 +17,7 @@ export default function BlogPage() {
         title="ALUWIK | Blog o stolarce aluminiowej i nowoczesnych rozwiązaniach"
         description="Bądź na bieżąco z trendami i poradami dotyczącymi stolarki aluminiowej. Na blogu ALUWIK znajdziesz inspiracje, realizacje oraz wskazówki dotyczące okien, drzwi, fasad i ogrodów zimowych."
       />
+      <HolidayNavbar />
       <div className="hidden xl:block">
         <NavbarContact />
       </div>
