@@ -4,6 +4,7 @@ import NavbarContact from "@/components/molecules/navbar-contact/NavbarContact";
 import PrivacyPolicy from "@/components/organisms/privacy-policy-page/PrivacyPolicy";
 import ContactHero from "@/components/organisms/home-page/ContactHero";
 import type { Metadata } from "next";
+import HolidayNavbar from "@/components/molecules/holiday-navbar/HolidayNavbar";
 
 export const metadata: Metadata = {
   title: "Polityka prywatności",
@@ -21,6 +22,7 @@ export const metadata: Metadata = {
 export default function PrivacyPolicyPage() {
   return (
     <>
+      <HolidayNavbar />
       <div className="hidden xl:block">
         <NavbarContact />
       </div>

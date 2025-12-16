@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Navbar } from "@/components/molecules/navbar/Navbar";
 import ContactTemplate from "@/templates/ContactTemplate";
 import { Footer } from "@/components/molecules/footer/Footer";
+import HolidayNavbar from "@/components/molecules/holiday-navbar/HolidayNavbar";
 
 export const metadata: Metadata = {
   title: "Kontakt - ALUWIK stolarka aluminiowa Tczew",
@@ -15,6 +16,7 @@ export const metadata: Metadata = {
 export default function ContactPage() {
   return (
     <>
+      <HolidayNavbar />
       <Navbar />
       <ContactTemplate />
       <Footer />

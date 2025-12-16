@@ -6,6 +6,7 @@ import { Footer } from "@/components/molecules/footer/Footer";
 import NavbarContact from "@/components/molecules/navbar-contact/NavbarContact";
 import ContactHero from "@/components/organisms/home-page/ContactHero";
 import { blogPosts } from "@/utils/blogPosts";
+import HolidayNavbar from "@/components/molecules/holiday-navbar/HolidayNavbar";
 
 type Props = {
   slug: string;
@@ -22,6 +23,7 @@ export default function BlogPostClient({ slug }: Props) {
 
   return (
     <>
+      <HolidayNavbar />
       <div className="hidden xl:block">
         <NavbarContact />
       </div>
