@@ -1,0 +1,248 @@
+.holidayNavbar {
+  position: relative;
+  background: linear-gradient(135deg, #165b33, #bb2528, #165b33);
+  background-size: 200% 200%;
+  animation: gradientShift 8s ease infinite;
+  padding: 1rem;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Animacja tła */
+@keyframes gradientShift {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/* Główny content */
+.content {
+  position: relative;
+  z-index: 3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+.messageWrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  width: 100%;
+}
+
+.mainText {
+  color: #fff;
+  font-weight: 700;
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.3),
+               0 0 20px rgba(255, 215, 0, 0.5);
+  animation: glow 2s ease-in-out infinite;
+}
+
+@keyframes glow {
+  0%, 100% {
+    text-shadow: 0 2px 10px rgba(0, 0, 0, 0.3),
+                 0 0 20px rgba(255, 215, 0, 0.5);
+  }
+  50% {
+    text-shadow: 0 2px 10px rgba(0, 0, 0, 0.3),
+                 0 0 30px rgba(255, 215, 0, 0.8),
+                 0 0 40px rgba(255, 215, 0, 0.6);
+  }
+}
+
+.dateText {
+  color: #fff;
+  font-weight: 600;
+}
+
+/* Wirujące płatki śniegu */
+.iconWrapper {
+  color: #fff;
+}
+
+.spinningIcon {
+  animation: spin 4s linear infinite;
+  filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.8));
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Padające płatki śniegu */
+.snowflakes {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.snowflake {
+  position: absolute;
+  top: -20px;
+  color: #fff;
+  font-size: 1.2em;
+  opacity: 0.8;
+  animation: fall linear infinite;
+  text-shadow: 0 0 5px rgba(255, 255, 255, 0.8);
+}
+
+.snowflake:nth-child(1) { left: 5%; animation-duration: 8s; animation-delay: 0s; }
+.snowflake:nth-child(2) { left: 10%; animation-duration: 10s; animation-delay: 1s; }
+.snowflake:nth-child(3) { left: 15%; animation-duration: 7s; animation-delay: 2s; }
+.snowflake:nth-child(4) { left: 20%; animation-duration: 9s; animation-delay: 0.5s; }
+.snowflake:nth-child(5) { left: 25%; animation-duration: 11s; animation-delay: 1.5s; }
+.snowflake:nth-child(6) { left: 30%; animation-duration: 8s; animation-delay: 3s; }
+.snowflake:nth-child(7) { left: 35%; animation-duration: 10s; animation-delay: 2.5s; }
+.snowflake:nth-child(8) { left: 40%; animation-duration: 9s; animation-delay: 4s; }
+.snowflake:nth-child(9) { left: 45%; animation-duration: 7s; animation-delay: 1s; }
+.snowflake:nth-child(10) { left: 50%; animation-duration: 11s; animation-delay: 0s; }
+.snowflake:nth-child(11) { left: 55%; animation-duration: 8s; animation-delay: 2s; }
+.snowflake:nth-child(12) { left: 60%; animation-duration: 10s; animation-delay: 3s; }
+.snowflake:nth-child(13) { left: 65%; animation-duration: 9s; animation-delay: 1.5s; }
+.snowflake:nth-child(14) { left: 70%; animation-duration: 7s; animation-delay: 0.5s; }
+.snowflake:nth-child(15) { left: 75%; animation-duration: 11s; animation-delay: 2.5s; }
+.snowflake:nth-child(16) { left: 80%; animation-duration: 8s; animation-delay: 4s; }
+.snowflake:nth-child(17) { left: 85%; animation-duration: 10s; animation-delay: 1s; }
+.snowflake:nth-child(18) { left: 90%; animation-duration: 9s; animation-delay: 3s; }
+.snowflake:nth-child(19) { left: 95%; animation-duration: 7s; animation-delay: 0s; }
+.snowflake:nth-child(20) { left: 98%; animation-duration: 11s; animation-delay: 2s; }
+
+@keyframes fall {
+  to {
+    transform: translateY(100vh) rotate(360deg);
+  }
+}
+
+/* Migające lampki świąteczne */
+.lights {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 5px;
+  display: flex;
+  justify-content: space-around;
+  z-index: 2;
+}
+
+.light {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  animation: blink 1.5s infinite;
+}
+
+.light:nth-child(odd) {
+  background: radial-gradient(circle, #ffd700, #ff6b6b);
+  box-shadow: 0 0 10px #ffd700, 0 0 20px #ff6b6b;
+}
+
+.light:nth-child(even) {
+  background: radial-gradient(circle, #4ecdc4, #95e1d3);
+  box-shadow: 0 0 10px #4ecdc4, 0 0 20px #95e1d3;
+}
+
+@keyframes blink {
+  0%, 100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.3;
+    transform: scale(0.8);
+  }
+}
+
+/* Responsywność */
+@media (max-width: 1024px) {
+  .messageWrapper {
+    flex-direction: column;
+    gap: 0.5rem;
+    text-align: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .holidayNavbar {
+    padding: 0.75rem 0.5rem;
+  }
+  
+  .content {
+    gap: 0.5rem;
+    flex-direction: column;
+  }
+  
+  .iconWrapper {
+    display: none;
+  }
+
+  .messageWrapper {
+    flex-direction: column;
+    gap: 0.25rem;
+    text-align: center;
+  }
+  
+  .mainText {
+    font-size: 14px !important;
+    line-height: 1.2;
+  }
+  
+  .dateText {
+    font-size: 12px !important;
+    line-height: 1.2;
+  }
+
+  .snowflake {
+    font-size: 0.9em;
+  }
+
+  .lights {
+    height: 3px;
+  }
+
+  .light {
+    width: 6px;
+    height: 6px;
+  }
+}
+
+@media (max-width: 480px) {
+  .holidayNavbar {
+    padding: 0.5rem;
+  }
+
+  .mainText {
+    font-size: 12px !important;
+  }
+  
+  .dateText {
+    font-size: 11px !important;
+  }
+
+  .content {
+    gap: 0.25rem;
+  }
+
+  .messageWrapper {
+    gap: 0.125rem;
+  }
+}
