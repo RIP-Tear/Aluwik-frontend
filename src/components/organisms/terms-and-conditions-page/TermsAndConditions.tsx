@@ -29,11 +29,8 @@ const TermsAndConditions = () => {
           </strong>
           , z siedzibą: <strong>al. Solidarności 8, 83-110 Tczew, woj. pomorskie</strong>, NIP:{" "}
           <strong>5931110940</strong>, REGON: <strong>364025475</strong>. Kontakt:{" "}
-          <a
-            href="mailto:biuro.aluwik@gmail.com"
-            className="text-orangeAccent underline cursor-active"
-          >
-            biuro.aluwik@gmail.com
+          <a href="mailto:biuro@aluwik.pl" className="text-orangeAccent underline cursor-active">
+            biuro@aluwik.pl
           </a>
           , tel.{" "}
           <a href="tel:+48609604571" className="text-orangeAccent underline cursor-active">
@@ -116,11 +113,8 @@ const TermsAndConditions = () => {
         </h3>
         <p className="mt-2 leading-relaxed text-gray-700">
           Uwagi lub reklamacje związane z funkcjonowaniem Serwisu można zgłaszać na adres:{" "}
-          <a
-            href="mailto:biuro.aluwik@gmail.com"
-            className="text-orangeAccent underline cursor-active"
-          >
-            biuro.aluwik@gmail.com
+          <a href="mailto:biuro@aluwik.pl" className="text-orangeAccent underline cursor-active">
+            biuro@aluwik.pl
           </a>
           . W zgłoszeniu opisz problem i podaj dane kontaktowe. Reklamacje rozpatrujemy w terminie
           do 14 dni roboczych.
@@ -154,11 +148,8 @@ const TermsAndConditions = () => {
         <h3 className="mt-6 text-xl font-semibold text-gray-900">12. Kontakt</h3>
         <p className="mt-2 leading-relaxed text-gray-700">
           W sprawach dotyczących Serwisu:{" "}
-          <a
-            href="mailto:biuro.aluwik@gmail.com"
-            className="text-orangeAccent underline cursor-active"
-          >
-            biuro.aluwik@gmail.com
+          <a href="mailto:biuro@aluwik.pl" className="text-orangeAccent underline cursor-active">
+            biuro@aluwik.pl
           </a>
           , tel.{" "}
           <a href="tel:+48609604571" className="text-orangeAccent underline cursor-active">

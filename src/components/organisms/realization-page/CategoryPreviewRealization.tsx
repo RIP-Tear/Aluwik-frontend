@@ -1,5 +1,6 @@
+"use client";
 import React, { useMemo, useState, useEffect } from "react";
-import { useRouter } from "next/router";
+import { useSearchParams } from "next/navigation";
 import PageSection from "@/components/atoms/page-section/PageSection";
 import clsx from "clsx";
 import { MoonLoader } from "react-spinners";
@@ -30,7 +31,7 @@ const buildImageSrc = (img: any) => img.url;
 const CategoryPreviewRealization: React.FC = () => {
   const { data, isLoading, isError, error } = useCloudinaryRealizations();
 
-  const router = useRouter();
+  const searchParams = useSearchParams();
   const [activeCategory, setActiveCategory] = useState(() => {
     const cat =
       typeof window !== "undefined"
@@ -40,13 +41,13 @@ const CategoryPreviewRealization: React.FC = () => {
   });
 
   useEffect(() => {
-    const cat = router.query.kategoria;
+    const cat = searchParams.get("kategoria");
     if (typeof cat === "string" && CATEGORY_KEYS.includes(cat)) {
       setActiveCategory(cat);
     } else if (!cat) {
       setActiveCategory(CATEGORY_KEYS[0]);
     }
-  }, [router.query.kategoria]);
+  }, [searchParams]);
   const [openedIndex, setOpenedIndex] = useState<number | null>(null);
 
   const cld = useMemo(

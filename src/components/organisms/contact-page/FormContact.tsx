@@ -1,3 +1,4 @@
+"use client";
 import React, { useState } from "react";
 import PageSection from "@/components/atoms/page-section/PageSection";
 import { Heading } from "@/components/atoms/heading/Heading";

@@ -1,3 +1,4 @@
+import { Suspense } from "react";
 import HeroDescription from "@/components/molecules/hero-descripton/HeroDescription";
 import HeroText from "@/components/molecules/hero-text/HeroText";
 import CategoryPreviewRealization from "@/components/organisms/realization-page/CategoryPreviewRealization";
@@ -15,7 +16,9 @@ realizacjami"
         text="Zobacz nasze realizacje – jakość, która mówi sama za siebie
 Nasze projekty to połączenie precyzji wykonania, trwałych materiałów i estetyki. W tej sekcji prezentujemy wybrane realizacje, które najlepiej pokazują możliwości technologii aluminiowej w praktyce – od nowoczesnych fasad i ogrodów zimowych, po funkcjonalne drzwi i okna. Zainspiruj się i przekonaj się, jak możemy odmienić również Twoją przestrzeń."
       />
-      <CategoryPreviewRealization />
+      <Suspense fallback={<div>Ładowanie realizacji...</div>}>
+        <CategoryPreviewRealization />
+      </Suspense>
     </div>
   );
 };

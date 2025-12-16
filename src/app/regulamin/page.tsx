@@ -1,0 +1,32 @@
+import { Navbar } from "@/components/molecules/navbar/Navbar";
+import { Footer } from "@/components/molecules/footer/Footer";
+import NavbarContact from "@/components/molecules/navbar-contact/NavbarContact";
+import TermsAndConditions from "@/components/organisms/terms-and-conditions-page/TermsAndConditions";
+import ContactHero from "@/components/organisms/home-page/ContactHero";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Regulamin",
+  description: "Regulamin świadczenia usług przez firmę ALUWIK - producenta stolarki aluminiowej.",
+  alternates: {
+    canonical: "/regulamin/",
+  },
+  robots: {
+    index: false,
+    follow: true,
+  },
+};
+
+export default function TermsAndConditionsPage() {
+  return (
+    <>
+      <div className="hidden xl:block">
+        <NavbarContact />
+      </div>
+      <Navbar />
+      <TermsAndConditions />
+      <ContactHero />
+      <Footer />
+    </>
+  );
+}
