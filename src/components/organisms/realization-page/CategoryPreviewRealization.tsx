@@ -33,13 +33,7 @@ const CategoryPreviewRealization: React.FC = () => {
 
   const searchParams = useSearchParams();
   const categoryHeaderRef = React.useRef<HTMLDivElement>(null);
-  const [activeCategory, setActiveCategory] = useState(() => {
-    const cat =
-      typeof window !== "undefined"
-        ? new URLSearchParams(window.location.search).get("kategoria")
-        : undefined;
-    return cat && CATEGORY_KEYS.includes(cat) ? cat : CATEGORY_KEYS[0];
-  });
+  const [activeCategory, setActiveCategory] = useState(CATEGORY_KEYS[0]);
 
   useEffect(() => {
     const cat = searchParams.get("kategoria");

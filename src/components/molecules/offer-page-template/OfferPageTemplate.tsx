@@ -117,7 +117,7 @@ const OfferPageTemplate = ({
           <div className="lg:col-span-2 space-y-6 leading-relaxed">
             {sections.map((section, index) => (
               <div key={index}>
-                <Heading label={section.heading} className="mb-2 text-start" as="h2" size={24} />
+                <Heading label={section.heading} className="mb-2 text-start text-orangeAccent" as="h2" size={24} />
                 {Array.isArray(section.content) ? (
                   <ul className="list-disc list-inside space-y-1">
                     {section.content.map((item, i) => (
@@ -133,7 +133,7 @@ const OfferPageTemplate = ({
             ))}
 
             {/* NOWA SEKCJA REALIZACJE */}
-            <Heading label="Zobacz realizacje" className="mb-5 text-start mt-5" as="h2" size={24} />
+            <Heading label="Zobacz realizacje" className="mb-5 text-start mt-5 text-orangeAccent" as="h2" size={24} />
             <div className="grid grid-cols-2 gap-4 mb-6">
               {isLoading ? (
                 <Text text="Ładowanie zdjęć..." size={14} />
@@ -165,7 +165,7 @@ const OfferPageTemplate = ({
             {/* OFERTY */}
             <Heading
               label="Sprawdź nasze inne oferty"
-              className="mb-5 text-start mt-5"
+              className="mb-5 text-start mt-5 text-orangeAccent"
               as="h2"
               size={24}
             />

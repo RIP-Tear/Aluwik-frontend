@@ -1,6 +1,7 @@
 "use client";
 
 import { notFound } from "next/navigation";
+import { useEffect } from "react";
 import { Navbar } from "@/components/molecules/navbar/Navbar";
 import { Footer } from "@/components/molecules/footer/Footer";
 import NavbarContact from "@/components/molecules/navbar-contact/NavbarContact";
@@ -14,6 +15,10 @@ type Props = {
 
 export default function OfferDetailClient({ slug }: Props) {
   const offer = offerPages[slug];
+
+  useEffect(() => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  }, [slug]);
 
   if (!offer) {
     notFound();
