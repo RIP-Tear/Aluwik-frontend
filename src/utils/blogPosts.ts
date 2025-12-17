@@ -9,6 +9,9 @@ import DrzwiAluminioweTczew from "@/components/organisms/blog-page/posts/DrzwiAl
 import OknaTczew from "@/components/organisms/blog-page/posts/OknaTczew";
 import DzwiPrzeciwpozarowe from "@/components/organisms/blog-page/posts/DzwiPrzeciwpozarowe";
 import OgrodZimowyIdealny from "@/components/organisms/blog-page/posts/OgrodZimowyIdealny";
+import SzklaneScianki from "@/components/organisms/blog-page/posts/SzklaneScianki";
+import ProducentStolarki from "@/components/organisms/blog-page/posts/ProducentStolarki";
+import MarkizyTczew from "@/components/organisms/blog-page/posts/MarkizyTczew";
 
 export type BlogPostData = {
   component: ComponentType;
@@ -70,6 +73,24 @@ export const blogPosts: Record<string, BlogPostData> = {
     title: "Jak zorganizować idealny ogród zimowy?",
     description:
       "Praktyczny poradnik jak zorganizować idealny ogród zimowy. Poznaj sekrety projektowania i urządzania przestrzeni ogrodów zimowych od ALUWIK.",
+  },
+  "szklane-scianki-dzialowe-biuro": {
+    component: SzklaneScianki,
+    title: "Szklane ścianki działowe do biura – nowoczesne, funkcjonalne i estetyczne rozwiązanie",
+    description:
+      "Poznaj zalety szklanych ścianek działowych do biura. Nowoczesne systemy przeszkleń od producenta stolarki aluminiowej ALUWIK – elastyczność, estetyka i izolacja akustyczna.",
+  },
+  "producent-stolarki-aluminiowej": {
+    component: ProducentStolarki,
+    title: "Producent stolarki aluminiowej – dlaczego warto postawić na sprawdzonego wykonawcę?",
+    description:
+      "Wybór sprawdzonego producenta stolarki aluminiowej to klucz do udanej inwestycji. Poznaj najważniejsze kryteria wyboru i dowiedz się, dlaczego warto zaufać ALUWIK.",
+  },
+  "markizy-tczew": {
+    component: MarkizyTczew,
+    title: "Markizy Tczew – skuteczna ochrona przed słońcem i komfort na tarasie",
+    description:
+      "Markizy Tczew – nowoczesne systemy osłonowe dla domów i lokali usługowych. Ochrona przed słońcem, komfort na tarasie i profesjonalny montaż od ALUWIK.",
   },
 };
 

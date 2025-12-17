@@ -7,12 +7,19 @@ import Image from "next/image";
 import { blogPosts } from "@/utils/mock/blogPosts";
 import { MoveUpRight } from "lucide-react";
 
+type BlogPostSection = {
+  heading: string;
+  text?: string;
+  bulletList?: string[];
+  numberedList?: string[];
+};
+
 type BlogPostTemplateProps = {
   slug: string;
   title: string;
   highlightWords: string[];
   heroImage: { src: string; alt: string };
-  sections: { heading: string; text: string }[];
+  sections: BlogPostSection[];
 };
 
 const BlogPostTemplate = ({
@@ -32,10 +39,31 @@ const BlogPostTemplate = ({
         <div className="flex flex-col lg:flex-row gap-10 mb-5 sm:mb-[50px]">
           {/* Lewa kolumna */}
           <div className="lg:w-3/4 space-y-8 leading-relaxed my-10">
-            {sections.map(section => (
-              <div key={section.heading} className="space-y-4">
+            {sections.map((section, index) => (
+              <div key={`${section.heading}-${index}`} className="space-y-4">
                 <Heading label={section.heading} as="h2" size={24} className="text-orangeAccent" />
-                <Text text={section.text} size={16} />
+                
+                {section.text && <Text text={section.text} size={16} />}
+                
+                {section.bulletList && (
+                  <ul className="list-disc list-inside space-y-2 ml-4">
+                    {section.bulletList.map((item, idx) => (
+                      <li key={idx} className="text-white text-[16px] leading-relaxed">
+                        {item}
+                      </li>
+                    ))}
+                  </ul>
+                )}
+                
+                {section.numberedList && (
+                  <ol className="list-decimal list-inside space-y-2 ml-4">
+                    {section.numberedList.map((item, idx) => (
+                      <li key={idx} className="text-white text-[16px] leading-relaxed">
+                        {item}
+                      </li>
+                    ))}
+                  </ol>
+                )}
               </div>
             ))}
           </div>

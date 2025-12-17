@@ -8,6 +8,30 @@ export type BlogPost = {
 
 export const blogPosts: BlogPost[] = [
   {
+    title: "Markizy Tczew – skuteczna ochrona przed słońcem i komfort na tarasie",
+    excerpt:
+      "Markizy Tczew – nowoczesne systemy osłonowe chroniące przed słońcem. Komfort na tarasie i profesjonalny montaż od lokalnego producenta.",
+    image: "/blog/awnings-tczew.webp",
+    date: "Styczeń 2026",
+    href: "markizy-tczew",
+  },
+  {
+    title: "Producent stolarki aluminiowej – dlaczego warto postawić na sprawdzonego wykonawcę?",
+    excerpt:
+      "Wybór sprawdzonego producenta stolarki aluminiowej to klucz do udanej inwestycji. Dowiedz się, na co zwrócić uwagę przy wyborze.",
+    image: "/blog/aluminium-manufacturer.webp",
+    date: "Grudzień 2025",
+    href: "producent-stolarki-aluminiowej",
+  },
+  {
+    title: "Szklane ścianki działowe do biura – nowoczesne, funkcjonalne i estetyczne rozwiązanie",
+    excerpt:
+      "Poznaj zalety szklanych ścianek działowych do biura. Nowoczesne systemy przeszkleń – elastyczność, estetyka i izolacja akustyczna.",
+    image: "/blog/glass-office-partitions.webp",
+    date: "Listopad 2025",
+    href: "szklane-scianki-dzialowe-biuro",
+  },
+  {
     title: "Świetliki dachowe z aluminium i szkła – naturalne światło w nowoczesnym wydaniu",
     excerpt:
       "Świetliki dachowe aluminiowe to połączenie funkcjonalności i estetyki. Dowiedz się, dlaczego warto wybrać konstrukcje aluminiowo-szklane do swojego domu lub biura.",
