@@ -32,6 +32,7 @@ const CategoryPreviewRealization: React.FC = () => {
   const { data, isLoading, isError, error } = useCloudinaryRealizations();
 
   const searchParams = useSearchParams();
+  const categoryHeaderRef = React.useRef<HTMLDivElement>(null);
   const [activeCategory, setActiveCategory] = useState(() => {
     const cat =
       typeof window !== "undefined"
@@ -48,6 +49,13 @@ const CategoryPreviewRealization: React.FC = () => {
       setActiveCategory(CATEGORY_KEYS[0]);
     }
   }, [searchParams]);
+
+  useEffect(() => {
+    if (categoryHeaderRef.current) {
+      categoryHeaderRef.current.scrollIntoView({ behavior: "smooth", block: "start" });
+    }
+  }, [activeCategory]);
+
   const [openedIndex, setOpenedIndex] = useState<number | null>(null);
 
   const cld = useMemo(
@@ -151,7 +159,10 @@ const CategoryPreviewRealization: React.FC = () => {
         {desktopCategorySidebar}
 
         <div className="flex-1 w-full">
-          <div className="w-full border-2 border-orangeAccent rounded-xl p-4 mb-6 bg-white flex items-center gap-3 justify-between">
+          <div 
+            ref={categoryHeaderRef}
+            className="w-full border-2 border-orangeAccent rounded-xl p-4 mb-6 bg-white flex items-center gap-3 justify-between"
+          >
             <div className="flex items-center gap-3">
               {(() => {
                 const Icon = CATEGORY_CONFIG[activeCategory].icon;
