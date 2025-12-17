@@ -6,7 +6,7 @@ export const metadata: Metadata = {
   description:
     "Zobacz wybrane realizacje ALUWIK. Montujemy nowoczesne okna, drzwi, fasady i ogrody zimowe z aluminium. Projekty dla domów jednorodzinnych, firm i instytucji publicznych.",
   alternates: {
-    canonical: "/realizacje/",
+    canonical: "https://aluwik.pl/realizacje/",
   },
 };
 

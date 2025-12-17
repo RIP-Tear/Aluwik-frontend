@@ -6,7 +6,7 @@ export const metadata: Metadata = {
   description:
     "Bądź na bieżąco z trendami i poradami dotyczącymi stolarki aluminiowej. Na blogu ALUWIK znajdziesz inspiracje, realizacje oraz wskazówki dotyczące okien, drzwi, fasad i ogrodów zimowych.",
   alternates: {
-    canonical: "/blog/",
+    canonical: "https://aluwik.pl/blog/",
   },
 };
 

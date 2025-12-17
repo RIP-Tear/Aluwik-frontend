@@ -23,7 +23,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     title: offer.title,
     description: offer.description,
     alternates: {
-      canonical: `/oferta/${slug}/`,
+      canonical: `https://aluwik.pl/oferta/${slug}/`,
     },
   };
 }

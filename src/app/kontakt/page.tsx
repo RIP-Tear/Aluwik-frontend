@@ -9,7 +9,7 @@ export const metadata: Metadata = {
   description:
     "Skontaktuj się z ALUWIK - producentem stolarki aluminiowej w Tczewie. Telefon: 609 604 571, 798 953 877. Adres: Aleja Solidarności 8, 83-110 Tczew. Zapytaj o wycenę!",
   alternates: {
-    canonical: "/kontakt/",
+    canonical: "https://aluwik.pl/kontakt/",
   },
 };
 

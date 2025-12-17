@@ -10,10 +10,10 @@ export const metadata: Metadata = {
   title: "Regulamin",
   description: "Regulamin świadczenia usług przez firmę ALUWIK - producenta stolarki aluminiowej.",
   alternates: {
-    canonical: "/regulamin/",
+    canonical: "https://aluwik.pl/regulamin/",
   },
   robots: {
-    index: false,
+    index: true,
     follow: true,
   },
 };

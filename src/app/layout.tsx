@@ -71,9 +71,9 @@ export const metadata: Metadata = {
     follow: true,
   },
   alternates: {
-    canonical: "/",
+    canonical: "https://aluwik.pl/",
     languages: {
-      pl: "/",
+      pl: "https://aluwik.pl/",
     },
   },
   openGraph: {

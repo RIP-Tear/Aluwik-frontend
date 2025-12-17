@@ -6,7 +6,7 @@ export const metadata: Metadata = {
   description:
     "Poznaj pełną ofertę ALUWIK: okna aluminiowe, drzwi, fasady, ogrody zimowe, świetliki dachowe i więcej. Wysokiej jakości stolarka aluminiowa z profilami Aluprof i Ponzio.",
   alternates: {
-    canonical: "/oferta/",
+    canonical: "https://aluwik.pl/oferta/",
   },
 };
 

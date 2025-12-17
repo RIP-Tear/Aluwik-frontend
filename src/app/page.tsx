@@ -6,7 +6,7 @@ export const metadata: Metadata = {
   description:
     "ALUWIK to producent wysokiej jakości stolarki aluminiowej: okien, drzwi, fasad i ogrodów zimowych. Oferujemy trwałe rozwiązania z profili Aluprof i Ponzio dla klientów indywidualnych i firm.",
   alternates: {
-    canonical: "/",
+    canonical: "https://aluwik.pl/",
   },
 };
 

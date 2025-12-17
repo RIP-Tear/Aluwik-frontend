@@ -58,7 +58,7 @@ export const metadata: Metadata = {
     "producenci aluminium",
   ],
   alternates: {
-    canonical: "/o-firmie/",
+    canonical: "https://aluwik.pl/o-firmie/",
   },
   openGraph: {
     title: "O firmie ALUWIK | Producent stolarki aluminiowej z Tczewa",

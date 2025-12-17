@@ -11,7 +11,7 @@ export const metadata: Metadata = {
   description:
     "Polityka prywatności serwisu ALUWIK. Informacje o przetwarzaniu danych osobowych zgodnie z RODO.",
   alternates: {
-    canonical: "/polityka-prywatnosci/",
+    canonical: "https://aluwik.pl/polityka-prywatnosci/",
   },
   robots: {
     index: false,
