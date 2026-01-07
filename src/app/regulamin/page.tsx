@@ -4,7 +4,7 @@ import NavbarContact from "@/components/molecules/navbar-contact/NavbarContact";
 import TermsAndConditions from "@/components/organisms/terms-and-conditions-page/TermsAndConditions";
 import ContactHero from "@/components/organisms/home-page/ContactHero";
 import type { Metadata } from "next";
-import HolidayNavbar from "@/components/molecules/holiday-navbar/HolidayNavbar";
+// import HolidayNavbar from "@/components/molecules/holiday-navbar/HolidayNavbar";
 
 export const metadata: Metadata = {
   title: "Regulamin",
@@ -21,7 +21,7 @@ export const metadata: Metadata = {
 export default function TermsAndConditionsPage() {
   return (
     <>
-      <HolidayNavbar />
+      {/* <HolidayNavbar /> */}
       <div className="hidden xl:block">
         <NavbarContact />
       </div>
