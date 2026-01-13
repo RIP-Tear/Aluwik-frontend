@@ -8,6 +8,18 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "https://aluwik.pl/oferta/",
   },
+  openGraph: {
+    title: "Oferta ALUWIK - Kompleksowa stolarka aluminiowa",
+    description:
+      "Okna, drzwi, fasady, ogrody zimowe. Profile Aluprof i Ponzio. Sprawdź naszą ofertę!",
+    url: "https://aluwik.pl/oferta/",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Oferta ALUWIK - Kompleksowa stolarka aluminiowa",
+    description: "Okna, drzwi, fasady, ogrody zimowe z profili Aluprof i Ponzio.",
+  },
 };
 
 export default function OfferPage() {

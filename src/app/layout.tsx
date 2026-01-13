@@ -4,6 +4,12 @@ import { Michroma } from "next/font/google";
 import ClientLayout from "@/components/providers/ClientLayout";
 import Script from "next/script";
 import type { Metadata } from "next";
+import {
+  JsonLd,
+  organizationSchema,
+  localBusinessSchema,
+  websiteSchema,
+} from "@/components/seo/JsonLd";
 
 const michroma = Michroma({
   subsets: ["latin"],
@@ -125,73 +131,16 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="pl">
       <head>
-        {/* Schema.org JSON-LD structured data */}
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify({
-              "@context": "https://schema.org",
-              "@type": "LocalBusiness",
-              name: "ALUWIK",
-              url: "https://aluwik.pl/",
-              logo: "https://aluwik.pl/android-chrome-512x512.png",
-              image: "https://aluwik.pl/og-image.jpg",
-              description: "Producent stolarki aluminiowej: okna, drzwi, fasady, ogrody zimowe.",
-              address: {
-                "@type": "PostalAddress",
-                streetAddress: "Aleja Solidarności 8",
-                addressLocality: "Tczew",
-                addressRegion: "Pomorskie",
-                postalCode: "83-110",
-                addressCountry: "PL",
-              },
-              contactPoint: [
-                {
-                  "@type": "ContactPoint",
-                  telephone: "+48 609 604 571",
-                  contactType: "customer service",
-                },
-                {
-                  "@type": "ContactPoint",
-                  telephone: "+48 798 953 877",
-                  contactType: "sales",
-                },
-              ],
-              email: "biuro.aluwik@gmail.com",
-              openingHoursSpecification: [
-                {
-                  "@type": "OpeningHoursSpecification",
-                  dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
-                  opens: "07:00",
-                  closes: "16:00",
-                },
-                {
-                  "@type": "OpeningHoursSpecification",
-                  dayOfWeek: "Saturday",
-                  opens: "09:00",
-                  closes: "14:00",
-                },
-              ],
-              sameAs: [
-                "https://www.facebook.com/profile.php?id=61577515076852",
-                "https://www.linkedin.com/company/aluwik-technologia-aluminiowa/?viewAsMember=true",
-                "https://wa.me/48609604571",
-              ],
-            }),
-          }}
-        />
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify({
-              "@context": "https://schema.org",
-              "@type": "Organization",
-              name: "ALUWIK",
-              url: "https://aluwik.pl/",
-              logo: "https://aluwik.pl/android-chrome-512x512.png",
-            }),
-          }}
-        />
+        {/* DNS Prefetch & Preconnect for better performance */}
+        <link rel="dns-prefetch" href="https://www.googletagmanager.com" />
+        <link rel="dns-prefetch" href="https://www.google-analytics.com" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+        
+        {/* Enhanced Schema.org JSON-LD structured data */}
+        <JsonLd data={organizationSchema} />
+        <JsonLd data={localBusinessSchema} />
+        <JsonLd data={websiteSchema} />
         {/* Structured Data for Products */}
         <script
           type="application/ld+json"

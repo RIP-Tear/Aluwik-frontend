@@ -11,6 +11,18 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "https://aluwik.pl/kontakt/",
   },
+  openGraph: {
+    title: "Kontakt - ALUWIK Tczew",
+    description:
+      "Telefon: 609 604 571, 798 953 877. Adres: Aleja Solidarności 8, 83-110 Tczew.",
+    url: "https://aluwik.pl/kontakt/",
+    type: "website",
+  },
+  twitter: {
+    card: "summary",
+    title: "Kontakt - ALUWIK Tczew",
+    description: "Skontaktuj się z nami: 609 604 571, Tczew",
+  },
 };
 
 export default function ContactPage() {

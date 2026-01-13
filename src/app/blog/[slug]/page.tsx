@@ -25,6 +25,28 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     alternates: {
       canonical: `https://aluwik.pl/blog/${slug}/`,
     },
+    openGraph: {
+      title: post.title,
+      description: post.description,
+      url: `https://aluwik.pl/blog/${slug}/`,
+      type: "article",
+      publishedTime: post.date,
+      authors: ["ALUWIK"],
+      images: [
+        {
+          url: post.image || `https://aluwik.pl/blog/${slug}.webp`,
+          width: 1200,
+          height: 630,
+          alt: post.title,
+        },
+      ],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: post.title,
+      description: post.description,
+      images: [post.image || `https://aluwik.pl/blog/${slug}.webp`],
+    },
   };
 }
 

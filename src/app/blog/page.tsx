@@ -8,6 +8,19 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "https://aluwik.pl/blog/",
   },
+  openGraph: {
+    title: "Blog ALUWIK - Wszystko o stolarce aluminiowej",
+    description:
+      "Porady, inspiracje i realizacje. Dowiedz się więcej o oknach, drzwiach, fasadach i ogrodach zimowych.",
+    url: "https://aluwik.pl/blog/",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Blog ALUWIK - Wszystko o stolarce aluminiowej",
+    description:
+      "Porady, inspiracje i realizacje dotyczące stolarki aluminiowej.",
+  },
 };
 
 export default function BlogPage() {

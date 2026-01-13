@@ -8,6 +8,18 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "https://aluwik.pl/realizacje/",
   },
+  openGraph: {
+    title: "Realizacje ALUWIK - Nasze projekty stolarki aluminiowej",
+    description:
+      "Sprawdź nasze realizacje: okna, drzwi, fasady i ogrody zimowe dla domów i firm.",
+    url: "https://aluwik.pl/realizacje/",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Realizacje ALUWIK - Nasze projekty",
+    description: "Zobacz nasze najnowsze realizacje stolarki aluminiowej.",
+  },
 };
 
 export default function RealizationPage() {
