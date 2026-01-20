@@ -19,10 +19,10 @@ const NavbarContact = () => {
             size={14}
           />
           <Button
-            label={"798 953 877"}
+            label={"886 347 417"}
             icon={<Phone />}
             color="black"
-            href="tel:798953877"
+            href="tel:886347417"
             size={14}
           />
           <Button

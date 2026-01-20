@@ -32,7 +32,7 @@ const faqData = [
   {
     question: "Jak mogę zamówić wycenę w ALUWIK?",
     answer:
-      "Wycenę możesz zamówić telefonicznie pod numerami: 609 604 571 lub 798 953 877, mailowo na biuro.aluwik@gmail.com lub poprzez formularz kontaktowy na stronie www.aluwik.pl/kontakt/",
+      "Wycenę możesz zamówić telefonicznie pod numerami: 609 604 571 lub 886 347 417, mailowo na biuro.aluwik@gmail.com lub poprzez formularz kontaktowy na stronie www.aluwik.pl/kontakt/",
   },
 ];
 

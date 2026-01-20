@@ -22,11 +22,11 @@ const InformationContact = () => {
             <Text text="609 604 571" size={16} />
           </Link>
           <Link
-            href="tel:798953877"
+            href="tel:886347417"
             className="cursor-active hover:underline flex items-center gap-2"
           >
             <Phone size={18} />
-            <Text text="798 953 877" size={16} />
+            <Text text="886 347 417" size={16} />
           </Link>
           <Link
             href="mailto:biuro@aluwik.pl"

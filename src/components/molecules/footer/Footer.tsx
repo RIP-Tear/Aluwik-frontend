@@ -148,7 +148,7 @@ export const Footer = () => {
           <Section title="Kontakt">
             <ul>
               <ListItem label="609 604 571" href="tel:609604571" isExternal />
-              <ListItem label="798 953 877" href="tel:798953877" isExternal />
+              <ListItem label="886 347 417" href="tel:886347417" isExternal />
               <ListItem label="biuro@aluwik.pl" href="mailto:biuro@aluwik.pl" isExternal />
               <ListItem
                 label="Aleja Solidarności 8, 83-110 Tczew"

@@ -7,14 +7,14 @@ import { Footer } from "@/components/molecules/footer/Footer";
 export const metadata: Metadata = {
   title: "Kontakt - ALUWIK stolarka aluminiowa Tczew",
   description:
-    "Skontaktuj się z ALUWIK - producentem stolarki aluminiowej w Tczewie. Telefon: 609 604 571, 798 953 877. Adres: Aleja Solidarności 8, 83-110 Tczew. Zapytaj o wycenę!",
+    "Skontaktuj się z ALUWIK - producentem stolarki aluminiowej w Tczewie. Telefon: 609 604 571, 886 347 417. Adres: Aleja Solidarności 8, 83-110 Tczew. Zapytaj o wycenę!",
   alternates: {
     canonical: "https://aluwik.pl/kontakt/",
   },
   openGraph: {
     title: "Kontakt - ALUWIK Tczew",
     description:
-      "Telefon: 609 604 571, 798 953 877. Adres: Aleja Solidarności 8, 83-110 Tczew.",
+      "Telefon: 609 604 571, 886 347 417. Adres: Aleja Solidarności 8, 83-110 Tczew.",
     url: "https://aluwik.pl/kontakt/",
     type: "website",
   },
